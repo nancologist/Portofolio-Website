@@ -1,0 +1,230 @@
+/*
+++++++++++ 1. Tablets & Small Devices +++++++++++++++++++
+
+Step1-1
+#header-home: Make the height much less than what it is on the laptops and desktops
+
+
+++++++++++ 2. Smartphones +++++++++++++++++++
+
+First we want to work on the Header and the Main Nav:
+
+Step2-1
+For Main Nav we are going to set flex-direction instead of 'row' to 'column'
+
+Step2-2
+We want to bring the logo on top in the center and the menu underneath it in the center
+
+Step2-3
+Like Step1-1 but 3 times smaller.
+
+Step2-4
+Add border on the bottom of the nav items to separate the rest of the content
+
+Step2-5
+We do not want that header-content (The text and teh 'View My Work'-Button on the Image) be displayed. All we want is Logo and the Menu.
+
+Step2-6
+If we look at About-page now, we see that the navi items are hidden, so we should set the same HEIGHT for the #header-inner.
+
+Stack Grid (Step2-7)
+So it has a same pattern. Everywhere we have Grid with repeat(n, 1fr/2fr...) we are going to replace repeat(...) with 1fr so that it stacks!
+
+Step2-8
+Under 'I Specialize In' The Icons and their texts are running into each other, so we are going to fix them
+
+About Page (Step2-9)
+The reason Step2-7 did not work for Bio in About Page is that, that we used there Grid-Template-Area, so we should fix it there in another way, same with the Contact Form, there we also used the Grid Template Area
+
+*/
+
+
+// 1. Tablets & Small Devices
+@media(max-width: 800px) {
+
+    #header-home {
+        height: 30rem; // Step1-1
+
+        .header-content {
+            padding-top: 5rem; // Pull up the Text and Buttons On the bg-image a bit up.
+        }
+    }
+
+}
+// ------------------------------------
+
+// 2. Smartphones
+@media(max-width: 500px) {
+    #main-nav {
+
+        // Step2-1 & Step2-2 :
+
+        flex-direction: column; 
+        align-items: center;
+
+        ul {
+            li {
+                padding: 1rem;
+            }
+        }
+    }
+
+    #header {
+        &-home {
+            height: 10rem;
+            
+            // Step2-4
+            border-bottom: 3px solid $main-color;
+            
+            // Not so important...
+            background-position: 20% 30%;
+
+            //Step2-5
+            .header-content {
+                display: none;
+            }
+        }
+
+        &-inner {
+            // Step2-6
+            height: 10rem;
+        }
+    }
+
+    // Stack Grid Columns (Step2-7)
+    #home-a .specials,
+    #home-b .stats,
+    #home-c .process,
+    #about-d .testimonials,
+    #contact-b .contact-info,
+    .items {
+        grid-template-columns: 1fr;
+    }
+
+    #home {
+        &-a {
+            // Step2-8
+            .specials div {
+                border-bottom: 1px $light-color solid;
+                padding: 1rem;
+
+                &:last-child {
+                    border: none;
+                    padding-bottom: 0;
+                }
+            }
+        }
+
+        &-b {
+            // Less Padding for Stats:
+            .stats div {
+                padding: 2rem 0 1rem;
+            }
+        }
+    }
+
+    // About (Step 2-9)
+    #about {
+        &-a {
+            .about-info {
+                grid-template-areas: 
+                'bioimage'
+                'bio'
+                'aw1'
+                'aw2'
+                'aw3';
+            }
+        }
+
+        // Logos are not that much important and they take too much place so we are going to remove them for smartphones:
+        &-c {
+            display: none;
+        }
+    }
+
+    // Contact
+    #contact {
+        &-a {
+            // Like Step 2-9 :
+            .text-fields {
+                grid-template-areas: 
+                'name'
+                'subject'
+                'email'
+                'phone'
+                'message';
+            }
+        }
+
+        &-b {
+            .contact-info {
+
+                div {
+                    margin-bottom: 1rem;
+                    padding-bottom: 1rem;
+                    border-bottom: 1px #555 solid;
+                    
+                    h3 {
+                        display: none;
+                    }
+    
+                    p {
+                        padding-top: 1rem;
+                        font-size: 1rem;
+                    }
+    
+                    &:last-child {
+                        border: none;
+                        margin-bottom: 0;
+                        padding-bottom: 0;
+                    }
+                }
+
+            }
+        }
+
+        &-c {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    // Footer
+    #main-footer {
+        height: 7rem;
+
+        .footer-content {
+            flex-direction: column;
+            padding: 1rem;
+            height: 5rem;
+        }
+    }
+}
+
+// ---------------------------
+
+
+// Landscape Mode on Smartphones
+@media(max-height: 580px) {
+    #header-home {
+        // Move the dynamic-text-with-js a bit up to set it in the middle of bg-image
+        .header-content {
+            padding-top: 3rem;
+        }
+    }
+}
+
+
+// Landscape - For iPhone5
+// for iPhone5 in landscape mode the homepage the dynamic text does not look that good, because the height of iPhone5 in landscape mode is too small!!! so we need to deal with it with Extra Media Query
+@media(max-height: 320px) {
+    #header-home {
+        // Move the dynamic-text-with-js a bit up to set it in the middle of bg-image
+        .header-content {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    }
+}
