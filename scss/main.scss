@@ -86,16 +86,21 @@ img {
         height: 100vh;
         color: #fff;
 
-        // Header Content
-        .header-content {
-            text-align: center;
-            padding-top: 20%;
+        .darken-overlay {
+            background: rgba(0, 0, 0, 0.5);
+            height: 100vh;
 
-            h1 {
-                font-size: 4rem;
-                line-height: 1.2;
+            .header-content {
+                text-align: center;
+                padding-top: 20%;
+    
+                h1 {
+                    font-size: 4rem;
+                    line-height: 1.2;
+                }
             }
         }
+
     }
 
     // Header Inner (About Page)
@@ -198,7 +203,7 @@ img {
                 &:hover {
                     background: $main-color;
                     color: $dark-color;
-                    
+
                     // Make Icons Bigger By Hovering:
                     width: 90px;
                     height: 90px;
@@ -222,23 +227,34 @@ img {
     &-a {
         .about-info {
             display: grid;
-            grid-template-areas: 
-            'bioimage   bio     bio'
-            'aw1        aw2     aw3';
+            grid-template-areas:
+                'bioimage   bio     bio'
+                'aw1        aw2     aw3';
             grid-gap: 1.2rem;
         }
 
         // Grid Area
-        .bio-image { grid-area: bioimage; }
-        .bio { 
-            grid-area: bio; 
+        .bio-image {
+            grid-area: bioimage;
+        }
+
+        .bio {
+            grid-area: bio;
             border-left: 3px solid $main-color;
             padding: 0.8rem;
         }
 
-        .award-1 { grid-area: aw1; }
-        .award-2 { grid-area: aw2; }
-        .award-3 { grid-area: aw3; }
+        .award-1 {
+            grid-area: aw1;
+        }
+
+        .award-2 {
+            grid-area: aw2;
+        }
+
+        .award-3 {
+            grid-area: aw3;
+        }
 
         .award-1 .fas,
         .award-2 .fas,
@@ -317,9 +333,9 @@ img {
         .text-fields {
             display: grid;
             grid-template-areas:
-            'name       email'
-            'subject    phone'
-            'message    message';
+                'name       email'
+                'subject    phone'
+                'message    message';
 
             grid-gap: 1.2rem;
             margin-bottom: 1.2rem;
@@ -328,15 +344,19 @@ img {
             .name-input {
                 grid-area: name;
             }
+
             .subject-input {
                 grid-area: subject;
             }
+
             .email-input {
                 grid-area: email;
             }
+
             .phone-input {
                 grid-area: phone;
             }
+
             .message-input {
                 grid-area: message;
                 height: 100px;

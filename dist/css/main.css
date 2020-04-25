@@ -217,18 +217,21 @@ img {
         border-color: #ffbc00; }
 
 #header-home {
-  background: url("../img/showcase.jpg") no-repeat center right/cover;
+  background: url("../img/showcase3.jpg") no-repeat center right/cover;
   height: 100vh;
   color: #fff; }
-  #header-home .header-content {
-    text-align: center;
-    padding-top: 20%; }
-    #header-home .header-content h1 {
-      font-size: 4rem;
-      line-height: 1.2; }
+  #header-home .darken-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh; }
+    #header-home .darken-overlay .header-content {
+      text-align: center;
+      padding-top: 20%; }
+      #header-home .darken-overlay .header-content h1 {
+        font-size: 4rem;
+        line-height: 1.2; }
 
 #header-inner {
-  background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
+  background: url("../img/showcase3.jpg") no-repeat 20% 30%/cover;
   height: 5.5rem;
   border-bottom: 3px solid #ffbc00; }
 
