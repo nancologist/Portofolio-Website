@@ -191,8 +191,8 @@ img {
   width: 100%; }
 
 #logo {
-  width: 70px;
-  height: 70px;
+  width: auto;
+  height: 100px;
   color: #fff;
   text-transform: uppercase; }
 
