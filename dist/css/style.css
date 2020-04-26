@@ -1586,11 +1586,17 @@ h1, h2, h3, h4, h5,
   #about-section .mj-container {
     text-align: center; }
   #about-section .about-info {
-    display: flex; }
+    display: flex;
+    justify-content: center; }
     #about-section .about-info img {
       max-width: 25%; }
+      @media (max-width: 767.98px) {
+        #about-section .about-info img {
+          display: none;
+          /* CHROME HAS PROBLEMS, USE FIREFOX! */ } }
     #about-section .about-info .bio {
       border-left: 3px solid #f69314;
       margin-left: 10px;
       text-align: left;
-      padding: 2rem; }
+      padding: 2rem;
+      max-width: 50%; }

@@ -1,3 +1,5 @@
+
+
 // Utilities --------------------------
 .bottom-line {
     height: 2px;
@@ -18,9 +20,14 @@
 
     .about-info {
         display: flex;
+        justify-content: center;
 
         img {
             max-width: 25%;
+            @include media-breakpoint-down(sm) {
+                display: none;
+                /* CHROME HAS PROBLEMS, USE FIREFOX! */
+            }
         }
 
         .bio {
@@ -28,27 +35,10 @@
             margin-left:10px;
             text-align: left;
             padding: 2rem;
+            max-width: 50%;
         }
     }
 }
 
 
 // Responsive --------------------------------------------------
-
-// Not working ....
-// @media(max-width: 500px) {
-//     #about-section {
-//         .mj-container {
-//         }
-    
-//         .about-info {
-    
-//             img {
-//                 display: none;
-//             }
-    
-//             .bio {
-//             }
-//         }
-//     }   
-// }
