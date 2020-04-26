@@ -7,4 +7,4 @@
 
 ### feature/rs-theme
 * This is the Real State Portfolio Template
-* COMMITS should look like this: ``#RL - Commit_msg...``
+* COMMITS should look like this: ``#RS - Commit_msg...``
