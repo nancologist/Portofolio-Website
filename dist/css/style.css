@@ -1572,3 +1572,25 @@ h1, h2, h3, h4, h5,
       margin: 4px; }
     .with-dots .owl-dots .owl-dot.active span {
       background: #f69314; }
+
+/* My Custom Styling */
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: #bbb;
+  display: block;
+  margin: 0 auto 1rem auto; }
+
+#about-section {
+  padding: 9rem 0; }
+  #about-section .mj-container {
+    text-align: center; }
+  #about-section .about-info {
+    display: flex; }
+    #about-section .about-info img {
+      max-width: 25%; }
+    #about-section .about-info .bio {
+      border-left: 3px solid #f69314;
+      margin-left: 10px;
+      text-align: left;
+      padding: 2rem; }
