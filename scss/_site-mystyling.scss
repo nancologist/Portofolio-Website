@@ -12,11 +12,7 @@
 
 // ++++++ ABOUT SECTION +++++
 #about-section {
-    padding: 9rem 0;
-
-    .mj-container {
-        text-align: center;
-    }
+    padding-top: 6rem;
 
     .about-info {
         display: flex;
@@ -24,7 +20,8 @@
 
         img {
             max-width: 25%;
-            @include media-breakpoint-down(sm) {
+            object-fit: cover;
+            @include media-breakpoint-down(md) {
                 display: none;
                 /* CHROME HAS PROBLEMS, USE FIREFOX! */
             }
@@ -35,7 +32,12 @@
             margin-left:10px;
             text-align: left;
             padding: 2rem;
-            max-width: 50%;
+            max-width: 70%;
+            @include media-breakpoint-down(md) {
+                max-width: 100%;
+                margin-left: 0;
+                padding: 1rem;
+            }
         }
     }
 }
