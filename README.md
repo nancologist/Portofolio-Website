@@ -12,6 +12,9 @@
 ### Dependencies
 #### ESLint
 ``npm install --save-dev eslint-config-react-app``
+
+#### Google Fonts
+````
 ___
 ___
 ___
