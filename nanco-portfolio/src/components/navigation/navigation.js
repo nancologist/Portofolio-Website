@@ -14,16 +14,9 @@ const AppNav = (props) => {
                     <Logo/>
                 </div>
                 <ul className={styles.navList}>
-                    <NavItem>Home</NavItem>
-                    <NavItem>About</NavItem>
-                    <NavItem>Contact</NavItem>
-
-                    {/*<li>*/}
-                        {/*<NavLink*/}
-                        {/*    activeClassName={styles.active}*/}
-                        {/*    exact*/}
-                        {/*    to="/">Home</NavLink>*/}
-                    {/*</li>*/}
+                    <NavItem goto={'/'}>Home</NavItem>
+                    <NavItem goto={'/about'}>About</NavItem>
+                    <NavItem goto={'/contact'}>Contact</NavItem>
                 </ul>
             </nav>
         </header>
