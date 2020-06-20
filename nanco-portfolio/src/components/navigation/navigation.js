@@ -5,15 +5,15 @@ import Logo from "../logo/logo";
 import styles from './navigation.module.css';
 
 const AppNav = (props) => {
-    let navCss = [styles.navBar];
-
-    if (props.isHome) {
-        navCss.push(styles.homeNavBar);
-    }
+    // let navCss = [styles.navBar];
+    //
+    // if (props.isHome) {
+    //     navCss.push(styles.homeNavBar);
+    // }
 
     return (
         <header>
-            <nav className={navCss.join(' ')}>
+            <nav className={styles.navBar}>
                 <div className={styles.logoContainer}>
                     <Logo/>
                 </div>

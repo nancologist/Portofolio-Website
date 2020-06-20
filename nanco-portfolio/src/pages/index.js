@@ -7,7 +7,7 @@ import AppNav from "../components/navigation/navigation";
 
 const Home = () => (
     <MainLayout>
-        <AppNav isHome/>
+        <AppNav />
         <div className={styles.container}>
             <h1>Morteza Jalilifar</h1>
             <p>
