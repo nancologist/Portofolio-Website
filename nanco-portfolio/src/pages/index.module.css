@@ -1,0 +1,36 @@
+.container {
+    padding: 3rem;
+    text-align: center;
+    width: 65%;
+    color: white;
+    margin: 10rem auto 0 auto;
+    font-size: 1.2rem;
+}
+
+.container h1::after {
+    content: '';
+    border-bottom: 5px solid var(--primary-color);
+    width: 60%;
+    height: 1px;
+    display: block;
+    margin: 10px auto 0 auto;
+}
+
+.cover {
+    background:
+            url("../images/background_5.jpg")
+            no-repeat;
+    background-size: cover;
+    height: 100vh;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -10;
+    filter:
+        blur(4px)
+        brightness(35%)
+        saturate(30%);
+}
