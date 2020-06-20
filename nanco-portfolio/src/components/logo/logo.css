@@ -1,19 +1,31 @@
 .logo {
     height: 40vmin;
     pointer-events: none;
+    transform: rotate(90deg);
 }
 
 @media (prefers-reduced-motion: no-preference) {
     .logo {
-        animation: App-logo-spin infinite 20s linear;
+        animation: App-logo-spin infinite 5s ease-in-out;
     }
 }
 
 @keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
+    0% {
+        transform:
+            rotate(90deg)
+            /*rotate3d(0, 1, 0, 0deg);*/
     }
-    to {
-        transform: rotate(360deg);
+
+    50% {
+        transform:
+            rotate(270deg)
+            /*rotate3d(0, 1, 0, 180deg);*/
+    }
+
+    100% {
+        transform:
+            rotate(90deg)
+            /*rotate3d(0, 1, 0, 0deg);*/
     }
 }
