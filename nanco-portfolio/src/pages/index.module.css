@@ -4,20 +4,26 @@
             no-repeat;
     background-size: cover;
     height: 100vh;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -10;
 }
 
-.coverOverlay {
-    background-color: rgba(0,0,0, 0.5);
-    background-image: linear-gradient(
-            to right,
-            rgba(92, 219, 149, 0.0),
-            rgba(92, 219, 149, 0.6)
-    );
-    height: 100%;
-    width: 100%;
+.cover:before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(52, 58, 64, 0.7);
 }
 
-.cover .btn {
+.container .btn {
     background-color: white;
     border: 3px solid white;
     border-radius: 50px;
@@ -34,7 +40,7 @@
     z-index: 0;
 }
 
-.cover .btn::after {
+.container .btn::after {
     background-color: var(--primary-color);
     border-radius: 50px;
     content: '';
@@ -48,12 +54,12 @@
     z-index: -1;
 }
 
-.cover .btn:hover {
+.container .btn:hover {
     color: white;
     background-color: transparent;
 }
 
-.cover .btn:hover::after {
+.container .btn:hover::after {
     transform: translate(0, -70%);
 }
 
