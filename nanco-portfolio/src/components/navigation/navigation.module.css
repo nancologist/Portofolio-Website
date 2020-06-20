@@ -1,0 +1,76 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    padding: 1.1rem 15%;
+    border: 3px solid var(--primary-color);
+    background-color: var(--primary-color);
+}
+
+.homeNavBar {
+    animation: removeBg 700ms forwards;
+}
+
+@keyframes removeBg {
+    from {
+        border: 3px solid var(--primary-color);
+        background-color: var(--primary-color);
+    }
+    to {
+        border: 3px solid transparent;
+        background-color: transparent;
+    }
+}
+
+.logoContainer {
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    position: relative;
+}
+
+.logoContainer img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 90%;
+}
+
+/* Navigation List and its Items ------------------------------ */
+.navList {
+    display: flex;
+    margin:0 1rem;
+    align-items: center;
+    font-weight: 600;
+}
+
+.navList li {
+    margin: 0 1rem;
+    padding: 0 5px;
+}
+
+.navList li a {
+    padding-bottom: 10px;
+    color: white;
+    transition: all 300ms;
+    display: inline-block; /* Otherwise, SCALING by hovering would not work! */
+}
+
+.navList li a.active {
+    pointer-events: none; /* Exclude Active Link From Hovering Effect! (Attention: It also removes all click events from the element. */
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.navList li a:hover {
+    /*color: red;*/
+    transform: scale(1.2);
+}
+
+/* Right Navigation ---------- */
+.navRight {
+    display: flex;
+}
