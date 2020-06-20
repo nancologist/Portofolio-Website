@@ -13,7 +13,6 @@ const Home = () => (
             <p>
                 I'm a fullstack developer from Berlin, Germany. Welcome to my page.
             </p>
-            <Link to="/courses" className={styles.btn}>Zu Kursen</Link>
         </div>
         <div className={styles.cover}>
         </div>
