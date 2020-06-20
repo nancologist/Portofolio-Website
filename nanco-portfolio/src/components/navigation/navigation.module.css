@@ -23,7 +23,7 @@
 }
 
 .logoContainer {
-    background-color: white;
+    background-color: transparent;
     width: 80px;
     height: 80px;
     text-align: center;
@@ -55,7 +55,7 @@
 
 .navList li a {
     padding-bottom: 10px;
-    color: white;
+    color: var(--primary-color);
     transition: all 300ms;
     display: inline-block; /* Otherwise, SCALING by hovering would not work! */
 }

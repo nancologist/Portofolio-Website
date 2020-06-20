@@ -1,5 +1,7 @@
 import React from 'react';
 // import {NavLink} from 'react-router-dom';
+
+import Logo from "../logo/logo";
 import styles from './navigation.module.css';
 
 const AppNav = (props) => {
@@ -13,12 +15,12 @@ const AppNav = (props) => {
         <header>
             <nav className={navCss.join(' ')}>
                 <div className={styles.logoContainer}>
-                    {/*<img src={logo} alt="VHS Kurse - Logo"/>*/}
+                    <Logo/>
                 </div>
                 <ul className={styles.navList}>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Contact</a></li>
 
                     {/*<li>*/}
                         {/*<NavLink*/}
