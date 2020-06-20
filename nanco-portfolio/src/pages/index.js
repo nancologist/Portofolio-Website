@@ -9,11 +9,9 @@ const Home = () => (
     <MainLayout>
         <AppNav isHome/>
         <div className={styles.container}>
-            <h1>Kurse der Berliner Volkshochschulen</h1>
+            <h1>Morteza Jalilifar</h1>
             <p>
-                In unserem Portal kannst du durch mehr als 1500 Kursangebote Berliner Volkshochschulen
-                deinen Kursen finden, dich anmelden und die Kursgebühr ganz einfach überweisen. Wenn du
-                Fragen hast, kannst du uns rund um die Uhr schreiben!
+                I'm a fullstack developer from Berlin, Germany. Welcome to my page.
             </p>
             <Link to="/courses" className={styles.btn}>Zu Kursen</Link>
         </div>

@@ -11,16 +11,10 @@
     right: 0;
     top: 0;
     z-index: -10;
-}
-
-.cover:before {
-    bottom: 0;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color: rgba(52, 58, 64, 0.7);
+    filter:
+        blur(4px)
+        brightness(35%)
+        saturate(30%);
 }
 
 .container .btn {
