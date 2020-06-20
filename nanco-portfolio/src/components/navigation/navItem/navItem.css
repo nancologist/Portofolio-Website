@@ -11,7 +11,14 @@
 
 .navItem a.active {
     pointer-events: none; /* Exclude Active Link From Hovering Effect! (Attention: It also removes all click events from the element. */
-    border-bottom: 3px solid var(--secondary-color);
+}
+
+/*.navItem a.active::before {*/
+/*    transform: translate(0, 0);*/
+/*}*/
+
+.navItem a.active::after {
+    transform: translate(0, 0);
 }
 
 /* For Hover Effect ------------- */
