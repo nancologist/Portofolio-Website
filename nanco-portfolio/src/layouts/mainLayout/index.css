@@ -1,0 +1,57 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Remove Arrows from Input:Number --------------- */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+/* ------------------------------------------------ */
+
+:root {
+    --primary-color: #05386b;
+    --primary-light-color: #5d7f98;
+    --secondary-color: #5cdb95;
+    --secondary-light-color: #8ee4af;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Rubik';*/
+    /*font-family: 'Convergence';*/
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+a {
+    /*font-family: 'Convergence';*/
+    /*font-family: 'Rubik';*/
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+h1, h2, h3, h4 {
+    /*font-family: 'Montserrat Alternates';*/
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 0.6rem;
+}
+
+ul {
+    list-style: none;
+}

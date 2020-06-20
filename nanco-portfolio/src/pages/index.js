@@ -2,10 +2,11 @@ import React, { Fragment } from "react"
 import { Link } from "gatsby"
 
 import styles from './index.module.css';
+import MainLayout from "../layouts/mainLayout";
 import AppNav from "../components/navigation/navigation";
 
-const IndexPage = () => (
-    <Fragment>
+const Home = () => (
+    <MainLayout>
         <div className={styles.cover}>
             <div className={styles.coverOverlay}>
                 <AppNav isHome/>
@@ -20,7 +21,7 @@ const IndexPage = () => (
                 </div>
             </div>
         </div>
-    </Fragment>
+    </MainLayout>
 );
 
-export default IndexPage
+export default Home
