@@ -8,6 +8,7 @@ export default (props) => {
             <Link
                 to={props.goto}
                 activeClassName={'active'}
+                exact
             >
                 {props.children}
             </Link>

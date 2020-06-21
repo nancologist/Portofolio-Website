@@ -1,8 +1,8 @@
 import React from "react";
-import MainLayout from "../../layouts/mainLayout";
+import MainLayout from "../../layouts/index";
 
 export default () => (
-    <MainLayout>
+    <React.Fragment>
         <p>You can contact Mori through... :</p>
-    </MainLayout>
+    </React.Fragment>
 );

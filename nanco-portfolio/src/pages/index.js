@@ -1,10 +1,10 @@
 import React, { Fragment } from "react"
 
 import styles from './index.module.css';
-import MainLayout from "../layouts/mainLayout";
+import MainLayout from "../layouts/index";
 
 const Home = () => (
-    <MainLayout>
+    <Fragment>
         <div className={styles.container}>
             <h1>Morteza Jalilifar</h1>
             <p>
@@ -13,7 +13,7 @@ const Home = () => (
         </div>
         <div className={styles.cover}>
         </div>
-    </MainLayout>
+    </Fragment>
 );
 
 export default Home
