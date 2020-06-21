@@ -13,8 +13,10 @@
 #### ESLint
 ``npm install --save-dev eslint-config-react-app``
 
-#### Google Fonts
-````
+#### Transition
+``npm install gatsby-plugin-transition-link`` >>> THIS HAS PROBLEM WITH ELEMENTS ON the page which have ``position: absulute`` !!! So you should find another way isntead of using this value for css position
+
+``npm install gsap``
 ___
 ___
 ___
