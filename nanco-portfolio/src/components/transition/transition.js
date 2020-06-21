@@ -4,7 +4,7 @@ import {
     Transition as ReactTransition,
 } from "react-transition-group"
 
-const timeout = 500;
+const timeout = 400;
 const getTransitionStyles = {
     entering: {
         position: `absolute`,
@@ -21,26 +21,12 @@ const getTransitionStyles = {
 };
 
 class Transition extends React.PureComponent {
-    state = {
-        pathname: '',
-    };
-
-    componentDidUpdate(prevProps, prevState, snapshot) {
-        if (this.props.location && prevState.pathname !== this.props.location.pathname) {
-            this.setState({pathname: this.props.location.pathname})
-        }
-    }
-
-    componentWillUnmount() {
-        this.setState({pathname: ''})
-    }
-
     render() {
-        console.log(this.props.children);
+        const {children, location} = this.props;
         return (
             <TransitionGroup>
                 <ReactTransition
-                    key={this.state.pathname}
+                    key={location.pathname}
                     timeout={{
                         enter: timeout,
                         exit: timeout,
@@ -52,7 +38,8 @@ class Transition extends React.PureComponent {
                                 ...getTransitionStyles[status],
                             }}
                         >
-                            {this.props.children}
+                            {children}
+                            {status}
                         </div>
                     )}
                 </ReactTransition>

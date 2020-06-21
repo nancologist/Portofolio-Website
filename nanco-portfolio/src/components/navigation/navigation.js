@@ -6,7 +6,7 @@ import Logo from "../logo/logo";
 import styles from './navigation.module.css';
 import NavItem from "./navItem/navItem";
 
-const AppNav = (props) => {
+const Navigation = (props) => {
     return (
         <header>
             <nav className={styles.navBar}>
@@ -23,4 +23,4 @@ const AppNav = (props) => {
     );
 };
 
-export default AppNav;
+export default Navigation;

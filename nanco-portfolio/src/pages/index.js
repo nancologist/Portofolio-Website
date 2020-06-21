@@ -10,8 +10,8 @@ const Home = () => (
             <p>
                 I'm a fullstack developer from Berlin, Germany. Welcome to my page.
             </p>
+            <div className={styles.cover}>
         </div>
-        <div className={styles.cover}>
         </div>
     </Fragment>
 );
