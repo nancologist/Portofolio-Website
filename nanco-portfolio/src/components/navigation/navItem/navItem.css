@@ -14,19 +14,6 @@
     color: var(--primary-dark-color);
 }
 
-/*.navItem a.active::before {*/
-/*    transform: translate(0, 0);*/
-/*}*/
-
-.navItem a.active::after {
-    /*transform: translate(0, 0);*/
-    /*background-image: linear-gradient(*/
-    /*        to right,*/
-    /*        var(--secondary-color),*/
-    /*        var(--primary-color)*/
-    /*);*/
-}
-
 /* For Hover Effect ------------- */
 .navItem a::before {
     background-image: linear-gradient(
@@ -34,8 +21,6 @@
             var(--secondary-color),
             var(--primary-color)
     );
-    /*background-color: white;*/
-
     content: '';
     display: block;
     height: 2px;
@@ -50,12 +35,10 @@
 
 .navItem a::after {
     background-image: linear-gradient(
-            to right,
+            to left,
             var(--secondary-color),
             var(--primary-color)
     );
-    /*background-color: white;*/
-
     bottom: 0;
     content: '';
     display: block;
