@@ -36,6 +36,7 @@
 /* <><><><><><><><><><><><><><><><><><><><><><><><> */
 .home-content {
     align-self: center;
+    color: #ddd
 }
 
 .home-content h1::after {
