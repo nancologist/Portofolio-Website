@@ -8,7 +8,8 @@
             center
             no-repeat;
     background-size: cover;
-    height: 260px;
-    max-width: 225px;
+    height: 350px;
+    max-width: 290px;
     border-radius: 7px;
+    filter: sepia(35%);
 }
