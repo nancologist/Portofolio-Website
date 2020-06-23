@@ -1,4 +1,4 @@
-.container {
+.home {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -12,7 +12,7 @@
 
 /* <><><><><><><><><><><><><><><><><><><><><><><><> */
 
-.cover {
+.home-bg {
     background:
             url("../images/background_5.jpg")
             center
@@ -34,11 +34,11 @@
 }
 
 /* <><><><><><><><><><><><><><><><><><><><><><><><> */
-.content {
+.home-content {
     align-self: center;
 }
 
-.content h1::after {
+.home-content h1::after {
     content: '';
     border-bottom: 5px solid var(--primary-color);
     width: 150px;

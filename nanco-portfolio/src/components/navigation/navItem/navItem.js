@@ -7,7 +7,7 @@ export default (props) => {
         <li className="navItem">
             <Link
                 to={props.goto}
-                activeClassName={'active'}
+                activeClassName="active"
             >
                 {props.children}
             </Link>

@@ -1,4 +1,4 @@
-.navBar {
+.nav {
     display: flex;
     font-size: 17px;
     justify-content: space-between;
@@ -7,7 +7,7 @@
     margin-bottom: 4px;
 }
 
-.logoContainer {
+.nav-logo-container {
     background-color: transparent;
     /*pointer-events: none; HOVER DOES NOT WORK WITH THIS! */
     width: 80px;
@@ -17,7 +17,7 @@
     overflow: hidden;
 }
 
-.logoContainer img {
+.nav-logo-container img {
     position: absolute;
     margin: auto;
     top: 0;
@@ -28,19 +28,14 @@
 }
 
 /* Navigation List and its Items ------------------------------ */
-.navList {
+.nav-list {
     display: flex;
     margin:0 1rem;
     align-items: center;
     font-weight: 600;
 }
 
-.navList li {
+.nav-list li {
     margin: 0 1.5rem;
     padding: 0 5px;
-}
-
-/* Right Navigation ---------- */
-.navRight {
-    display: flex;
 }

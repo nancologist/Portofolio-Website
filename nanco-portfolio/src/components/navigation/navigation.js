@@ -3,17 +3,17 @@ import React from 'react';
 // import {NavLink} from 'react-router-dom';
 
 import Logo from "../logo/logo";
-import styles from './navigation.module.css';
+import './navigation.css';
 import NavItem from "./navItem/navItem";
 
 const Navigation = (props) => {
     return (
         <header>
-            <nav className={styles.navBar}>
-                <div className={styles.logoContainer}>
+            <nav className="nav">
+                <div className="nav-logo-container">
                     <Logo/>
                 </div>
-                <ul className={styles.navList}>
+                <ul className="nav-list">
                     <NavItem goto={'/'}>Home</NavItem>
                     <NavItem goto={'/about'}>About</NavItem>
                     <NavItem goto={'/contact'}>Contact</NavItem>
