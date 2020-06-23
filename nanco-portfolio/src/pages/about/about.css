@@ -3,5 +3,12 @@
 }
 
 .about-pic {
-
+    background:
+            url("../../images/about_mypic.jpeg")
+            center
+            no-repeat;
+    background-size: cover;
+    height: 260px;
+    max-width: 225px;
+    border-radius: 7px;
 }

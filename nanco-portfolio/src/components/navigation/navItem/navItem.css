@@ -51,6 +51,10 @@
     will-change: transform;
 }
 
+.navItem a:hover {
+    color: var(--primary-color);
+}
+
 .navItem a:hover::before {
     transform: translate(0, 0);
 }
