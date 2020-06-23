@@ -9,10 +9,12 @@
 
 .logoContainer {
     background-color: transparent;
+    /*pointer-events: none; HOVER DOES NOT WORK WITH THIS! */
     width: 80px;
     height: 80px;
     text-align: center;
     position: relative;
+    overflow: hidden;
 }
 
 .logoContainer img {

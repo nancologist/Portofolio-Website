@@ -11,6 +11,7 @@ const Home = () => (
                 <p>
                     Hi, I'm Mori! Welcome to my page.
                 </p>
+                <div className={styles.box}></div>
                 <p>
                     This is a brief introduction of mine, my projects and skills. Let's get started!
                 </p>
