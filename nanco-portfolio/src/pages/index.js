@@ -13,7 +13,7 @@ const Home = () => (
                 </p>
                 <div className={styles.box}></div>
                 <p>
-                    This is a brief introduction of mine, my projects and skills. Let's get started!
+                    This is a brief introduction of mine, my projects and skills. Fasten your seatbelt!
                 </p>
             </div>
             <div className={styles.cover}>
