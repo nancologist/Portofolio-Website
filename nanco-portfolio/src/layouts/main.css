@@ -55,3 +55,8 @@ p {
 ul {
     list-style: none;
 }
+
+.page-container {
+    padding-right: 15%; /* Exactly like .navBar Padding */
+    padding-left: 15%;
+}

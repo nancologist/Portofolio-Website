@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 
 import Transition from "../components/transition/transition";
 import Meta from "../meta";
-import './index.css';
+import './main.css';
 import AppNav from "../components/navigation/navigation";
 
 const MainLayout = ({ children, location }) => {

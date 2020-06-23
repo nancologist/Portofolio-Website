@@ -1,6 +1,6 @@
 import React, { Fragment } from "react"
 
-import styles from './index.module.css';
+import styles from './home.module.css';
 import MainLayout from "../layouts/index";
 
 const Home = () => (
