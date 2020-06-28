@@ -18,8 +18,8 @@ const Home = () => {
                     </p>
                     <Link
                         to='/about'
-                        onMouseOver={() => {homeBg.current.classList.add('hover')}}
-                        onMouseOut={() => {homeBg.current.classList.remove('hover')}}
+                        onMouseOver={() => {homeBg.current.classList.add('light-up')}}
+                        onMouseOut={() => {homeBg.current.classList.remove('light-up')}}
                     >
                         About Me
                     </Link>

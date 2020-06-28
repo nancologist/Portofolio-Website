@@ -33,7 +33,7 @@
         saturate(30%);
 }
 
-.hover {
+.light-up {
     filter:
             blur(1px)
             brightness(50%)
