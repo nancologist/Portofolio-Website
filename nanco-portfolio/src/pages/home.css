@@ -25,10 +25,19 @@
     height: 100%;
     z-index: -10;
 
+    transition: all 500ms ease-in-out;
+
     filter:
         blur(4px)
         brightness(30%)
         saturate(30%);
+}
+
+.hover {
+    filter:
+            blur(2px)
+            brightness(50%)
+            saturate(60%);
 }
 
 /* <><><><><><><><><><><><><><><><><><><><><><><><> */
