@@ -6,23 +6,10 @@ import './main.css';
 import AppNav from "../components/navigation/navigation";
 
 const MainLayout = ({ children, location }) => {
-    // if (location.pathname === "/") {
-    //     return (
-    //         <Fragment>
-    //             <Meta/>
-    //             <Transition location={location}>
-    //                 {children}
-    //             </Transition>
-    //         </Fragment>
-    //     );
-    // }
-
     return (
         <Fragment>
             <Meta/>
-            {
-                location.pathname !== '/' ? <AppNav/> : null
-            }
+            <AppNav isHome={location.pathname === '/'}/>
             <Transition location={location}>
                 {children}
             </Transition>

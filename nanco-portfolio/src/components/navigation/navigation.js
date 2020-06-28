@@ -7,8 +7,15 @@ import './navigation.css';
 import NavItem from "./navItem/navItem";
 
 const Navigation = (props) => {
+    let xStyle;
+    if (props.isHome) {
+        xStyle = {
+            opacity: 0
+        }
+    }
+
     return (
-        <header>
+        <header style={xStyle}>
             <nav className="nav">
                 <div className="nav-logo-container">
                     <Logo/>
