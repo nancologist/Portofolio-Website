@@ -1,7 +1,7 @@
 import React, { Fragment } from "react"
+import {Link} from "gatsby";
 
 import './home.css';
-import MainLayout from "../layouts/index";
 
 const Home = () => (
     <Fragment>
@@ -14,6 +14,12 @@ const Home = () => (
                 <p>
                     This is a brief introduction of mine, my projects and skills, fasten your seatbelt!
                 </p>
+                <Link
+                    to='/about'
+                    activeClassName="active"
+                >
+                    About Me
+                </Link>
             </div>
             <div className="home-bg">
         </div>
