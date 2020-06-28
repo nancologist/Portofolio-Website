@@ -1,19 +1,10 @@
-import React, { Fragment } from "react"
+import React, {Fragment, useRef} from "react"
 import {Link} from "gatsby";
 
 import './home.css';
 
 const Home = () => {
-    const handleMouseOver = () => {
-        const homeBgEl = document.querySelector('.home-bg');
-        homeBgEl.classList.add('hover');
-    };
-
-    const handleMouseOut = () => {
-        const homeBgEl = document.querySelector('.home-bg');
-        homeBgEl.classList.remove('hover');
-    };
-
+    const homeBg = useRef(null);
     return (
         <Fragment>
             <div className="home">
@@ -27,13 +18,13 @@ const Home = () => {
                     </p>
                     <Link
                         to='/about'
-                        onMouseOver={handleMouseOver}
-                        onMouseOut={handleMouseOut}
+                        onMouseOver={() => {homeBg.current.classList.add('hover')}}
+                        onMouseOut={() => {homeBg.current.classList.remove('hover')}}
                     >
                         About Me
                     </Link>
                 </div>
-                <div className="home-bg">
+                <div ref={homeBg} className="home-bg">
                 </div>
             </div>
         </Fragment>
