@@ -5,6 +5,7 @@
     padding: 18px 15%;
     border-bottom: 1px solid var(--primary-color);
     margin-bottom: 4px;
+    transition: opacity 500ms ease-in-out;
 }
 
 .nav-logo-container {

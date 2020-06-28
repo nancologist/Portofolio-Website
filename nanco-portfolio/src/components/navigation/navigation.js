@@ -15,8 +15,8 @@ const Navigation = (props) => {
     }
 
     return (
-        <header style={xStyle}>
-            <nav className="nav">
+        <header>
+            <nav className="nav" style={xStyle}>
                 <div className="nav-logo-container">
                     <Logo/>
                 </div>

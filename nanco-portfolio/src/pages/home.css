@@ -2,6 +2,11 @@
     font-size: 1.2rem;
     justify-content: center;
     text-align: center;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 /* <><><><><><><><><><><><><><><><><><><><><><><><> */
@@ -13,11 +18,11 @@
             no-repeat;
     background-size: cover;
 
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    position: inherit;
+    top: inherit;
+    left: inherit;
+    right: inherit;
+    height: 100%;
     z-index: -10;
 
     filter:
@@ -28,7 +33,11 @@
 
 /* <><><><><><><><><><><><><><><><><><><><><><><><> */
 .home-content {
-    color: #ddd
+    color: #ddd;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
 }
 
 .home-content h1::after {
