@@ -24,11 +24,7 @@
     right: inherit;
     height: 100%;
     z-index: -10;
-
-    will-change: filter;
-
     transition: all 500ms ease-out;
-
     filter:
         blur(4px)
         brightness(30%)
@@ -37,9 +33,9 @@
 
 .light-up {
     filter:
-            blur(0px)
-            brightness(40%)
-            saturate(60%);
+        blur(0px)
+        brightness(40%)
+        saturate(60%);
 }
 
 /* <><><><><><><><><><><><><><><><><><><><><><><><> */
