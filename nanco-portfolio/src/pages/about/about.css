@@ -53,15 +53,7 @@
 .section-projects {
     background-color: var(--secondary-light-color);
     border-radius: 5px;
-    padding: 15px;
-}
-
-.section-projects {
-    /*font-family: 'Montserrat Alternates', sans-serif;*/
-    /*font-family: 'Zilla Slab', sans-serif;*/
-    /*font-family: 'Rubik', sans-serif;*/
-    /*font-family: 'Convergence', sans-serif;*/
-    /*font-family: 'Montserrat', sans-serif;*/
+    padding: 5px 15px 15px 15px;
 }
 
 /* Responsive : Don't remove the foto, put it under the about-content! */
