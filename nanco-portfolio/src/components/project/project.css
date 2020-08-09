@@ -2,6 +2,7 @@
     border-left: 3px solid var(--primary-color);
     color: #ccc;
     padding-left: 15px;
+    margin-bottom: 20px;
 }
 
 .project__title {
@@ -44,13 +45,13 @@
     list-style: initial;
 }
 
-.project__brands {
+.project__tools {
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
-.project__brands--img {
+.project__tools--img {
     border-bottom: 1px solid #999;
     display: inline-block;
     height: 50px;
@@ -59,7 +60,7 @@
     width: 50px;
 }
 
-.project__brands--img img {
+.project__tools--img img {
     max-width: 100%;
     max-height: 100%;
 }
