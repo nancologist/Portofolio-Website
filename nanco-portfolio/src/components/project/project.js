@@ -6,11 +6,21 @@ import BuildIcon from '@material-ui/icons/Build';
 
 import stiwaLogo from '../../images/brands/stiwa.svg';
 import es6Logo from '../../images/brands/es6.png';
+import eslintLogo from '../../images/brands/eslint.png';
 import puppLogo from '../../images/brands/puppeteer.png';
 import jestLogo from '../../images/brands/jest.jpg';
+import sassLogo from '../../images/brands/sass.jpg';
 import jqueryLogo from '../../images/brands/jquery.jpg';
+
 import ppLogo from '../../images/brands/newpp.png';
+import djangoLogo from '../../images/brands/django.jpg';
+import pythonLogo from '../../images/brands/Python.svg.png';
+import mdbLogo from '../../images/brands/mdb.jpeg';
+
 import gfLogo from '../../images/brands/gf.png';
+import javaLogo from '../../images/brands/java.jpg';
+import seleniumLogo from '../../images/brands/selenium.jpg';
+import springLogo from '../../images/brands/spring.png';
 
 const projects = [
     {
@@ -22,7 +32,7 @@ const projects = [
         date: 'Jun 2020 - Present',
         tasks: [
             'Designing and implementing automated E2E tests for the modules (using Jest & Puppeteer & JS)',
-            'Translating and improving the jQuery code into ES6 code and above.',
+            'Replacing and improving the jQuery code with ES6 standards and above.',
             'Documenting the new implementations.',
             'Modifying the implemented ES6 code according to the reviews.'
         ],
@@ -32,12 +42,20 @@ const projects = [
                 alt: 'ES6 Logo'
             },
             {
+                src: eslintLogo,
+                alt: 'ESLint Logo'
+            },
+            {
                 src: puppLogo,
                 alt: 'Puppeteer Logo'
             },
             {
                 src: jestLogo,
                 alt: 'Jest Logo'
+            },
+            {
+                src: sassLogo,
+                alt: 'Sass Logo'
             },
             {
                 src: jqueryLogo,
@@ -57,6 +75,24 @@ const projects = [
             'Designing and implementing the web application (GUI) (using Python - Django)',
             'Implementing LDAP CRUD and Search functionalities (using python-ldap)',
             'Improving the application considering UX and functionalities'
+        ],
+        tools: [
+            {
+                src: djangoLogo,
+                alt: 'Django Logo'
+            },
+            {
+                src: pythonLogo,
+                alt: 'Python Logo'
+            },
+            {
+                src: es6Logo,
+                alt: 'ES6 Logo'
+            },
+            {
+                src: mdbLogo,
+                alt: 'Material Design Bootstrap Logo'
+            },
         ]
     },
     {
@@ -70,6 +106,16 @@ const projects = [
             'Defining E2E tests for the frontend components.',
             'Implementing and adding automated tests to project\'s pipeline (using Selenium & Java)',
             'Documenting the implemented tests.'
+        ],
+        tools: [
+            {
+                src: javaLogo,
+                alt: 'Java Logo'
+            },
+            {
+                src: seleniumLogo,
+                alt: 'Selenium Logo'
+            }
         ]
     },
     {
@@ -82,7 +128,17 @@ const projects = [
         tasks: [
             'First project during Ausbildung FA.',
             'Creating a tool (webapp) to send the first password to the user in a secure way.',
-            'Using Java and Spring to create the web application.'
+            'Using Java and Spring Framework to create the web application.'
+        ],
+        tools: [
+            {
+                src: javaLogo,
+                alt: 'Java Logo'
+            },
+            {
+                src: springLogo,
+                alt: 'Spring Framework'
+            }
         ]
     },
 ];
