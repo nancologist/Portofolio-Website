@@ -2,12 +2,17 @@
     border-left: 3px solid var(--primary-color);
     color: #ccc;
     padding-left: 15px;
+    margin-bottom: 100px;
+}
+
+.project > * {
     margin-bottom: 20px;
 }
 
 .project__title {
     display: flex;
     align-items: center;
+    padding-bottom: 10px;
 }
 
 .project__title h2 {
@@ -15,11 +20,10 @@
 }
 
 .project__title__customer-logo {
-    /*border-bottom: 1px solid #999;*/
     display: inline-block;
     height: 80px;
-    /*padding-bottom: 3px;*/
     width: 80px;
+    margin-right: 10px;
 }
 
 .project__title__customer-logo img {
@@ -47,7 +51,6 @@
 
 .project__tools {
     display: flex;
-    /*justify-content: center;*/
     text-align: center;
 }
 
@@ -59,7 +62,7 @@
     border-bottom: 1px solid #999;
     display: inline-block;
     height: 50px;
-    margin-left: 5px;
+    margin-left: 15px;
     padding-bottom: 3px;
     width: 50px;
 }

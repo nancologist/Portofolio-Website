@@ -20,7 +20,9 @@ import mdbLogo from '../../images/brands/mdb.jpeg';
 import gfLogo from '../../images/brands/gf.png';
 import javaLogo from '../../images/brands/java.jpg';
 import seleniumLogo from '../../images/brands/selenium.jpg';
+
 import springLogo from '../../images/brands/spring.png';
+import cssLogo from '../../images/brands/css.png';
 
 const projects = [
     {
@@ -137,7 +139,11 @@ const projects = [
             },
             {
                 src: springLogo,
-                alt: 'Spring Framework'
+                alt: 'Spring Framework Logo'
+            },
+            {
+                src: cssLogo,
+                alt: 'CSS Logo'
             }
         ]
     },
