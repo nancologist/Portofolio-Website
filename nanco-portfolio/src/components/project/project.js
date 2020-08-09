@@ -2,9 +2,15 @@ import React from "react";
 import "./project.css";
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
+import BuildIcon from '@material-ui/icons/Build';
+
 import stiwaLogo from '../../images/brands/stiwa.svg';
 import es6Logo from '../../images/brands/es6.png';
+import puppLogo from '../../images/brands/puppeteer.png';
+import jestLogo from '../../images/brands/jest.jpg';
 import jqueryLogo from '../../images/brands/jquery.jpg';
+import ppLogo from '../../images/brands/newpp.png';
+import gfLogo from '../../images/brands/gf.png';
 
 const projects = [
     {
@@ -26,6 +32,14 @@ const projects = [
                 alt: 'ES6 Logo'
             },
             {
+                src: puppLogo,
+                alt: 'Puppeteer Logo'
+            },
+            {
+                src: jestLogo,
+                alt: 'Jest Logo'
+            },
+            {
                 src: jqueryLogo,
                 alt: 'jQuery Logo'
             }
@@ -33,6 +47,10 @@ const projects = [
     },
     {
         title: 'LDAP GUI (DPX)',
+        customer: {
+            logo: ppLogo,
+            name: 'Digitas Pixelpark'
+        },
         date: 'Dec 2019 - Mai 2020',
         tasks: [
             'Researching available open source LDAP libraries.',
@@ -43,6 +61,10 @@ const projects = [
     },
     {
         title: 'Georg Fischer Website - Test Automation (DPX)',
+        customer: {
+            logo: gfLogo,
+            name: 'Georg Fischer'
+        },
         date: 'Dec 2019 - Mai 2020',
         tasks: [
             'Defining E2E tests for the frontend components.',
@@ -52,6 +74,10 @@ const projects = [
     },
     {
         title: 'Password Tool (DPX)',
+        customer: {
+            logo: ppLogo,
+            name: 'Digitas Pixelpark'
+        },
         date: 'Sep 2019 - Nov 2019',
         tasks: [
             'First project during Ausbildung FA.',
@@ -73,16 +99,25 @@ const project = () => {
             </div>;
         }
         if (project.tools) {
-            tools = project.tools.map(
-                (brand) => {
-                    index++;
-                    return (
-                        <div key={index} className="project__tools--img">
-                            <img src={brand.src} alt={brand.alt}/>
-                        </div>
-                    )
-                }
-            )
+            tools =
+                <div className="project__tools">
+                    <div className="project__tools--icon">
+                        <BuildIcon fontSize="large"/>
+                    </div>
+                    {
+                        project.tools.map(
+                            (brand) =>
+                            {
+                                index++;
+                                return (
+                                    <div key={index} className="project__tools--img-wrapper">
+                                        <img src={brand.src} alt={brand.alt}/>
+                                    </div>
+                                )
+                            }
+                        )
+                    }
+                </div>
         }
         return (
             <div className="project" key={index}>
@@ -105,9 +140,7 @@ const project = () => {
                         }
                     </ul>
                 </div>
-                <div className="project__tools">
-                    {tools}
-                </div>
+                {tools}
             </div>
         )
     })
