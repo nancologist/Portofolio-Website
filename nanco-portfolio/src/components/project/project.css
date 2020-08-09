@@ -1,7 +1,7 @@
 .project {
     border-left: 3px solid var(--primary-color);
     color: #ccc;
-    padding-left: 5px;
+    padding-left: 15px;
 }
 
 .project__title {
