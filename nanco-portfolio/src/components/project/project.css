@@ -6,7 +6,7 @@
 }
 
 .project > * {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .project__title {
@@ -37,7 +37,7 @@
 }
 
 .project__date--text {
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .project__tasks {
@@ -47,6 +47,7 @@
 
 .project__tasks--list {
     list-style: initial;
+    margin-left: 45px;
 }
 
 .project__tasks--list-item {
@@ -59,7 +60,7 @@
 }
 
 .project__tools--icon {
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 .project__tools--img-wrapper {
