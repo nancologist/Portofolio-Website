@@ -1,4 +1,4 @@
-*, *::before, *::after {
+*, *::before, *::after, *::marker {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -18,11 +18,18 @@ input[type=number] {
 }
 /* ------------------------------------------------ */
 
+/*font-family: 'Montserrat Alternates', sans-serif;*/
+/*font-family: 'Zilla Slab', sans-serif;*/
+/*font-family: 'Rubik', sans-serif;*/
+/*font-family: 'Convergence', sans-serif;*/
+/*font-family: 'Montserrat', sans-serif;*/
+
 :root {
     --primary-color: #86c232;
     --primary-dark-color: #61892F;
     --secondary-color: #222629;
     --secondary-light-color: #474B4F;
+    --secondary-lighter-color: #6B6E70;
 }
 
 body {

@@ -1,6 +1,7 @@
 import React from "react";
 
 import ArrowDownBtn from "../../components/ui-components/arrowDownBtn";
+import Project from "../../components/project/project";
 import './about.css';
 
 export default () => (
@@ -19,8 +20,12 @@ export default () => (
                 </p>
             </div>
         </div>
-        <ArrowDownBtn/>
-        <div className="section-projects" id='projects'></div>
+        <div className="section-projects">
+            <h1>Projects</h1>
+            <div className="projects">
+              <Project/>
+            </div>
+        </div>
         <div className="section-skills"></div>
     </div>
 );
