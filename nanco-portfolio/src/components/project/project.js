@@ -9,6 +9,10 @@ import jqueryLogo from '../../images/brands/jquery.jpg';
 const projects = [
     {
         title: 'Stiftung Warentest Website - Frontend Consolidation (DPX)',
+        customer: {
+            logo: stiwaLogo,
+            name: 'Stiftung Warentest Logo'
+        },
         date: 'Jun 2020 - Present',
         tasks: [
             'Designing and implementing automated E2E tests for the modules (using Jest & Puppeteer & JS)',
@@ -17,10 +21,6 @@ const projects = [
             'Modifying the implemented ES6 code according to the reviews.'
         ],
         brands: [
-            {
-                src: stiwaLogo,
-                alt: 'Stiftung Warentest Logo'
-            },
             {
                 src: es6Logo,
                 alt: 'ES6 Logo'
@@ -67,7 +67,12 @@ const project = () => {
         index++;
         return (
             <div className="project" key={index}>
-                <h2 className="project__title">{project.title}</h2>
+                <div className="project__title">
+                    <div className="project__title__customer-logo">
+                        <img src={project.customer.logo} alt={"Logo of Customer " + project.customer.name}/>
+                    </div>
+                    <h2>{project.title}</h2>
+                </div>
                 <div className="project__date">
                     <CalendarTodayIcon fontSize="large"/>
                     <span className="project__date--text">{project.date}</span>
