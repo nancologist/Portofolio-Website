@@ -21,4 +21,28 @@ ___
 ___
 ___
 
-## Ticketing System
+## Cools of Material UI
+https://material-ui.com/components/floating-action-button/
+
+https://material-ui.com/components/drawers/
+
+https://material-ui.com/components/menus/ (For "About" in Navbar , undersections)
+
+https://material-ui.com/components/app-bar/ (For Responsive Navbar maybe)
+
+https://material-ui.com/components/cards/ (For Projects and/or Skills )
+
+https://material-ui.com/components/expansion-panels/ (Accordions For Projects and/or Skills )
+
+https://material-ui.com/components/dialogs/ (Modal ?)
+
+https://material-ui.com/components/badges/ (Badges!!!)
+
+https://material-ui.com/components/icons/ (ICONS!!!)
+
+https://material-ui.com/components/tooltips/ (Tooltips!!!)
+
+https://material-ui.com/components/transitions/ (Transitions!)
+
+https://material-ui.com/components/timeline/ (TIMELINE - For About-Page ?)
+___
