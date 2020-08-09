@@ -8,7 +8,7 @@ import jqueryLogo from '../../images/brands/jquery.jpg';
 
 const projects = [
     {
-        title: 'Stiftung Warentest Website - Frontend Consolidation (DPX)',
+        title: 'Stiftung Warentest Website - JS Consolidation (DPX)',
         customer: {
             logo: stiwaLogo,
             name: 'Stiftung Warentest Logo'
@@ -32,7 +32,7 @@ const projects = [
         ]
     },
     {
-        title: 'LDAP GUI (for DPX)',
+        title: 'LDAP GUI (DPX)',
         date: 'Dec 2019 - Mai 2020',
         tasks: [
             'Researching available open source LDAP libraries.',
