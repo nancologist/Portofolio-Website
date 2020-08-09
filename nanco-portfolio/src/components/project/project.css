@@ -5,13 +5,23 @@
 }
 
 .project__title {
-    /*font-family: 'Montserrat Alternates', sans-serif;*/
-    /*font-family: 'Zilla Slab', sans-serif;*/
-    /*font-family: 'Rubik', sans-serif;*/
-    /*font-family: 'Convergence', sans-serif;*/
     font-family: 'Montserrat', sans-serif;
 }
 
-.project__tasks ul {
+.project__date {
+    display: flex;
+    align-items: center;
+}
+
+.project__date--text {
+    margin-left: 20px;
+}
+
+.project__tasks {
+    display: flex;
+    align-items: center;
+}
+
+.project__tasks--list {
     list-style: initial;
 }
