@@ -53,15 +53,11 @@
 .section-projects {
     background-color: var(--secondary-light-color);
     border-radius: 5px;
-    padding: 5px 15px 15px 15px;
+    padding: 5px 45px 15px 45px;
 }
 
-.projects {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.projects--title {
+.section-projects--title {
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 

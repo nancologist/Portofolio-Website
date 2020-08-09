@@ -197,7 +197,7 @@ const project = () => {
                         {
                             project.tasks.map((task) => {
                                 index++;
-                                return <li key={index}>{task}</li>
+                                return <li className="project__tasks--list-item" key={index}>{task}</li>
                             })
                         }
                     </ul>

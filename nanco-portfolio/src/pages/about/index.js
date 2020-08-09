@@ -21,10 +21,8 @@ export default () => (
             </div>
         </div>
         <div className="section-projects">
-            <div className="projects">
-                <h1 className="projects--title">Projects</h1>
-                <Project/>
-            </div>
+            <h1 className="section-projects--title">Projects</h1>
+            <Project/>
         </div>
         <div className="section-skills"></div>
     </div>

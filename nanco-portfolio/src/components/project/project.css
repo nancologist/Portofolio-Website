@@ -49,6 +49,10 @@
     list-style: initial;
 }
 
+.project__tasks--list-item {
+    margin-bottom: 10px;
+}
+
 .project__tools {
     display: flex;
     text-align: center;
