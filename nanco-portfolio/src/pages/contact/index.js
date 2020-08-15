@@ -28,6 +28,24 @@ export default () => {
                     <FilledInput
                         className='contact__form__input'
                         id="name"
+                        name='name'
+                        type="text"
+                    />
+                </FormControl>
+                <FormControl fullWidth variant='filled'>
+                    <InputLabel
+                        htmlFor="phone-number"
+                        classes={{
+                            root: 'contact__form__label',
+                            focused: 'contact__form__label--focused'
+                        }}
+                    >
+                        Phone number
+                    </InputLabel>
+                    <FilledInput
+                        className='contact__form__input'
+                        id="phone-number"
+                        name='phone-number'
                         type="text"
                     />
                 </FormControl>
@@ -44,6 +62,7 @@ export default () => {
                     <FilledInput
                         className='contact__form__input'
                         id="email"
+                        name='email'
                         type="email"
                     />
                 </FormControl>
@@ -62,6 +81,7 @@ export default () => {
                         id="message"
                         type="text"
                         multiline="true"
+                        name="message"
                         rows={10}
                     />
                 </FormControl>
