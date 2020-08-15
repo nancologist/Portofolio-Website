@@ -18,6 +18,7 @@ export default () => {
             <form
                 className="contact__form"
                 data-netlify="true"
+                method='post'
                 name="contact-form"
             >
                 <input type="hidden" name="form-name" value="contact" />
