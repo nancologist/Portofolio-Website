@@ -5,7 +5,7 @@ import './contact.css';
 export default () => {
     return (
         <div className="page-container contact">
-            <h1 className="contact__title">Contact Me</h1>
+            <h1 className="contact__title">Let's get in touch!</h1>
             <FormControl className="contact__form">
                 <div>
                     <InputLabel
