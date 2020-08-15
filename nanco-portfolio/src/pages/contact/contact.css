@@ -1,19 +1,20 @@
 .contact {
-    margin: 30px;
+    margin-top: 70px;
     text-align: center;
 }
 
 .contact__title {
-    text-align: center;
+    font-size: 30px;
 }
 
 .contact__form {
-    margin-top: 20px !important;
+    margin: 40px auto 0 auto;
+    width: 50%;
 }
 
 .contact__form__label {
     color: var(--primary-dark-color) !important;
-    font-size: larger !important;
+    /*font-size: larger !important;*/
 }
 
 .contact__form__label--focused {
@@ -21,7 +22,6 @@
 }
 
 .contact__form__input {
-    width: 500px;
     color: #ccc !important;
 }
 

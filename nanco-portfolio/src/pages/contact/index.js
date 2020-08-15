@@ -1,13 +1,13 @@
 import React from "react";
-import {FormControl, InputLabel, Input} from '@material-ui/core';
+import {FormControl, InputLabel, FilledInput} from '@material-ui/core';
 import './contact.css';
 
 export default () => {
     return (
         <div className="page-container contact">
-            <h1 className="contact__title">Let's get in touch!</h1>
-            <FormControl className="contact__form">
-                <div>
+            <p className="contact__title">Let's get in touch!</p>
+            <form className="contact__form">
+                <FormControl fullWidth required variant='filled'>
                     <InputLabel
                         htmlFor="my-input"
                         classes={{
@@ -17,14 +17,12 @@ export default () => {
                     >
                         Email address
                     </InputLabel>
-                    <Input
+                    <FilledInput
                         id="my-input"
-                        classes={{
-                            root: 'contact__form__input'
-                        }}
+                        className='contact__form__input'
                     />
-                </div>
-            </FormControl>
+                </FormControl>
+            </form>
         </div>
     );
 };
