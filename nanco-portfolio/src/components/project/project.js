@@ -74,33 +74,6 @@ const projects = [
         ]
     },
     {
-        title: 'My Portfolio',
-        customer: {
-            logo: myPortfolioLogo,
-            name: 'Logo of My Portfolio'
-        },
-        date: 'April 2020 - Present',
-        tasks: [
-            'Creating a platform from scratch to present my own works.',
-            'Having an own experimental playground for testing frontend features.',
-            'Using Gatsby, one of the most popular frameworks to create static pages.'
-        ],
-        tools: [
-            {
-                src: gatsbyLogo,
-                alt: 'Gatsby Logo'
-            },
-            {
-                src: reactLogo,
-                alt: 'React Logo'
-            },
-            {
-                src: cssLogo,
-                alt: 'CSS Logo'
-            }
-        ]
-    },
-    {
         title: 'Volkshochschulkurse (Pseudo-Abschlussprojekt)',
         customer: {
             logo: vhsKurseLogo,
@@ -131,6 +104,33 @@ const projects = [
                 src: cssLogo,
                 alt: 'CSS Logo'
             },
+        ]
+    },
+    {
+        title: 'My Portfolio',
+        customer: {
+            logo: myPortfolioLogo,
+            name: 'Logo of My Portfolio'
+        },
+        date: 'Jan 2020 - Present',
+        tasks: [
+            'Creating a platform from scratch to present my own works.',
+            'Having an own experimental playground for testing frontend features.',
+            'Using Gatsby, one of the most popular frameworks to create static pages.'
+        ],
+        tools: [
+            {
+                src: gatsbyLogo,
+                alt: 'Gatsby Logo'
+            },
+            {
+                src: reactLogo,
+                alt: 'React Logo'
+            },
+            {
+                src: cssLogo,
+                alt: 'CSS Logo'
+            }
         ]
     },
     {
