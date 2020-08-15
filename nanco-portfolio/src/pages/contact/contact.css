@@ -1,0 +1,33 @@
+.contact {
+    margin: 30px;
+    text-align: center;
+}
+
+.contact__title {
+    text-align: center;
+}
+
+.contact__form {
+    margin-top: 20px !important;
+}
+
+.contact__form__label {
+    color: var(--primary-dark-color) !important;
+    font-size: larger !important;
+}
+
+.contact__form__label--focused {
+    color: var(--primary-color) !important;
+}
+
+.contact__form__input {
+    width: 500px;
+}
+
+.contact__form__input:before {
+    border-bottom: 2px solid var(--primary-dark-color) !important;
+}
+
+.contact__form__input:after {
+    border-bottom: 2px solid var(--primary-color) !important;
+}
