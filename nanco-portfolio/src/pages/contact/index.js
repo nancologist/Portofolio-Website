@@ -4,14 +4,7 @@ import {makeStyles} from "@material-ui/core/styles";
 import SendIcon from '@material-ui/icons/Send';
 import './contact.css';
 
-const useStyles = makeStyles((theme) => ({
-    button: {
-        margin: theme.spacing(1),
-    },
-}));
-
 export default () => {
-    const classes = useStyles();
     return (
         <div className="page-container contact">
             <p className="contact__title">Let's get in touch!</p>
@@ -73,9 +66,10 @@ export default () => {
                     />
                 </FormControl>
                 <Button
-                    color="primary"
-                    className={classes.button}
+                    className='contact__form__submit-button'
                     endIcon={<SendIcon/>}
+                    fullWidth={true}
+                    size='large'
                     type='submit'
                     variant="outlined"
                 >
