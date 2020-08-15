@@ -12,6 +12,10 @@
     width: 50%;
 }
 
+.contact__form > * {
+    margin-bottom: 30px !important;
+}
+
 .contact__form__label {
     color: var(--primary-dark-color) !important;
     /*font-size: larger !important;*/
