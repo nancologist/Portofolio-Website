@@ -10,9 +10,9 @@ export default () => {
             <p className="contact__title">Let's get in touch!</p>
             <form
                 className="contact__form"
+                data-netlify="true"
                 method='post'
                 name="contact"
-                netlify
             >
                 <input type="hidden" name="form-name" value="contact" />
                 <FormControl fullWidth required variant='filled'>
