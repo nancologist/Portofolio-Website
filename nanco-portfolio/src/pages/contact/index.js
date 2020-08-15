@@ -19,9 +19,9 @@ export default () => {
                 className="contact__form"
                 data-netlify="true"
                 method='post'
-                name="contact-form"
+                name="contactform"
             >
-                <input type="hidden" name="form-name" value="contact" />
+                <input type="hidden" name="form-name" value="contactform" />
                 <FormControl fullWidth required variant='filled'>
                     <InputLabel
                         htmlFor="name"
