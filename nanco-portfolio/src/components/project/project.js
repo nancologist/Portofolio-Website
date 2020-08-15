@@ -12,6 +12,14 @@ import jestLogo from '../../images/brands/jest.jpg';
 import sassLogo from '../../images/brands/sass.jpg';
 import jqueryLogo from '../../images/brands/jquery.jpg';
 
+import gatsbyLogo from '../../images/brands/gatsby.png';
+import reactLogo from '../../images/brands/react.png';
+import myPortfolioLogo from '../../images/logo.svg';
+
+import vhsKurseLogo from '../../images/brands/vhsKurse.png';
+import firebaseLogo from '../../images/brands/firebase.png';
+import reduxLogo from '../../images/brands/redux.png';
+
 import ppLogo from '../../images/brands/newpp.png';
 import djangoLogo from '../../images/brands/django.jpg';
 import pythonLogo from '../../images/brands/Python.svg.png';
@@ -63,6 +71,66 @@ const projects = [
                 src: jqueryLogo,
                 alt: 'jQuery Logo'
             }
+        ]
+    },
+    {
+        title: 'My Portfolio',
+        customer: {
+            logo: myPortfolioLogo,
+            name: 'Logo of My Portfolio'
+        },
+        date: 'April 2020 - Present',
+        tasks: [
+            'Creating a platform from scratch to present my own works.',
+            'Having an own experimental playground for testing frontend features.',
+            'Using Gatsby, one of the most popular frameworks to create static pages.'
+        ],
+        tools: [
+            {
+                src: gatsbyLogo,
+                alt: 'Gatsby Logo'
+            },
+            {
+                src: reactLogo,
+                alt: 'React Logo'
+            },
+            {
+                src: cssLogo,
+                alt: 'CSS Logo'
+            }
+        ]
+    },
+    {
+        title: 'Volkshochschulkurse (Pseudo-Abschlussprojekt)',
+        customer: {
+            logo: vhsKurseLogo,
+            name: 'VHS-Kurse Logo'
+        },
+        date: 'Mai 2020 - Jun 2020',
+        tasks: [
+            'Modifying data for importing in data base.',
+            'Creating a platform from scratch for users to search between the offered courses of Berliner Volkshochschulen with multiple filters',
+            'Using Google Firebase as NoSQL database and Rest API service.',
+            'Using Redux for state management.',
+            'Using Axios for the communication between backend and user interface.'
+        ],
+        tools: [
+            {
+                src: reactLogo,
+                alt: 'React Logo'
+            },
+            {
+                src: firebaseLogo,
+                alt: 'Firebase Logo'
+            },
+            {
+                src: reduxLogo,
+                alt: 'Redux Logo'
+            },
+            {
+                src: cssLogo,
+                alt: 'CSS Logo'
+            },
         ]
     },
     {
@@ -184,7 +252,9 @@ const project = () => {
         return (
             <div className="project" key={index}>
                 <div className="project__title">
-                    {customerLogo}
+                    <div className="project__title__customer-logo">
+                        {customerLogo}
+                    </div>
                     <h2>{project.title}</h2>
                 </div>
                 <div className="project__date">
