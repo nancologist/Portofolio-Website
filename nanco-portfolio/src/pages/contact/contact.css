@@ -22,6 +22,7 @@
 
 .contact__form__input {
     width: 500px;
+    color: #ccc !important;
 }
 
 .contact__form__input:before {
