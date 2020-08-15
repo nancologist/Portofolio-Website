@@ -14,6 +14,7 @@ import jqueryLogo from '../../images/brands/jquery.jpg';
 
 import gatsbyLogo from '../../images/brands/gatsby.png';
 import reactLogo from '../../images/brands/react.png';
+import materialUiLogo from '../../images/brands/materialui.svg';
 import myPortfolioLogo from '../../images/logo.svg';
 
 import vhsKurseLogo from '../../images/brands/vhsKurse.png';
@@ -116,7 +117,8 @@ const projects = [
         tasks: [
             'Creating a platform from scratch to present my own works.',
             'Having an own experimental playground for testing frontend features.',
-            'Using Gatsby, one of the most popular frameworks to create static pages.'
+            'Using Gatsby, one of the most popular frameworks to create static pages.',
+            'Using Material-UI.',
         ],
         tools: [
             {
@@ -126,6 +128,10 @@ const projects = [
             {
                 src: reactLogo,
                 alt: 'React Logo'
+            },
+            {
+                src: materialUiLogo,
+                alt: 'Material UI Logo'
             },
             {
                 src: cssLogo,
