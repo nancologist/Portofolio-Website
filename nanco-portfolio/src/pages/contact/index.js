@@ -1,16 +1,21 @@
 import React, { Component } from "react";
 import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
-import {Button, FilledInput, FormControl, Icon, InputLabel} from '@material-ui/core';
+import {Button, Snackbar} from '@material-ui/core';
 import SendIcon from '@material-ui/icons/Send';
+import MuiAlert from '@material-ui/lab/Alert';
 
 import AppFormCtrl from '../../components/formControl';
 import './contact.css';
 
+function Alert(props) {
+    return <MuiAlert elevation={6} variant="filled" {...props} />;
+}
+
 export default class Contact extends Component {
     state = {
         btnClass: 'disabled',
-        // captchaValue: '',
+        successMsgShown: false
     };
 
     handleCaptchaSuccess = (value) => {
@@ -27,8 +32,7 @@ export default class Contact extends Component {
         const form = event.currentTarget;
         const data = new FormData(form);
         axios.post('', data).then(() => {
-            alert('Thank You!');
-            // Show some msg on the contact page....
+            this.setState({successMsgShown: true});
         })
     };
 
@@ -70,6 +74,11 @@ export default class Contact extends Component {
                         </Button>
                     </div>
                 </form>
+                <Snackbar open={this.state.successMsgShown} autoHideDuration={6000}>
+                    <Alert severity="success">
+                        Your message successfully sent!
+                    </Alert>
+                </Snackbar>
             </div>
         );
     }
