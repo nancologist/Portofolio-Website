@@ -36,6 +36,10 @@ export default class Contact extends Component {
         })
     };
 
+    hideSuccessMsg = () => {
+        this.setState({successMsgShown: false});
+    };
+
     render() {
         return (
             <div className="page-container contact">
@@ -74,7 +78,12 @@ export default class Contact extends Component {
                         </Button>
                     </div>
                 </form>
-                <Snackbar open={this.state.successMsgShown} autoHideDuration={6000}>
+                <Snackbar
+                    anchorOrigin={{ vertical: 'top', horizontal: 'center'}}
+                    autoHideDuration={6000}
+                    open={this.state.successMsgShown}
+                    onClose={this.hideSuccessMsg}
+                >
                     <Alert severity="success">
                         Your message successfully sent!
                     </Alert>
