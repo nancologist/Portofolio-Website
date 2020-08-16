@@ -11,6 +11,7 @@ export default () => {
             <form
                 className="contact__form"
                 data-netlify="true"
+                data-netlify-recaptcha="true"
                 method='post'
                 name="contact"
                 netlify-honeypot="bot-field"
