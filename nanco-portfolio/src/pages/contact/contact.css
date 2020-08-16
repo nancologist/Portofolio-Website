@@ -56,7 +56,10 @@
     border-color: var(--primary-color) !important;
 }
 
-.contact__form__submit-button-wrapper {
-    width: 100%;
+.contact__form__submit-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
     text-align: right;
+    width: 100%;
 }
