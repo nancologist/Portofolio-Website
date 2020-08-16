@@ -1,6 +1,6 @@
 import React from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import {Button, FilledInput, FormControl, Icon, InputLabel} from '@material-ui/core';
-import {makeStyles} from "@material-ui/core/styles";
 import SendIcon from '@material-ui/icons/Send';
 import './contact.css';
 
@@ -11,7 +11,6 @@ export default () => {
             <form
                 className="contact__form"
                 data-netlify="true"
-                data-netlify-recaptcha="true"
                 method='post'
                 name="contact"
                 netlify-honeypot="bot-field"
@@ -100,8 +99,13 @@ export default () => {
                 >
                     Send
                 </Button>
-                <div data-netlify-recaptcha="true"></div>
+                <ReCAPTCHA
+                    sitekey='6Lc5Xb8ZAAAAAM4jbxaQqB_xGI0IpebgvFhMeReP'
+                    onChange={(value) => { console.log('Captcha value: ' + value) }}
+                />
             </form>
         </div>
     );
 };
+
+// 6Lc5Xb8ZAAAAAM4jbxaQqB_xGI0IpebgvFhMeReP
