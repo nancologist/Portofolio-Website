@@ -14,10 +14,10 @@ export default () => {
                 // data-netlify-recaptcha="true"
                 method='post'
                 name="portfoliocontact"
-                netlify-honeypot="bot-field"
+                // netlify-honeypot="bot-field"
             >
                 <input type="hidden" name="form-name" value="portfoliocontact" />
-                <input name="bot-field" />
+                {/*<input name="bot-field" />*/}
                 <FormControl fullWidth required variant='filled'>
                     <InputLabel
                         htmlFor="name"
@@ -65,7 +65,7 @@ export default () => {
                     <FilledInput
                         className='contact__form__input'
                         id="email"
-                        name='email'
+                        name="email"
                         type="email"
                     />
                 </FormControl>
@@ -92,7 +92,6 @@ export default () => {
                     <Button
                         className='contact__form__submit-button'
                         endIcon={<SendIcon/>}
-                        // fullWidth={true}
                         size='large'
                         type='submit'
                         variant="outlined"
