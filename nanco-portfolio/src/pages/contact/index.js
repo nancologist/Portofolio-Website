@@ -7,14 +7,19 @@ import './contact.css';
 export default () => {
     return (
         <div className="page-container contact">
-            <p className="contact__title">Let's get in touch!</p>
+            <p className="contact__title">Get in touch</p>
             <form
                 className="contact__form"
                 data-netlify="true"
+                data-netlify-recaptcha="true"
                 method='post'
                 name="contact"
+                netlify-honeypot="bot-field"
             >
                 <input type="hidden" name="form-name" value="contact" />
+                <div className="hidden">
+                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                </div>
                 <FormControl fullWidth required variant='filled'>
                     <InputLabel
                         htmlFor="name"
@@ -95,6 +100,7 @@ export default () => {
                 >
                     Send
                 </Button>
+                <div data-netlify-recaptcha="true" />
             </form>
         </div>
     );
