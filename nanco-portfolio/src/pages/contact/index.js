@@ -11,7 +11,7 @@ export default () => {
             <form
                 className="contact__form"
                 data-netlify="true"
-                data-netlify-recaptcha="true"
+                // data-netlify-recaptcha="true"
                 method='post'
                 name="contact"
                 netlify-honeypot="bot-field"
@@ -100,11 +100,11 @@ export default () => {
                 >
                     Send
                 </Button>
-                <ReCAPTCHA
-                    sitekey='6Lc3Xr8ZAAAAADxKp6zv61rgrJPSHzNWhMc3YJIS'
-                    onChange={(value) => { console.log('Captcha value: ' + value) }}
-                    data-theme='dark'
-                />
+                {/*<ReCAPTCHA*/}
+                {/*    sitekey='6Lc3Xr8ZAAAAADxKp6zv61rgrJPSHzNWhMc3YJIS'*/}
+                {/*    onChange={(value) => { console.log('Captcha value: ' + value) }}*/}
+                {/*    data-theme='dark'*/}
+                {/*/>*/}
             </form>
         </div>
     );
