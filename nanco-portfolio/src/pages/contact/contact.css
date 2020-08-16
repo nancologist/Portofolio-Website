@@ -44,9 +44,15 @@
 .contact__form__submit-button {
     color: var(--primary-dark-color) !important;
     border-color: var(--primary-dark-color) !important;
+    width: 35%;
 }
 
 .contact__form__submit-button:hover {
     color: var(--primary-color) !important;
     border-color: var(--primary-color) !important;
+}
+
+.contact__form__submit-button-wrapper {
+    width: 100%;
+    text-align: right;
 }

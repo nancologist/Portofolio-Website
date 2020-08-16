@@ -90,16 +90,18 @@ export default () => {
                         rows={7}
                     />
                 </FormControl>
-                <Button
-                    className='contact__form__submit-button'
-                    endIcon={<SendIcon/>}
-                    fullWidth={true}
-                    size='large'
-                    type='submit'
-                    variant="outlined"
-                >
-                    Send
-                </Button>
+                <div className="contact__form__submit-button-wrapper">
+                    <Button
+                        className='contact__form__submit-button'
+                        endIcon={<SendIcon/>}
+                        // fullWidth={true}
+                        size='large'
+                        type='submit'
+                        variant="outlined"
+                    >
+                        Send
+                    </Button>
+                </div>
                 {/*<ReCAPTCHA*/}
                 {/*    sitekey='6Lc3Xr8ZAAAAADxKp6zv61rgrJPSHzNWhMc3YJIS'*/}
                 {/*    onChange={(value) => { console.log('Captcha value: ' + value) }}*/}
