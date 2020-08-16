@@ -88,7 +88,12 @@ export default () => {
                         rows={7}
                     />
                 </FormControl>
-                <div className="contact__form__submit-button-wrapper">
+                <div className="contact__form__submit-wrapper">
+                    <ReCAPTCHA
+                        sitekey='6Lc3Xr8ZAAAAADxKp6zv61rgrJPSHzNWhMc3YJIS'
+                        onChange={(value) => { console.log('Captcha value: ' + value) }}
+                        data-theme='dark'
+                    />
                     <Button
                         className='contact__form__submit-button'
                         endIcon={<SendIcon/>}
@@ -99,11 +104,6 @@ export default () => {
                         Send
                     </Button>
                 </div>
-                <ReCAPTCHA
-                    sitekey='6Lc3Xr8ZAAAAADxKp6zv61rgrJPSHzNWhMc3YJIS'
-                    onChange={(value) => { console.log('Captcha value: ' + value) }}
-                    data-theme='dark'
-                />
             </form>
         </div>
     );
