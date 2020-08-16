@@ -45,13 +45,19 @@
     border-bottom: 2px solid var(--primary-color) !important;
 }
 
-.contact__form__submit-button {
+.contact__form__submit-button--disabled {
+    color: var(--secondary-lighter-color) !important;
+    border-color: var(--secondary-lighter-color) !important;
+    width: 35%;
+}
+
+.contact__form__submit-button--active {
     color: var(--primary-dark-color) !important;
     border-color: var(--primary-dark-color) !important;
     width: 35%;
 }
 
-.contact__form__submit-button:hover {
+.contact__form__submit-button--active:hover {
     color: var(--primary-color) !important;
     border-color: var(--primary-color) !important;
 }
