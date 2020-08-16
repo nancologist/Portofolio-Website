@@ -79,8 +79,8 @@ export default class Contact extends Component {
                     </div>
                 </form>
                 <Snackbar
-                    anchorOrigin={{ vertical: 'top', horizontal: 'center'}}
-                    autoHideDuration={6000}
+                    anchorOrigin={{ vertical: 'bottom', horizontal: 'right'}}
+                    autoHideDuration={5000}
                     open={this.state.successMsgShown}
                     onClose={this.hideSuccessMsg}
                 >
