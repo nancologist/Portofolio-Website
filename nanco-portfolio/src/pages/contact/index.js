@@ -91,7 +91,8 @@ export default () => {
                 <div className="contact__form__submit-wrapper">
                     <ReCAPTCHA
                         onChange={(value) => { console.log('Captcha value: ' + value) }}
-                        sitekey='6Lc3Xr8ZAAAAADxKp6zv61rgrJPSHzNWhMc3YJIS'
+                        // sitekey= {SITE_RECAPTCHA_KEY}
+                        sitekey="6Lc3Xr8ZAAAAADxKp6zv61rgrJPSHzNWhMc3YJIS"
                         theme="dark"
                     />
                     <Button
