@@ -85,9 +85,9 @@ export default () => {
                         className='contact__form__input'
                         id="message"
                         type="text"
-                        multiline="true"
+                        multiline={true}
                         name="message"
-                        rows={10}
+                        rows={7}
                     />
                 </FormControl>
                 <Button
@@ -103,6 +103,7 @@ export default () => {
                 <ReCAPTCHA
                     sitekey='6Lc3Xr8ZAAAAADxKp6zv61rgrJPSHzNWhMc3YJIS'
                     onChange={(value) => { console.log('Captcha value: ' + value) }}
+                    data-theme='dark'
                 />
             </form>
         </div>

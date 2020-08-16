@@ -1,5 +1,5 @@
 .contact {
-    margin-top: 70px;
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .contact__form > * {
-    margin-bottom: 30px !important;
+    margin-bottom: 25px !important;
 }
 
 .contact__form__label {
