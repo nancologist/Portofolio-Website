@@ -100,7 +100,7 @@ export default () => {
                     Send
                 </Button>
                 <ReCAPTCHA
-                    sitekey='6Lc5Xb8ZAAAAAM4jbxaQqB_xGI0IpebgvFhMeReP'
+                    sitekey='6Lc3Xr8ZAAAAADxKp6zv61rgrJPSHzNWhMc3YJIS'
                     onChange={(value) => { console.log('Captcha value: ' + value) }}
                 />
             </form>
