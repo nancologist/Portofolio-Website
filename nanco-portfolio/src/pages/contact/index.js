@@ -90,9 +90,9 @@ export default () => {
                 </FormControl>
                 <div className="contact__form__submit-wrapper">
                     <ReCAPTCHA
-                        sitekey='6Lc3Xr8ZAAAAADxKp6zv61rgrJPSHzNWhMc3YJIS'
                         onChange={(value) => { console.log('Captcha value: ' + value) }}
-                        data-theme='dark'
+                        sitekey='6Lc3Xr8ZAAAAADxKp6zv61rgrJPSHzNWhMc3YJIS'
+                        theme="dark"
                     />
                     <Button
                         className='contact__form__submit-button'
