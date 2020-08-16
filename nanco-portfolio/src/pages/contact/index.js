@@ -22,7 +22,8 @@ export default class Contact extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        const data = event.currentTarget;
+        const form = event.currentTarget;
+        const data = new FormData(form);
         axios.post('', data).then(() => {
             alert('Thank You!');
             // Show some msg on the contact page...
