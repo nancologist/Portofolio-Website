@@ -23,9 +23,10 @@ export default class Contact extends Component {
     handleSubmit = (event) => {
         event.preventDefault();
         const data = event.currentTarget;
-        const req = new XMLHttpRequest();
-        req.send(data);
-        axios.post('', data).then(() => { alert('Thank You!'); })
+        axios.post('', data).then(() => {
+            alert('Thank You!');
+            // Show some msg on the contact page...
+        })
     };
 
     render() {
