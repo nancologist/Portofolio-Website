@@ -13,13 +13,11 @@ export default () => {
                 data-netlify="true"
                 // data-netlify-recaptcha="true"
                 method='post'
-                name="contact"
+                name="portfoliocontact"
                 netlify-honeypot="bot-field"
             >
-                <input type="hidden" name="form-name" value="contact" />
-                <div className="hidden">
-                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-                </div>
+                <input type="hidden" name="form-name" value="portfoliocontact" />
+                <input name="bot-field" />
                 <FormControl fullWidth required variant='filled'>
                     <InputLabel
                         htmlFor="name"
