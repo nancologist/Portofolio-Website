@@ -87,6 +87,10 @@
         background-color: transparent;
         padding: 0;
     }
+
+    .section-projects--title {
+        text-align: center;
+    }
 }
 
 /* Responsive : Don't remove the foto, put it under the about-content! */
