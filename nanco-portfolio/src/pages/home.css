@@ -86,6 +86,13 @@
     width: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+    .home-content {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
 /*.home-content a::after {*/
 /*    background-color: var(--primary-color);*/
 /*    border-radius: 5px;*/

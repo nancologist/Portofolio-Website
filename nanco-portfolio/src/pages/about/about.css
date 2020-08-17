@@ -61,4 +61,20 @@
     margin-bottom: 50px;
 }
 
+@media only screen and (max-width: 1024px) {
+    .section-bio {
+        border-bottom: 3px solid var(--primary-color);
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 45px;
+        text-align: center;
+    }
+
+    .about-pic-container {
+        height: 300px;
+        margin-top: 40px;
+        order: 2;
+    }
+}
+
 /* Responsive : Don't remove the foto, put it under the about-content! */
