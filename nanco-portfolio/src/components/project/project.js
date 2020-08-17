@@ -238,9 +238,9 @@ const project = () => {
             tools =
                 <div className="project__feature project__tools">
                     <div className="project__tools--icon">
-                        <BuildIcon fontSize="large"/>
+                        <BuildIcon className='project__feature__icon' fontSize="large"/>
                     </div>
-                    {
+                    <div>{
                         project.tools.map(
                             (brand) =>
                             {
@@ -252,23 +252,23 @@ const project = () => {
                                 )
                             }
                         )
-                    }
+                    }</div>
                 </div>
         }
         return (
             <div className="project" key={index}>
-                <div className="project__title">
+                <div className="project__feature project__title">
                     <div className="project__title__customer-logo">
                         {customerLogo}
                     </div>
                     <h2>{project.title}</h2>
                 </div>
                 <div className="project__feature project__date">
-                    <CalendarTodayIcon fontSize="large"/>
+                    <CalendarTodayIcon className='project__feature__icon' fontSize="large"/>
                     <span className="project__date--text">{project.date}</span>
                 </div>
                 <div className="project__feature project__tasks">
-                    <AssignmentIcon fontSize="large"/>
+                    <AssignmentIcon className='project__feature__icon' fontSize="large"/>
                     <ul className="project__tasks--list">
                         {
                             project.tasks.map((task) => {

@@ -71,4 +71,21 @@
         border-left: none;
         border-bottom: 1px dashed var(--primary-color);
     }
+
+    .project__title {
+        text-align: center;
+    }
+
+    .project__feature {
+        flex-direction: column;
+        margin-top: 40px
+    }
+
+    .project__feature__icon {
+        margin-bottom: 20px;
+    }
+
+    .project__date--text {
+        margin-left: 0;
+    }
 }
