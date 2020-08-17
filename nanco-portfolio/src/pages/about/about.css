@@ -68,7 +68,11 @@
         flex-direction: column;
         margin-bottom: 80px;
         padding-bottom: 45px;
-        text-align: center;
+        text-align: justify;
+    }
+
+    .section-bio p {
+        line-height: 1.8;
     }
 
     .about-pic-container {
