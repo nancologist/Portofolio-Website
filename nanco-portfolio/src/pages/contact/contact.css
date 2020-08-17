@@ -48,3 +48,18 @@
     text-align: right;
     width: 100%;
 }
+
+@media only screen and (max-width: 1366px) {
+    .contact__form__submit-wrapper {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .contact-form__recaptcha {
+        margin-bottom: 20px;
+    }
+
+    .contact__form__submit-button {
+        width: 300px;
+    }
+}

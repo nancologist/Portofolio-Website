@@ -61,13 +61,17 @@ export default class Contact extends Component {
                     <AppFormCtrl name='message' required text='Message' textarea={{ multiline: true, rows: 7 }} type='email'/>
                     <div className="contact__form__submit-wrapper">
                         <ReCAPTCHA
+                            className={'contact-form__recaptcha'}
                             onChange={this.handleCaptchaSuccess}
                             // sitekey= {SITE_RECAPTCHA_KEY}
                             sitekey="6Lc3Xr8ZAAAAADxKp6zv61rgrJPSHzNWhMc3YJIS"
                             theme="dark"
                         />
                         <Button
-                            className={'contact__form__submit-button--' + this.state.btnClass}
+                            className={`
+                                contact__form__submit-button 
+                                contact__form__submit-button--${this.state.btnClass}
+                            `}
                             disabled={this.state.btnClass === 'disabled'}
                             endIcon={<SendIcon/>}
                             size='large'
