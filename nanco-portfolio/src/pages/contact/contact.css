@@ -75,3 +75,10 @@
         width: 70%;
     }
 }
+
+@media only screen and (max-width: 460px) {
+    .contact__form {
+        width: 120%;
+        padding-right: 10%; /* To center the form, but it should be a better way to do that! */
+    }
+}
