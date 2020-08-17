@@ -236,7 +236,7 @@ const project = () => {
         }
         if (project.tools) {
             tools =
-                <div className="project__tools">
+                <div className="project__feature project__tools">
                     <div className="project__tools--icon">
                         <BuildIcon fontSize="large"/>
                     </div>
@@ -263,11 +263,11 @@ const project = () => {
                     </div>
                     <h2>{project.title}</h2>
                 </div>
-                <div className="project__date">
+                <div className="project__feature project__date">
                     <CalendarTodayIcon fontSize="large"/>
                     <span className="project__date--text">{project.date}</span>
                 </div>
-                <div className="project__tasks">
+                <div className="project__feature project__tasks">
                     <AssignmentIcon fontSize="large"/>
                     <ul className="project__tasks--list">
                         {
