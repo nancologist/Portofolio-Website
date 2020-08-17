@@ -78,4 +78,11 @@
     }
 }
 
+@media only screen and (max-width: 667px) {
+    .section-projects {
+        background-color: transparent;
+        padding: 0;
+    }
+}
+
 /* Responsive : Don't remove the foto, put it under the about-content! */
