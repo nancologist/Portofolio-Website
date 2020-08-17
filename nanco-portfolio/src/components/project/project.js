@@ -16,6 +16,7 @@ import gatsbyLogo from '../../images/brands/gatsby.png';
 import reactLogo from '../../images/brands/react.png';
 import materialUiLogo from '../../images/brands/materialui.svg';
 import myPortfolioLogo from '../../images/logo.svg';
+import netlifyLogo from '../../images/brands/netlify.png';
 
 import vhsKurseLogo from '../../images/brands/vhsKurse.png';
 import firebaseLogo from '../../images/brands/firebase.png';
@@ -119,8 +120,14 @@ const projects = [
             'Having an own experimental playground for testing frontend features.',
             'Using Gatsby, one of the most popular frameworks to create static pages.',
             'Using Material-UI.',
+            'Implementing Google ReCAPTCHA V2 for contact form.',
+            'Deploying page on Netlify via Github.'
         ],
         tools: [
+            {
+                src: netlifyLogo,
+                alt: 'Netlify Logo'
+            },
             {
                 src: gatsbyLogo,
                 alt: 'Gatsby Logo'
