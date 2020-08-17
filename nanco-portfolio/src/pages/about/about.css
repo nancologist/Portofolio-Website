@@ -43,7 +43,12 @@
     margin: auto;
 }
 
-.about-content p {
+.bio__content__title {
+    color: var(--primary-color);
+    font-size: 25px;
+}
+
+.bio__content__text {
     line-height: 1.5;
     font-size: 1.1rem;
     color: #ccc;
@@ -85,6 +90,8 @@
 @media only screen and (max-width: 667px) {
     .section-projects {
         background-color: transparent;
+        margin-left: -50px;
+        margin-right: -50px;
         padding: 0;
     }
 
@@ -92,5 +99,3 @@
         text-align: center;
     }
 }
-
-/* Responsive : Don't remove the foto, put it under the about-content! */
