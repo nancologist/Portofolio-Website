@@ -51,15 +51,18 @@
     will-change: transform;
 }
 
-.navItem a:hover {
-    color: var(--primary-color);
-    transform: scale(1.1);
-}
+/* This @media allows hover-effect only if it's a device without touch. */
+@media (hover: hover) {
+    .navItem a:hover {
+        color: var(--primary-color);
+        transform: scale(1.1);
+    }
 
-.navItem a:hover::before {
-    transform: translate(0, 0);
-}
+    .navItem a:hover::before {
+        transform: translate(0, 0);
+    }
 
-.navItem a:hover::after {
-    transform: translate(0, 0);
+    .navItem a:hover::after {
+        transform: translate(0, 0);
+    }
 }

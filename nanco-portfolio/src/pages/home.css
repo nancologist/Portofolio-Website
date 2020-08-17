@@ -82,14 +82,20 @@
     transition: all 400ms;
 }
 
-.home-content a:hover::after {
-    width: 100%;
-}
-
 @media only screen and (max-width: 768px) {
     .home-content {
         margin-left: 20px;
         margin-right: 20px;
+    }
+}
+
+@media (hover: hover) {
+    .home-content a:hover::after {
+        width: 100%;
+    }
+
+    .home-content a::after {
+        width: 0;
     }
 }
 

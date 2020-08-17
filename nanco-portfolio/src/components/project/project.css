@@ -88,4 +88,8 @@
     .project__date--text {
         margin-left: 0;
     }
+
+    .project__tasks--list {
+        margin-left: 20px;
+    }
 }
