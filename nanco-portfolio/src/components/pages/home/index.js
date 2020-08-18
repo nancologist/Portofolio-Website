@@ -1,4 +1,5 @@
 import React, {Fragment, useRef} from "react"
+import LanguageIcon from '@material-ui/icons/Language';
 import {Link} from "gatsby";
 
 import './home.css';
@@ -43,6 +44,13 @@ const Home = (props) => {
                     </Link>
                 </div>
                 <div ref={homeBg} className="home-bg">
+                </div>
+                <div className="home__select-lang">
+                    <LanguageIcon className="home__select-lang__icon" fontSize='large' />
+                    <div className="home__select-lang__list">
+                        <span>DE</span>
+                        <span>EN</span>
+                    </div>
                 </div>
             </div>
         </Fragment>
