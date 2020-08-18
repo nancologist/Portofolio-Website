@@ -46,3 +46,8 @@ https://material-ui.com/components/transitions/ (Transitions!)
 
 https://material-ui.com/components/timeline/ (TIMELINE - For About-Page ?)
 ___
+
+## Internationalization
+https://www.npmjs.com/package/gatsby-plugin-i18n
+
+___
