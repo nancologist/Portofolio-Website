@@ -6,13 +6,55 @@ import Logo from "../logo/logo";
 import './navigation.css';
 import NavItem from "./navItem/navItem";
 
+const langs = {
+    en: [
+        {
+            name: 'Home',
+            route: '/',
+        },
+        {
+            name: 'About',
+            route: '/about',
+        },
+        {
+            name: 'Contact',
+            route: '/contact',
+        }
+    ],
+    de: [
+        {
+            name: 'Startseite',
+            route: '/de',
+        },
+        {
+            name: 'Über mich',
+            route: '/de/ueber-mich',
+        },
+        {
+            name: 'Kontakt',
+            route: '/de/kontakt',
+        }
+    ]
+};
+
 const Navigation = (props) => {
     let xStyle;
+    let navItems;
     if (props.isHome) {
         xStyle = {
             opacity: 0
         }
     }
+
+    if (props.isGerman) {
+        navItems = langs.de;
+    } else {
+        navItems = langs.en;
+    }
+
+    const navItemEls = navItems.map((navItem) => (
+        <NavItem goto={navItem.route}>{navItem.name}</NavItem>
+    ));
 
     return (
         <header>
@@ -21,9 +63,7 @@ const Navigation = (props) => {
                     <Logo/>
                 </div>
                 <ul className="nav-list">
-                    <NavItem goto={'/'}>Home</NavItem>
-                    <NavItem goto={'/about'}>About</NavItem>
-                    <NavItem goto={'/contact'}>Contact</NavItem>
+                    {navItemEls}
                 </ul>
             </nav>
         </header>

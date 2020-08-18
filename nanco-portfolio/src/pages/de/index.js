@@ -1,7 +1,7 @@
 import React, {Fragment, useRef} from "react"
 import {Link} from "gatsby";
 
-import './home.css';
+import '../home.css';
 
 const Home = () => {
     const homeBg = useRef(null);
@@ -29,13 +29,13 @@ const Home = () => {
                 <div className="home-content">
                     <h1>Morteza Jalilifar</h1>
                     <p>
-                        Hi, I'm Mori! Welcome to my page.
+                        Hej, das ist Mori! Willkommen zu meiner Seite!
                     </p>
                     <p>
                         This is a brief introduction of mine, my projects and skills, fasten your seatbelt!
                     </p>
                     <Link
-                        to='/about'
+                        to='/de/ueber-mich'
                         onMouseOver={lightUpBackground}
                         onMouseOut={() => {homeBg.current.classList.remove('light-up')}}
                     >
