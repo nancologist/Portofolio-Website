@@ -49,3 +49,19 @@
         padding-top: 4px;
     }
 }
+
+@media only screen and (max-width: 319px) {
+    .nav {
+        flex-direction: row;
+        /*padding: 0;*/
+    }
+
+    .nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-logo-container {
+        display: none;
+    }
+}
