@@ -17,18 +17,18 @@
             center
             no-repeat;
     background-size: cover;
-
-    position: inherit;
-    top: inherit;
-    left: inherit;
-    right: inherit;
-    height: 100%;
-    z-index: -10;
-    transition: all 500ms ease-out;
     filter:
-        blur(4px)
-        brightness(30%)
-        saturate(30%);
+            blur(4px)
+            brightness(30%)
+            saturate(30%);
+    height: 100%;
+    left: inherit;
+    position: inherit;
+    right: inherit;
+    top: inherit;
+    transition: all 500ms ease-out;
+    will-change: filter;
+    z-index: -10;
 }
 
 .light-up {
@@ -80,6 +80,7 @@
     display: block;
     margin: 10px auto 0 auto;
     transition: all 400ms;
+    will-change: width;
 }
 
 @media only screen and (max-width: 768px) {
