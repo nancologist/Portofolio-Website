@@ -1,4 +1,4 @@
-import React, {Fragment, useRef} from "react"
+import React, {Fragment, useRef, useState} from "react"
 import LanguageIcon from '@material-ui/icons/Language';
 import {Link} from "gatsby";
 
@@ -6,6 +6,8 @@ import './home.css';
 
 const Home = (props) => {
     const homeBg = useRef(null);
+    const [listClass, setListClass] = useState(['home__select-lang__list']);
+    // const [langClass, setLangClass] = useState(['home__select-lang']);
     const lightUpBackground = () => {
         /*
         * Lighting Up Background as hover-effect does not
@@ -23,6 +25,30 @@ const Home = (props) => {
             }
         }
         homeBg.current.classList.add('light-up')
+    };
+    const showLangs = () => {
+        const className = 'home__select-lang__list--is-shown';
+        const classIndex = listClass.indexOf(className);
+        const classExists = classIndex > -1;
+        if (classExists) {
+            setListClass(arr => {
+                arr.splice(classIndex, 1);
+                return [...arr]
+            });
+            // setLangClass(arr => {
+            //     arr.splice(arr.indexOf('overflow-visible'), 1);
+            //     return [...arr];
+            // });
+        } else {
+            setListClass(arr => {
+                arr.push(className);
+                return [...arr];
+            });
+            // setLangClass(arr => {
+            //     arr.push('overflow-visible');
+            //     return [...arr];
+            // });
+        }
     };
     return (
         <Fragment>
@@ -45,12 +71,16 @@ const Home = (props) => {
                 </div>
                 <div ref={homeBg} className="home-bg">
                 </div>
-                <div className="home__select-lang">
-                    <LanguageIcon className="home__select-lang__icon" fontSize='large' />
-                    <div className="home__select-lang__list">
+                <div className='home__select-lang'>
+                    <div className={listClass.join(' ')}>
                         <span>DE</span>
                         <span>EN</span>
                     </div>
+                    <LanguageIcon
+                        className="home__select-lang__icon"
+                        fontSize='large'
+                        onClick={showLangs}
+                    />
                 </div>
             </div>
         </Fragment>

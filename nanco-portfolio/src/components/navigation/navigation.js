@@ -52,8 +52,8 @@ const Navigation = (props) => {
         navItems = langs.en;
     }
 
-    const navItemEls = navItems.map((navItem) => (
-        <NavItem goto={navItem.route}>{navItem.name}</NavItem>
+    const navItemEls = navItems.map((navItem, index) => (
+        <NavItem key={index} goto={navItem.route}>{navItem.name}</NavItem>
     ));
 
     return (
