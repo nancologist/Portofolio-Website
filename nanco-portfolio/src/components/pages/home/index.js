@@ -7,7 +7,7 @@ import './home.css';
 const Home = (props) => {
     const homeBg = useRef(null);
     const [listClass, setListClass] = useState(['home__select-lang__list']);
-    // const [langClass, setLangClass] = useState(['home__select-lang']);
+    const [iconClass, setIconClass] = useState(['home__select-lang__icon']);
     const lightUpBackground = () => {
         /*
         * Lighting Up Background as hover-effect does not
@@ -35,19 +35,19 @@ const Home = (props) => {
                 arr.splice(classIndex, 1);
                 return [...arr]
             });
-            // setLangClass(arr => {
-            //     arr.splice(arr.indexOf('overflow-visible'), 1);
-            //     return [...arr];
-            // });
+            setIconClass(arr => {
+                arr.splice(arr.indexOf('color-primary'), 1);
+                return [...arr];
+            });
         } else {
             setListClass(arr => {
                 arr.push(className);
                 return [...arr];
             });
-            // setLangClass(arr => {
-            //     arr.push('overflow-visible');
-            //     return [...arr];
-            // });
+            setIconClass(arr => {
+                arr.push('color-primary');
+                return [...arr];
+            });
         }
     };
     return (
@@ -77,7 +77,7 @@ const Home = (props) => {
                         <span>EN</span>
                     </div>
                     <LanguageIcon
-                        className="home__select-lang__icon"
+                        className={iconClass}
                         fontSize='large'
                         onClick={showLangs}
                     />

@@ -102,7 +102,6 @@
 
 .home__select-lang {
     align-items: center;
-    /*background-color: red;*/
     border-radius: 16px;
     bottom: 3%;
     color: var(--primary-color);
@@ -114,8 +113,17 @@
 }
 
 .home__select-lang__icon {
+    color: var(--primary-dark-color);
     position: relative;
     left: 91px;
+}
+
+.home__select-lang__icon:hover {
+    color: var(--primary-color);
+}
+
+.color-primary {
+    color: var(--primary-color);
 }
 
 .home__select-lang__list {
