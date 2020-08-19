@@ -120,7 +120,8 @@ const projects = [
             'Having an own experimental playground for testing frontend features.',
             'Using Gatsby, one of the most popular frameworks to create static pages.',
             'Using Material-UI.',
-            'Implementing Google ReCAPTCHA V2 for contact form.',
+            'Implementing Google ReCAPTCHA V2 for contact form to prevent spams.',
+            'Internationalizing website (adding German).',
             'Deploying page on Netlify via Github.'
         ],
         tools: [
