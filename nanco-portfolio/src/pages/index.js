@@ -1,6 +1,4 @@
 import React from "react"
-
-import './home.css';
 import Home from "../components/pages/home";
 
 const HomeEN = () => (
