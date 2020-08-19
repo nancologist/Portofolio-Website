@@ -62,6 +62,7 @@ const Home = (props) => {
                         {props.greeting2}
                     </p>
                     <Link
+                        className='home-content__aboutme-link'
                         to={props.aboutMeRoute}
                         onMouseOver={lightUpBackground}
                         onMouseOut={() => {homeBg.current.classList.remove('light-up')}}
@@ -73,11 +74,21 @@ const Home = (props) => {
                 </div>
                 <div className='home__select-lang'>
                     <div className={listClass.join(' ')}>
-                        <span>DE</span>
-                        <span>EN</span>
+                        <span>
+                            <Link
+                                to={'/de'}
+                                className={props.lang === 'de' ? 'active-lang': ''}
+                            >de</Link>
+                        </span>
+                        <span>
+                            <Link
+                                to={'/'}
+                                className={props.lang === 'en' ? 'active-lang': ''}
+                            >en</Link>
+                        </span>
                     </div>
                     <LanguageIcon
-                        className={iconClass}
+                        className={iconClass.join(' ')}
                         fontSize='large'
                         onClick={showLangs}
                     />

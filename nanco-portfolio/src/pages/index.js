@@ -9,6 +9,7 @@ const HomeEN = () => (
         greeting2={`This is a brief introduction of mine, my projects and skills, fasten your seatbelt!`}
         aboutMeRoute='/about'
         aboutMeText='About Me'
+        lang='en'
     />
 );
 
