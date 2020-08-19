@@ -6,11 +6,12 @@ import './main.css';
 import Navigation from "../components/navigation/navigation";
 
 const MainLayout = ({ children, location }) => {
+    const homeRegex = /\/$|\/de$|\/de\/$/;
     return (
         <Fragment>
             <Meta/>
             <Navigation
-                isHome={location.pathname === '/' || location.pathname === '/de'}
+                isHome={location.pathname.match(homeRegex)}
                 isGerman={location.pathname.includes('/de')}
             />
             <Transition location={location}>
