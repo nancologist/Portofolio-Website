@@ -54,7 +54,7 @@ const Home = (props) => {
         <Fragment>
             <div className="home">
                 <div className="home-content">
-                    <h1>Morteza Jalilifar</h1>
+                    <h1>{props.name}</h1>
                     <p>
                         {props.greeting1}
                     </p>
@@ -85,6 +85,12 @@ const Home = (props) => {
                                 to={'/'}
                                 className={props.lang === 'en' ? 'active-lang': ''}
                             >en</Link>
+                        </span>
+                        <span>
+                            <Link
+                                to={'فا/'}
+                                className={props.lang === 'fa' ? 'active-lang': ''}
+                            >فا</Link>
                         </span>
                     </div>
                     <LanguageIcon

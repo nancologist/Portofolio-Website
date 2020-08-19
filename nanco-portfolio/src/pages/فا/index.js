@@ -1,15 +1,15 @@
 import React from "react"
 import Home from "../../components/pages/home";
 
-const HomeDE = () => (
+const HomeFA = () => (
     <Home
-        name={'Morteza Jalilifar'}
-        greeting1={`Willkommen zu meiner Seite.`}
+        name={'مرتضی جلیلی فر'}
+        greeting1={'به صفحه من خوش آمدید.'}
         greeting2={`Das ist eine kurze Einführung in meine professionelle Karriere, Projekte und Kompetenzen.`}
         aboutMeRoute='/de/ueber-mich'
-        aboutMeText='Über mich'
-        lang='de'
+        aboutMeText='درباره من'
+        lang='fa'
     />
 );
 
-export default HomeDE
+export default HomeFA
