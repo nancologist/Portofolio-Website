@@ -54,6 +54,10 @@
     color: #ccc;
 }
 
+.bio__content__text a {
+    color: var(--primary-color);
+}
+
 /* Section Projects */
 .section-projects {
     background-color: var(--secondary-light-color);
