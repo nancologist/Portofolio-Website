@@ -6,7 +6,7 @@ import './main.css';
 import Navigation from "../components/navigation/navigation";
 
 const MainLayout = ({ children, location }) => {
-    const homeRegex = /\/(de|de\/)?$/;
+    const homeRegex = /^\/(de|de\/)?$/;
     return (
         <Fragment>
             <Meta/>
