@@ -4,6 +4,7 @@ import Modal from '@material-ui/core/Modal';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
 import BuildIcon from '@material-ui/icons/Build';
+import theme from "../../colors";
 
 import stiwaLogo from '../../images/brands/stiwa.svg';
 import es6Logo from '../../images/brands/es6.png';
@@ -39,11 +40,51 @@ import cssLogo from '../../images/brands/css.png';
 import stiwaThumb from '../../images/work-thumbnails/stiwa.png'
 import lighthouseThumb from '../../images/work-thumbnails/lighthouse-deskapp.jpg'
 import myPageThumb from '../../images/work-thumbnails/my-page.jpg'
+import Fade from "@material-ui/core/Fade";
+import {createMuiTheme} from "@material-ui/core";
+import {ThemeProvider} from "@material-ui/styles";
 
 const projects = [
     {
         title: 'Desktop App - Webpage Assessment Tool using Google Lighthouse',
-        thumbnail: lighthouseThumb
+        thumbnail: lighthouseThumb,
+        customer: {
+            logo: stiwaLogo,
+            name: 'Stiftung Warentest Logo'
+        },
+        date: 'Jun 2020 - Present',
+        tasks: [
+            'Designing and implementing automated E2E tests for the UI components (using Jest & Puppeteer & JS)',
+            'Replacing and improving the jQuery code with ES6 standards and above.',
+            'Documenting the new implementations.',
+            'Modifying the implemented ES6 code according to the reviews.'
+        ],
+        tools: [
+            {
+                src: es6Logo,
+                alt: 'ES6 Logo'
+            },
+            {
+                src: eslintLogo,
+                alt: 'ESLint Logo'
+            },
+            {
+                src: puppLogo,
+                alt: 'Puppeteer Logo'
+            },
+            {
+                src: jestLogo,
+                alt: 'Jest Logo'
+            },
+            {
+                src: sassLogo,
+                alt: 'Sass Logo'
+            },
+            {
+                src: jqueryLogo,
+                alt: 'jQuery Logo'
+            }
+        ]
     },
     {
         title: 'Stiftung Warentest - JavaScript Consolidation (DPX)',
@@ -249,11 +290,11 @@ const projects = [
 
 const project = () => {
     const [open, setOpen] = React.useState(false);
-    const [itemNo, setItemNo] = React.useState(NaN);
+    const [currentProject, setCurrentProject] = React.useState(projects[0]);
 
     const openModal = (i) => {
         setOpen(true);
-        setItemNo(i);
+        setCurrentProject(projects[i]);
     };
 
     const closeModal = () => { setOpen(false); };
@@ -261,37 +302,6 @@ const project = () => {
         <Fragment>
             {
                 projects.map((project, index) => {
-                    // let customerLogo = null;
-                    // let tools = null;
-
-                    // if (project.customer) {
-                    //     customerLogo = <div className="project__title__customer-logo">
-                    //         <img src={project.customer.logo} alt={"Logo of Customer " + project.customer.name}/>
-                    //     </div>;
-                    // }
-                    //
-                    // if (project.tools) {
-                    //     tools =
-                    //         <div className="project__feature project__tools">
-                    //             <div className="project__tools--icon">
-                    //                 <BuildIcon className='project__feature__icon' fontSize="large"/>
-                    //             </div>
-                    //             <div>{
-                    //                 project.tools.map(
-                    //                     (brand) =>
-                    //                     {
-                    //                         index++;
-                    //                         return (
-                    //                             <div key={index} className="project__tools--img-wrapper">
-                    //                                 <img src={brand.src} alt={brand.alt}/>
-                    //                             </div>
-                    //                         )
-                    //                     }
-                    //                 )
-                    //             }</div>
-                    //         </div>
-                    // }
-
                     return (
                         <div
                             className="project"
@@ -306,8 +316,60 @@ const project = () => {
                     )
                 })
             }
-            <Modal open={open} onClose={closeModal}>
-                <h4>This is the Work Number: {itemNo}</h4>
+            <Modal
+                aria-describedby="modal-description"
+                aria-labelledby="modal-title"
+                className={'modal'}
+                disableAutoFocus={true}
+                onClose={closeModal}
+                open={open}
+            >
+                <Fade in={open} disableAutoFocus={true}>
+                    <div>
+                        <div className="project__feature project__title" id="modal-title">
+                            <div className="project__title__customer-logo">
+                                <div className="project__title__customer-logo">
+                                    <img
+                                        src={currentProject.customer.logo}
+                                        alt={"Logo of Customer " + currentProject.customer.name}
+                                    />
+                                </div>
+                            </div>
+                            <h2>{currentProject.title}</h2>
+                        </div>
+                        <div id="modal-description">
+                            <div className="project__feature project__date">
+                                <CalendarTodayIcon className='project__feature__icon' fontSize="large"/>
+                                <span className="project__date--text">{currentProject.date}</span>
+                            </div>
+                            <div className="project__feature project__tasks">
+                                <AssignmentIcon className='project__feature__icon' fontSize="large"/>
+                                <ul className="project__tasks--list">{
+                                    currentProject.tasks.map((task, i) => {
+                                        return <li className="project__tasks--list-item" key={task + i}>{task}</li>
+                                    })
+                                }</ul>
+                            </div>
+                            <div className="project__feature project__tools">
+                                <div className="project__tools--icon">
+                                    <BuildIcon className='project__feature__icon' fontSize="large"/>
+                                </div>
+                                <div>{
+                                    currentProject.tools.map(
+                                        (brand, i) =>
+                                        {
+                                            return (
+                                                <div key={brand.alt + i} className="project__tools--img-wrapper">
+                                                    <img src={brand.src} alt={brand.alt}/>
+                                                </div>
+                                            )
+                                        }
+                                    )
+                                }</div>
+                            </div>
+                        </div>
+                    </div>
+                </Fade>
             </Modal>
         </Fragment>
     );

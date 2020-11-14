@@ -87,6 +87,23 @@
     width: 50px;
 }
 
+/* <><><><><><> MODAL <><><><><><> */
+.modal {
+    align-items: center;
+    background-color: rgba(107, 110, 112, 0.6);
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+.modal:focus {
+    outline: none !important;
+}
+
+.modal > *:focus {
+    outline: none !important;
+}
+
 .project__tools--img-wrapper img {
     max-width: 100%;
     max-height: 100%;
