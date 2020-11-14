@@ -36,12 +36,12 @@ import cssLogo from '../../images/brands/css.png';
 
 // Works' Thumbnails
 import stiwaThumb from '../../images/work-thumbnails/stiwa.png'
-import lighthouseThumb from '../../images/work-thumbnails/lighthouse-deskapp.png'
-import myPageThumb from '../../images/work-thumbnails/my-page.png'
+import lighthouseThumb from '../../images/work-thumbnails/lighthouse-deskapp.jpg'
+import myPageThumb from '../../images/work-thumbnails/my-page.jpg'
 
 const projects = [
     {
-        title: 'Desktop App - Websites Assessment Tool using Google Lighthouse',
+        title: 'Desktop App - Webpage Assessment Tool using Google Lighthouse',
         thumbnail: lighthouseThumb
     },
     {
