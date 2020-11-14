@@ -37,6 +37,7 @@ import cssLogo from '../../images/brands/css.png';
 // Works' Thumbnails
 import stiwaThumb from '../../images/work-thumbnails/stiwa.png'
 import lighthouseThumb from '../../images/work-thumbnails/lighthouse-deskapp.png'
+import myPageThumb from '../../images/work-thumbnails/my-page.png'
 
 const projects = [
     {
@@ -119,7 +120,8 @@ const projects = [
         ]
     },
     {
-        title: 'My Portfolio',
+        title: 'My Playground!',
+        thumbnail: myPageThumb,
         customer: {
             logo: myPortfolioLogo,
             name: 'Logo of My Portfolio'
@@ -159,6 +161,7 @@ const projects = [
     },
     {
         title: 'LDAP GUI (DPX)',
+        thumbnail: ppLogo,
         customer: {
             logo: ppLogo,
             name: 'Digitas Pixelpark'
@@ -191,6 +194,7 @@ const projects = [
     },
     {
         title: 'Georg Fischer Website - Test Automation (DPX)',
+        thumbnail: gfLogo,
         customer: {
             logo: gfLogo,
             name: 'Georg Fischer'
@@ -214,6 +218,7 @@ const projects = [
     },
     {
         title: 'Password Tool (DPX)',
+        thumbnail: ppLogo,
         customer: {
             logo: ppLogo,
             name: 'Digitas Pixelpark'
