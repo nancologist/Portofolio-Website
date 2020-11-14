@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "./project.css";
+import Modal from '@material-ui/core/Modal';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
 import BuildIcon from '@material-ui/icons/Build';
@@ -247,53 +248,69 @@ const projects = [
 ];
 
 const project = () => {
-    let index = 0;
+    const [open, setOpen] = React.useState(false);
+    const [itemNo, setItemNo] = React.useState(NaN);
 
-    return projects.map((project) => {
-        index++;
-        let customerLogo = null;
-        let tools = null;
+    const openModal = (i) => {
+        setOpen(true);
+        setItemNo(i);
+    };
 
-        if (project.customer) {
-            customerLogo = <div className="project__title__customer-logo">
-                <img src={project.customer.logo} alt={"Logo of Customer " + project.customer.name}/>
-            </div>;
-        }
+    const closeModal = () => { setOpen(false); };
+    return (
+        <Fragment>
+            {
+                projects.map((project, index) => {
+                    // let customerLogo = null;
+                    // let tools = null;
 
-        if (project.tools) {
-            tools =
-                <div className="project__feature project__tools">
-                    <div className="project__tools--icon">
-                        <BuildIcon className='project__feature__icon' fontSize="large"/>
-                    </div>
-                    <div>{
-                        project.tools.map(
-                            (brand) =>
-                            {
-                                index++;
-                                return (
-                                    <div key={index} className="project__tools--img-wrapper">
-                                        <img src={brand.src} alt={brand.alt}/>
-                                    </div>
-                                )
-                            }
-                        )
-                    }</div>
-                </div>
-        }
+                    // if (project.customer) {
+                    //     customerLogo = <div className="project__title__customer-logo">
+                    //         <img src={project.customer.logo} alt={"Logo of Customer " + project.customer.name}/>
+                    //     </div>;
+                    // }
+                    //
+                    // if (project.tools) {
+                    //     tools =
+                    //         <div className="project__feature project__tools">
+                    //             <div className="project__tools--icon">
+                    //                 <BuildIcon className='project__feature__icon' fontSize="large"/>
+                    //             </div>
+                    //             <div>{
+                    //                 project.tools.map(
+                    //                     (brand) =>
+                    //                     {
+                    //                         index++;
+                    //                         return (
+                    //                             <div key={index} className="project__tools--img-wrapper">
+                    //                                 <img src={brand.src} alt={brand.alt}/>
+                    //                             </div>
+                    //                         )
+                    //                     }
+                    //                 )
+                    //             }</div>
+                    //         </div>
+                    // }
 
-        return (
-            <div
-                className="project"
-                key={index}
-                style={{ 'background-image': `url(${project.thumbnail})` }}
-            >
-                <div className="project__overlay">
-                    <h3 className="overlay__title">{project.title}</h3>
-                </div>
-            </div>
-        )
-    })
+                    return (
+                        <div
+                            className="project"
+                            key={index}
+                            onClick={openModal.bind(this, index)}
+                            style={{ backgroundImage: `url(${project.thumbnail})` }}
+                        >
+                            <div className="project__overlay">
+                                <h3 className="overlay__title">{project.title}</h3>
+                            </div>
+                        </div>
+                    )
+                })
+            }
+            <Modal open={open} onClose={closeModal}>
+                <h4>This is the Work Number: {itemNo}</h4>
+            </Modal>
+        </Fragment>
+    );
 };
 
 export default project;
