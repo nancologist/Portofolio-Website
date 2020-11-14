@@ -43,7 +43,7 @@ const projects = [
         },
         date: 'Jun 2020 - Present',
         tasks: [
-            'Designing and implementing automated E2E tests for the modules (using Jest & Puppeteer & JS)',
+            'Designing and implementing automated E2E tests for the UI components (using Jest & Puppeteer & JS)',
             'Replacing and improving the jQuery code with ES6 standards and above.',
             'Documenting the new implementations.',
             'Modifying the implemented ES6 code according to the reviews.'
@@ -187,7 +187,7 @@ const projects = [
         },
         date: 'Dec 2019 - Mai 2020',
         tasks: [
-            'Defining E2E tests for the frontend components.',
+            'Defining E2E tests for the UI components.',
             'Implementing and adding automated tests to project\'s pipeline (using Selenium & Java)',
             'Documenting the implemented tests.'
         ],

@@ -21,7 +21,7 @@ export default () => (
             </div>
         </div>
         <div className="section-projects">
-            <h1 className="section-projects--title">Projects</h1>
+            <h1 className="section-projects--title">Works</h1>
             <Project/>
         </div>
         <div className="section-skills"></div>
