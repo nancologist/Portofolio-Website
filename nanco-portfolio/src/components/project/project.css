@@ -1,13 +1,42 @@
 .project {
-    border-left: 3px solid var(--primary-color);
+    background-color: var(--secondary-light-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     color: #ccc;
-    padding-left: 15px;
-    margin-bottom: 100px;
+    height: 300px;
+    margin: 5px;
+    overflow: hidden;
+    transition: all 300ms;
+    width: 30%;
 }
 
-.project > * {
-    margin-bottom: 30px;
+.project:hover {
+    /*border: 3px solid var(--primary-color);*/
 }
+
+.project:hover > .project__overlay {
+    transform: translateY(-100%);
+}
+
+.project__overlay {
+    /*background-color: var(--primary-color);*/
+    background-color: rgba(134, 194, 50, 0.5);
+    color: var(--secondary-color);
+    height: 100%;
+    position: relative; bottom: -100%;
+    transition: all 300ms;
+    width: 100%;
+}
+
+.overlay__title {
+    padding: 10px;
+    width: 100%;
+}
+
+/*.project > * {*/
+/*    margin-bottom: 30px;*/
+/*}*/
 
 .project__title {
     display: flex;

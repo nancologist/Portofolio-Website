@@ -58,14 +58,18 @@
     color: var(--primary-color);
 }
 
-/* Section Projects */
+/* <><><><><><><><><> Section Projects <><><><><><><><><> */
 .section-projects {
-    background-color: var(--secondary-light-color);
+    /*background-color: var(--secondary-light-color);*/
     border-radius: 5px;
-    padding: 5px 45px 15px 45px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0 5px 0 5px;
 }
 
 .section-projects--title {
+    flex: 0 0 100%; /* Workaround for Exclude Title from Flex of .section-projects */
     margin-top: 50px;
     margin-bottom: 50px;
 }

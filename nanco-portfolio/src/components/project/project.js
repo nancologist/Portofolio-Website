@@ -34,9 +34,18 @@ import seleniumLogo from '../../images/brands/selenium.jpg';
 import springLogo from '../../images/brands/spring.png';
 import cssLogo from '../../images/brands/css.png';
 
+// Works' Thumbnails
+import stiwaThumb from '../../images/work-thumbnails/stiwa.png'
+import lighthouseThumb from '../../images/work-thumbnails/lighthouse-deskapp.png'
+
 const projects = [
     {
-        title: 'Stiftung Warentest Website - JS Consolidation (DPX)',
+        title: 'Desktop App - Websites Assessment Tool using Google Lighthouse',
+        thumbnail: lighthouseThumb
+    },
+    {
+        title: 'Stiftung Warentest - JavaScript Consolidation (DPX)',
+        thumbnail: stiwaLogo,
         customer: {
             logo: stiwaLogo,
             name: 'Stiftung Warentest Logo'
@@ -76,7 +85,8 @@ const projects = [
         ]
     },
     {
-        title: 'Volkshochschulkurse (Pseudo-Abschlussprojekt)',
+        title: 'Volkshochschulkurse (School Project)',
+        thumbnail: vhsKurseLogo,
         customer: {
             logo: vhsKurseLogo,
             name: 'VHS-Kurse Logo'
@@ -233,15 +243,18 @@ const projects = [
 
 const project = () => {
     let index = 0;
+
     return projects.map((project) => {
         index++;
         let customerLogo = null;
         let tools = null;
+
         if (project.customer) {
             customerLogo = <div className="project__title__customer-logo">
                 <img src={project.customer.logo} alt={"Logo of Customer " + project.customer.name}/>
             </div>;
         }
+
         if (project.tools) {
             tools =
                 <div className="project__feature project__tools">
@@ -263,33 +276,47 @@ const project = () => {
                     }</div>
                 </div>
         }
+
         return (
-            <div className="project" key={index}>
-                <div className="project__feature project__title">
-                    <div className="project__title__customer-logo">
-                        {customerLogo}
-                    </div>
-                    <h2>{project.title}</h2>
+            <div
+                className="project"
+                key={index}
+                style={{ 'background-image': `url(${project.thumbnail})` }}
+            >
+                <div className="project__overlay">
+                    <h3 className="overlay__title">{project.title}</h3>
                 </div>
-                <div className="project__feature project__date">
-                    <CalendarTodayIcon className='project__feature__icon' fontSize="large"/>
-                    <span className="project__date--text">{project.date}</span>
-                </div>
-                <div className="project__feature project__tasks">
-                    <AssignmentIcon className='project__feature__icon' fontSize="large"/>
-                    <ul className="project__tasks--list">
-                        {
-                            project.tasks.map((task) => {
-                                index++;
-                                return <li className="project__tasks--list-item" key={index}>{task}</li>
-                            })
-                        }
-                    </ul>
-                </div>
-                {tools}
             </div>
         )
     })
 };
 
 export default project;
+
+/*
+"Project Details" - For Modal After clicking on "Project Thumbnail":
+
+<div className="project__feature project__title">
+    <div className="project__title__customer-logo">
+        {customerLogo}
+    </div>
+    <h2>{project.title}</h2>
+</div>
+<div className="project__feature project__date">
+    <CalendarTodayIcon className='project__feature__icon' fontSize="large"/>
+    <span className="project__date--text">{project.date}</span>
+</div>
+<div className="project__feature project__tasks">
+    <AssignmentIcon className='project__feature__icon' fontSize="large"/>
+    <ul className="project__tasks--list">
+        {
+            project.tasks.map((task) => {
+                index++;
+                return <li className="project__tasks--list-item" key={index}>{task}</li>
+            })
+        }
+    </ul>
+</div>
+{tools}
+
+* */

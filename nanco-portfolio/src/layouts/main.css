@@ -51,7 +51,6 @@ a {
 
 h1, h2, h3, h4 {
     font-family: 'Rubik', sans-serif;
-    margin-bottom: 1rem;
 }
 
 p {
@@ -63,6 +62,6 @@ ul {
 }
 
 .page-container {
-    padding-right: 15%; /* Exactly like .navBar Padding */
-    padding-left: 15%;
+    padding-right: 10%; /* Exactly like .navBar Padding */
+    padding-left: 10%;
 }
