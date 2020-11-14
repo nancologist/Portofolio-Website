@@ -79,8 +79,8 @@
         border-bottom: 3px solid var(--primary-color);
         align-items: center;
         flex-direction: column;
-        margin-bottom: 80px;
-        padding-bottom: 45px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
         text-align: justify;
     }
 
@@ -93,15 +93,25 @@
         margin-top: 40px;
         order: 2;
     }
+
+    .section-projects {
+        justify-content: center;
+    }
+
+    .section-projects--title {
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 40px;
+    }
 }
 
 @media only screen and (max-width: 667px) {
-    .section-projects {
-        background-color: transparent;
-        margin-left: -50px;
-        margin-right: -50px;
-        padding: 0;
-    }
+    /*.section-projects {*/
+    /*    background-color: transparent;*/
+    /*    margin-left: -50px;*/
+    /*    margin-right: -50px;*/
+    /*    padding: 0;*/
+    /*}*/
 
     .section-projects--title {
         text-align: center;
