@@ -17,7 +17,9 @@ export default (props) => (
             className='contact__form__input'
             id={props.name}
             name={props.name}
+            onChange={props.changed}
             type={props.type}
+            value={props.value}
             {...props.textarea}
         />
     </FormControl>
