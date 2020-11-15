@@ -26,5 +26,61 @@
     outline: none !important;
 }
 
-/* <><><><><><><><><><><><><><><><><><> */
+/* <><><><><><><><> MODAL CONTENT <><><><><><><><><><> */
 
+.modal__title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.modal__title h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.modal__title__customer-logo {
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    margin-right: 10px;
+}
+
+.modal__title__customer-logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.modal__feature {
+    display: flex;
+    align-items: center;
+}
+
+.modal__date--text {
+    margin-left: 30px;
+}
+.modal__tasks--list {
+    list-style: initial;
+    margin-left: 45px;
+}
+
+.modal__tasks--list-item {
+    margin-bottom: 10px;
+}
+
+.modal__tools--icon {
+    margin-right: 30px;
+}
+
+.modal__tools--img-wrapper {
+    border-bottom: 1px solid #999;
+    display: inline-block;
+    height: 50px;
+    margin-left: 15px;
+    padding-bottom: 3px;
+    width: 50px;
+}
+
+.modal__tools--img-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+}

@@ -24,14 +24,12 @@ const AppModal = (props) => {
                 in={open}
             >
                 <div>
-                    <div className="project__feature project__title" id="modal-title">
-                        <div className="project__title__customer-logo">
-                            <div className="project__title__customer-logo">
-                                <img
-                                    src={project.customer.logo}
-                                    alt={"Logo of Customer " + project.customer.name}
-                                />
-                            </div>
+                    <div className="project__feature modal__title" id="modal-title">
+                        <div className="modal__title__customer-logo">
+                            <img
+                                src={project.customer.logo}
+                                alt={"Logo of Customer " + project.customer.name}
+                            />
                         </div>
                         <h2>{project.title}</h2>
                     </div>
@@ -39,28 +37,28 @@ const AppModal = (props) => {
                         <CancelIcon />
                     </div>
                     <div id="modal-description">
-                        <div className="project__feature project__date">
-                            <CalendarTodayIcon className='project__feature__icon' fontSize="large"/>
-                            <span className="project__date--text">{project.date}</span>
+                        <div className="modal__feature project__date">
+                            <CalendarTodayIcon className="project__feature__icon" fontSize="large"/>
+                            <span className="modal__date--text">{project.date}</span>
                         </div>
-                        <div className="project__feature project__tasks">
-                            <AssignmentIcon className='project__feature__icon' fontSize="large"/>
-                            <ul className="project__tasks--list">{
+                        <div className="modal__feature project__tasks">
+                            <AssignmentIcon className="modal__feature__icon" fontSize="large"/>
+                            <ul className="modal__tasks--list">{
                                 project.tasks.map((task, i) => {
-                                    return <li className="project__tasks--list-item" key={task + i}>{task}</li>
+                                    return <li className="modal__tasks--list-item" key={task + i}>{task}</li>
                                 })
                             }</ul>
                         </div>
-                        <div className="project__feature project__tools">
-                            <div className="project__tools--icon">
-                                <BuildIcon className='project__feature__icon' fontSize="large"/>
+                        <div className="modal__feature project__tools">
+                            <div className="modal__tools--icon">
+                                <BuildIcon className="modal__feature__icon" fontSize="large"/>
                             </div>
                             <div>{
                                 project.tools.map(
                                     (brand, i) =>
                                     {
                                         return (
-                                            <div key={brand.alt + i} className="project__tools--img-wrapper">
+                                            <div key={brand.alt + i} className="modal__tools--img-wrapper">
                                                 <img src={brand.src} alt={brand.alt}/>
                                             </div>
                                         )
