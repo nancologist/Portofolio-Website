@@ -2,6 +2,11 @@ import React, { Fragment } from "react";
 import AppModal from "../ui-components/AppModal/AppModal";
 import "./project.css";
 
+import electronJsLogo from '../../images/brands/electronjs.svg.png';
+import googleLighthouseLogo from '../../images/brands/google-lighthouse.svg';
+import vueJsLogo from '../../images/brands/vuejs.png';
+import vuetifyLogo from '../../images/brands/vuetify.png';
+
 import stiwaLogo from '../../images/brands/stiwa.svg';
 import es6Logo from '../../images/brands/es6.png';
 import eslintLogo from '../../images/brands/eslint.png';
@@ -44,37 +49,31 @@ const projects = [
             logo: stiwaLogo,
             name: 'Stiftung Warentest Logo'
         },
-        date: 'Jun 2020 - Present',
+        date: 'Sep 2020 - Okt 2020',
         tasks: [
-            'Designing and implementing automated E2E tests for the UI components (using Jest & Puppeteer & JS)',
-            'Replacing and improving the jQuery code with ES6 standards and above.',
-            'Documenting the new implementations.',
-            'Modifying the implemented ES6 code according to the reviews.'
+            'Allowing User to customize and configure Google Lighthouse scoring criteria and expectations',
+            'Possibility to use both remote or local sitemaps entering URL or importing local xml files',
+            'Reading Sitemap files and allow user to select multiple URLs for scoring by Google Lighthouse',
+            'Adding Drag&Drop feature to ease importing sitemap files',
+            'Cross platform application thanks to the ElectronJS',
+            'Using Vue and Vuetify for the UI'
         ],
         tools: [
             {
-                src: es6Logo,
-                alt: 'ES6 Logo'
+                src: electronJsLogo,
+                alt: 'ElectronJS Logo'
             },
             {
-                src: eslintLogo,
-                alt: 'ESLint Logo'
+                src: googleLighthouseLogo,
+                alt: 'Google Lighthouse Logo'
             },
             {
-                src: puppLogo,
-                alt: 'Puppeteer Logo'
+                src: vueJsLogo,
+                alt: 'VueJS Logo'
             },
             {
-                src: jestLogo,
-                alt: 'Jest Logo'
-            },
-            {
-                src: sassLogo,
-                alt: 'Sass Logo'
-            },
-            {
-                src: jqueryLogo,
-                alt: 'jQuery Logo'
+                src: vuetifyLogo,
+                alt: 'Vuetify Logo'
             }
         ]
     },
@@ -85,7 +84,7 @@ const projects = [
             logo: stiwaLogo,
             name: 'Stiftung Warentest Logo'
         },
-        date: 'Jun 2020 - Present',
+        date: 'Jun 2020 - August 2020',
         tasks: [
             'Designing and implementing automated E2E tests for the UI components (using Jest & Puppeteer & JS)',
             'Replacing and improving the jQuery code with ES6 standards and above.',
@@ -128,7 +127,7 @@ const projects = [
         },
         date: 'Mai 2020 - Jun 2020',
         tasks: [
-            'Modifying data for importing in data base.',
+            'Modifying JSON data for importing in the database.',
             'Creating a platform from scratch for users to search between the offered courses of Berliner Volkshochschulen with multiple filters',
             'Using Google Firebase as NoSQL database and Rest API service.',
             'Using Redux for state management.',
