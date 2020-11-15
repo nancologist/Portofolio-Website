@@ -1,6 +1,6 @@
 import React from "react";
 import {FilledInput, FormControl, InputLabel} from "@material-ui/core";
-import './formControl.css';
+import './index.css';
 
 export default (props) => (
     <FormControl fullWidth required={!!props.required} variant='filled'>

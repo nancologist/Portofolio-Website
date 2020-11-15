@@ -5,7 +5,7 @@ import {Button, Snackbar} from '@material-ui/core';
 import SendIcon from '@material-ui/icons/Send';
 import MuiAlert from '@material-ui/lab/Alert';
 
-import AppFormCtrl from '../../components/formControl';
+import AppFormCtrl from '../../components/AppFormControl';
 import './contact.css';
 
 function Alert(props) {
