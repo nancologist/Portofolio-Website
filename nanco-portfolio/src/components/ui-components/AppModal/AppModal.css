@@ -1,7 +1,6 @@
 .modal {
     align-items: center;
     background-color: rgba(107, 110, 112, 0.8);
-    border: none;
     display: flex;
     justify-content: center;
     padding: 10px 30px;
@@ -9,10 +8,8 @@
 }
 
 .modal__content {
-    /*width: 70%;*/
     position: relative;
     color: white;
-    overflow: scroll;
 }
 
 .modal__close-btn {
@@ -35,7 +32,7 @@
 .modal__title {
     display: flex;
     align-items: center;
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
 }
 
 .modal__title h2 {
@@ -94,13 +91,23 @@
     max-height: 100%;
 }
 
-@media only screen and (max-width: 667px) {
+@media only screen and (max-width: 668px) {
     .modal {
+    }
+
+    .modal__close-btn {
+        position: fixed;
+        right: 20px;
+        top: 15px;
+    }
+
+    .modal__title__customer-logo {
+        margin-right: 0;
     }
 
     .modal__feature {
         flex-direction: column;
-        margin-top: 30px;
+        margin-top: 15px;
     }
 
     .modal__title {
@@ -109,28 +116,21 @@
     }
 
     .modal__feature__icon {
-        margin-bottom: 20px;
+        margin-bottom: 5px;
     }
 
     .modal__date--text {
-        /*margin-left: 0;*/
+        margin-left: 0;
     }
-
     .modal__tasks--list {
-        /*margin-left: 20px;*/
-    }
-}
-
-@media only screen and (max-height: 800px) {
-    .modal {
-        /*padding: 0;*/
+        margin-left: 0;
     }
 
-    .modal__feature {
-        /*padding: 0;*/
+    .modal__tasks--list-item {
+        margin-bottom: 0;
     }
 
-    .modal__feature__icon {
-        /*margin-bottom: 0;*/
+    .modal__tools--icon {
+        margin-right: 0;
     }
 }
