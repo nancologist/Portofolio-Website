@@ -44,6 +44,7 @@ import myPageThumb from '../../images/work-thumbnails/my-page.jpg'
 import Fade from "@material-ui/core/Fade";
 import {createMuiTheme} from "@material-ui/core";
 import {ThemeProvider} from "@material-ui/styles";
+import AppModal from "../ui-components/AppModal/AppModal";
 
 const projects = [
     {
@@ -290,15 +291,15 @@ const projects = [
 ];
 
 const project = () => {
-    const [open, setOpen] = React.useState(false);
     const [currentProject, setCurrentProject] = React.useState(projects[0]);
+    const [modalOpen, setModalOpen] = React.useState(false);
 
-    const openModal = (i) => {
-        setOpen(true);
+    const handleClick = (i) => {
         setCurrentProject(projects[i]);
+        setModalOpen(true);
     };
+    const closeModal = () => { setModalOpen(false) };
 
-    const closeModal = () => { setOpen(false); };
     return (
         <Fragment>
             {
@@ -307,7 +308,7 @@ const project = () => {
                         <div
                             className="project"
                             key={index}
-                            onClick={openModal.bind(this, index)}
+                            onClick={handleClick.bind(this, index)}
                             style={{ backgroundImage: `url(${project.thumbnail})` }}
                         >
                             <div className="project__overlay">
@@ -317,68 +318,11 @@ const project = () => {
                     )
                 })
             }
-            <Modal
-                aria-describedby="modal-description"
-                aria-labelledby="modal-title"
-                className="modal"
-                disableAutoFocus={true}
-                onClose={closeModal}
-                open={open}
-            >
-                <Fade
-                    className="modal__content"
-                    disableAutoFocus={true}
-                    in={open}
-                >
-                    <div>
-                        <div className="project__feature project__title" id="modal-title">
-                            <div className="project__title__customer-logo">
-                                <div className="project__title__customer-logo">
-                                    <img
-                                        src={currentProject.customer.logo}
-                                        alt={"Logo of Customer " + currentProject.customer.name}
-                                    />
-                                </div>
-                            </div>
-                            <h2>{currentProject.title}</h2>
-                        </div>
-                        <div className="modal__close-btn" onClick={closeModal}>
-                            <CancelIcon />
-                        </div>
-                        <div id="modal-description">
-                            <div className="project__feature project__date">
-                                <CalendarTodayIcon className='project__feature__icon' fontSize="large"/>
-                                <span className="project__date--text">{currentProject.date}</span>
-                            </div>
-                            <div className="project__feature project__tasks">
-                                <AssignmentIcon className='project__feature__icon' fontSize="large"/>
-                                <ul className="project__tasks--list">{
-                                    currentProject.tasks.map((task, i) => {
-                                        return <li className="project__tasks--list-item" key={task + i}>{task}</li>
-                                    })
-                                }</ul>
-                            </div>
-                            <div className="project__feature project__tools">
-                                <div className="project__tools--icon">
-                                    <BuildIcon className='project__feature__icon' fontSize="large"/>
-                                </div>
-                                <div>{
-                                    currentProject.tools.map(
-                                        (brand, i) =>
-                                        {
-                                            return (
-                                                <div key={brand.alt + i} className="project__tools--img-wrapper">
-                                                    <img src={brand.src} alt={brand.alt}/>
-                                                </div>
-                                            )
-                                        }
-                                    )
-                                }</div>
-                            </div>
-                        </div>
-                    </div>
-                </Fade>
-            </Modal>
+            <AppModal
+                handleClose={closeModal}
+                open={modalOpen}
+                project={currentProject}
+            />
         </Fragment>
     );
 };

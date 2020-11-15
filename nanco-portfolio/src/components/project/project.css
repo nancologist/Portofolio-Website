@@ -93,35 +93,6 @@
     max-height: 100%;
 }
 
-/* <><><><><><> MODAL <><><><><><> */
-.modal {
-    align-items: center;
-    background-color: rgba(107, 110, 112, 0.6);
-    border: none;
-    display: flex;
-    justify-content: center;
-    padding: 45px;
-}
-
-.modal__content {
-    /*width: 70%;*/
-    position: relative;
-}
-
-.modal__close-btn {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.modal:focus {
-    outline: none !important;
-}
-
-.modal > *:focus {
-    outline: none !important;
-}
-
 @media only screen and (max-width: 1024px) {
     .project {
         margin-bottom: 15px;
