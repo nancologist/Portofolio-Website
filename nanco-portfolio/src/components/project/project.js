@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import AppModal from "../ui-components/AppModal/AppModal";
 import "./project.css";
 
 import stiwaLogo from '../../images/brands/stiwa.svg';
@@ -34,7 +35,6 @@ import cssLogo from '../../images/brands/css.png';
 // Works' Thumbnails
 import lighthouseThumb from '../../images/work-thumbnails/lighthouse-deskapp.jpg'
 import myPageThumb from '../../images/work-thumbnails/my-page.jpg'
-import AppModal from "../ui-components/AppModal/AppModal";
 
 const projects = [
     {
@@ -318,31 +318,3 @@ const project = () => {
 };
 
 export default project;
-
-/*
-"Project Details" - For Modal After clicking on "Project Thumbnail":
-
-<div className="project__feature project__title">
-    <div className="project__title__customer-logo">
-        {customerLogo}
-    </div>
-    <h2>{project.title}</h2>
-</div>
-<div className="project__feature project__date">
-    <CalendarTodayIcon className='project__feature__icon' fontSize="large"/>
-    <span className="project__date--text">{project.date}</span>
-</div>
-<div className="project__feature project__tasks">
-    <AssignmentIcon className='project__feature__icon' fontSize="large"/>
-    <ul className="project__tasks--list">
-        {
-            project.tasks.map((task) => {
-                index++;
-                return <li className="project__tasks--list-item" key={index}>{task}</li>
-            })
-        }
-    </ul>
-</div>
-{tools}
-
-* */
