@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import "./AppModal.css";
 
 import Modal from "@material-ui/core/Modal";

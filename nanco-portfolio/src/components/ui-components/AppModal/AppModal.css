@@ -4,16 +4,19 @@
     border: none;
     display: flex;
     justify-content: center;
-    padding: 45px;
+    padding: 10px 30px;
+    overflow: scroll;
 }
 
 .modal__content {
     /*width: 70%;*/
     position: relative;
     color: white;
+    overflow: scroll;
 }
 
 .modal__close-btn {
+    cursor: pointer;
     position: absolute;
     right: 0;
     top: 0;
@@ -54,6 +57,7 @@
 .modal__feature {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .modal__feature__icon {
@@ -114,5 +118,19 @@
 
     .modal__tasks--list {
         /*margin-left: 20px;*/
+    }
+}
+
+@media only screen and (max-height: 800px) {
+    .modal {
+        /*padding: 0;*/
+    }
+
+    .modal__feature {
+        /*padding: 0;*/
+    }
+
+    .modal__feature__icon {
+        /*margin-bottom: 0;*/
     }
 }
