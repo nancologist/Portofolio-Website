@@ -1,6 +1,6 @@
 .modal {
     align-items: center;
-    background-color: rgba(107, 110, 112, 0.6);
+    background-color: rgba(107, 110, 112, 0.8);
     border: none;
     display: flex;
     justify-content: center;
@@ -10,6 +10,7 @@
 .modal__content {
     /*width: 70%;*/
     position: relative;
+    color: white;
 }
 
 .modal__close-btn {
@@ -55,6 +56,10 @@
     align-items: center;
 }
 
+.modal__feature__icon {
+    color: var(--primary-color);
+}
+
 .modal__date--text {
     margin-left: 30px;
 }
@@ -83,4 +88,31 @@
 .modal__tools--img-wrapper img {
     max-width: 100%;
     max-height: 100%;
+}
+
+@media only screen and (max-width: 667px) {
+    .modal {
+    }
+
+    .modal__feature {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .modal__title {
+        text-align: center;
+        /*margin-top: 10px;*/
+    }
+
+    .modal__feature__icon {
+        margin-bottom: 20px;
+    }
+
+    .modal__date--text {
+        /*margin-left: 0;*/
+    }
+
+    .modal__tasks--list {
+        /*margin-left: 20px;*/
+    }
 }

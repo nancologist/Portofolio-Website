@@ -24,7 +24,7 @@ const AppModal = (props) => {
                 in={open}
             >
                 <div>
-                    <div className="project__feature modal__title" id="modal-title">
+                    <div className="modal__feature modal__title" id="modal-title">
                         <div className="modal__title__customer-logo">
                             <img
                                 src={project.customer.logo}
@@ -37,8 +37,8 @@ const AppModal = (props) => {
                         <CancelIcon />
                     </div>
                     <div id="modal-description">
-                        <div className="modal__feature project__date">
-                            <CalendarTodayIcon className="project__feature__icon" fontSize="large"/>
+                        <div className="modal__feature modal__date">
+                            <CalendarTodayIcon className="modal__feature__icon" fontSize="large"/>
                             <span className="modal__date--text">{project.date}</span>
                         </div>
                         <div className="modal__feature project__tasks">
