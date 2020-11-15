@@ -13,9 +13,11 @@ function Alert(props) {
 export default (props) => {
     const [msgOpen, setMsgOpen] = useState(false);
 
-    if (props.location.state.open) {
-        setMsgOpen(true);
-        props.location.state.open = false;
+    if (props.location.state) {
+        if (props.location.state.open) {
+            setMsgOpen(true);
+            props.location.state.open = false;
+        }
     }
 
     const closeMsg = () => {
