@@ -1,11 +1,5 @@
 import React, { Fragment } from "react";
 import "./project.css";
-import Modal from '@material-ui/core/Modal';
-import AssignmentIcon from '@material-ui/icons/Assignment';
-import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
-import BuildIcon from '@material-ui/icons/Build';
-import CancelIcon from '@material-ui/icons/Cancel';
-import theme from "../../colors";
 
 import stiwaLogo from '../../images/brands/stiwa.svg';
 import es6Logo from '../../images/brands/es6.png';
@@ -38,12 +32,8 @@ import springLogo from '../../images/brands/spring.png';
 import cssLogo from '../../images/brands/css.png';
 
 // Works' Thumbnails
-import stiwaThumb from '../../images/work-thumbnails/stiwa.png'
 import lighthouseThumb from '../../images/work-thumbnails/lighthouse-deskapp.jpg'
 import myPageThumb from '../../images/work-thumbnails/my-page.jpg'
-import Fade from "@material-ui/core/Fade";
-import {createMuiTheme} from "@material-ui/core";
-import {ThemeProvider} from "@material-ui/styles";
 import AppModal from "../ui-components/AppModal/AppModal";
 
 const projects = [
