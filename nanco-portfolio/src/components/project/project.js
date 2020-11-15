@@ -46,8 +46,8 @@ const projects = [
         title: 'Desktop App - Webpage Assessment Tool using Google Lighthouse',
         thumbnail: lighthouseThumb,
         customer: {
-            logo: stiwaLogo,
-            name: 'Stiftung Warentest Logo'
+            logo: electronJsLogo,
+            name: 'ElectronJS Logo'
         },
         date: 'Sep 2020 - Okt 2020',
         tasks: [
