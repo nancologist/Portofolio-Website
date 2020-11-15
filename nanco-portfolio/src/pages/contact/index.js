@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { navigate } from "gatsby"
 import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
 import {Button, Snackbar} from '@material-ui/core';
@@ -7,10 +8,6 @@ import MuiAlert from '@material-ui/lab/Alert';
 
 import AppFormCtrl from '../../components/AppFormControl';
 import './contact.css';
-
-function Alert(props) {
-    return <MuiAlert elevation={6} variant="filled" {...props} />;
-}
 
 export default class Contact extends Component {
     state = {
@@ -33,11 +30,16 @@ export default class Contact extends Component {
         const data = new FormData(form);
         axios.post('', data).then(() => {
             this.setState({successMsgShown: true});
-        })
-    };
-
-    hideSuccessMsg = () => {
-        this.setState({successMsgShown: false});
+        });
+        navigate(
+            '/about',
+            {
+                state: {
+                    msg: 'show the damn msg!',
+                    open: true
+                }
+            }
+        );
     };
 
     render() {
@@ -82,16 +84,6 @@ export default class Contact extends Component {
                         </Button>
                     </div>
                 </form>
-                <Snackbar
-                    anchorOrigin={{ vertical: 'bottom', horizontal: 'right'}}
-                    autoHideDuration={5000}
-                    open={this.state.successMsgShown}
-                    onClose={this.hideSuccessMsg}
-                >
-                    <Alert severity="success">
-                        Your message successfully sent!
-                    </Alert>
-                </Snackbar>
             </div>
         );
     }
