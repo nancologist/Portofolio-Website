@@ -17,9 +17,10 @@
 }
 
 .project__overlay {
-    /*background-color: var(--primary-color);*/
+    align-items: center;
     background-color: rgba(134, 194, 50, 0.8);
     color: var(--secondary-color);
+    display: flex;
     height: 100%;
     position: relative; bottom: -100%;
     transition: all 300ms;
