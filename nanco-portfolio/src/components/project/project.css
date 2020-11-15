@@ -88,6 +88,11 @@
     width: 50px;
 }
 
+.project__tools--img-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 /* <><><><><><> MODAL <><><><><><> */
 .modal {
     align-items: center;
@@ -95,6 +100,18 @@
     border: none;
     display: flex;
     justify-content: center;
+    padding: 45px;
+}
+
+.modal__content {
+    /*width: 70%;*/
+    position: relative;
+}
+
+.modal__close-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .modal:focus {
@@ -103,11 +120,6 @@
 
 .modal > *:focus {
     outline: none !important;
-}
-
-.project__tools--img-wrapper img {
-    max-width: 100%;
-    max-height: 100%;
 }
 
 @media only screen and (max-width: 1024px) {

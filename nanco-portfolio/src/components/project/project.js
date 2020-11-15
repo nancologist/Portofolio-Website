@@ -4,6 +4,7 @@ import Modal from '@material-ui/core/Modal';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
 import BuildIcon from '@material-ui/icons/Build';
+import CancelIcon from '@material-ui/icons/Cancel';
 import theme from "../../colors";
 
 import stiwaLogo from '../../images/brands/stiwa.svg';
@@ -319,12 +320,16 @@ const project = () => {
             <Modal
                 aria-describedby="modal-description"
                 aria-labelledby="modal-title"
-                className={'modal'}
+                className="modal"
                 disableAutoFocus={true}
                 onClose={closeModal}
                 open={open}
             >
-                <Fade in={open} disableAutoFocus={true}>
+                <Fade
+                    className="modal__content"
+                    disableAutoFocus={true}
+                    in={open}
+                >
                     <div>
                         <div className="project__feature project__title" id="modal-title">
                             <div className="project__title__customer-logo">
@@ -336,6 +341,9 @@ const project = () => {
                                 </div>
                             </div>
                             <h2>{currentProject.title}</h2>
+                        </div>
+                        <div className="modal__close-btn" onClick={closeModal}>
+                            <CancelIcon />
                         </div>
                         <div id="modal-description">
                             <div className="project__feature project__date">
