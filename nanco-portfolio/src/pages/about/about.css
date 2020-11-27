@@ -125,7 +125,7 @@
     }
 }
 
-@media only screen and (min-width: 2090px) {
+@media only screen and (min-width: 1900px) {
     /* To avoid that the face in the profile photo goes out of the image frame */
     .about-pic {
         width: 55%;
