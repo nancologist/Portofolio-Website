@@ -126,13 +126,30 @@
 
 /* Skills- List > Item > Content */
 .list-item__content {
-    width: 70%;
+    width: 100%;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill__list-item:nth-child(2n+1) .list-item__content{
+    align-items: flex-end;
 }
 
 .list-item__content__tech {
     margin-bottom: 10px;
-    color: #ccc
+    color: #ccc;
+    display: flex;
+    align-items: center;
+}
+
+.skill__list-item:nth-child(2n+1) .list-item__content__tech {
+    flex-direction: row-reverse;
+}
+
+.list-item__content__tech__text {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 /* <><><><><><><><><><><><><><><><><><><><><><><><><><><> */
