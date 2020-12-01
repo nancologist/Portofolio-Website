@@ -158,8 +158,11 @@
 
 @media only screen and (max-width: 1200px) {
     .section-projects {
-        justify-content: center;
         text-align: center;
+    }
+
+    .section-projects__items {
+        justify-content: center;
     }
 
     /* <><><><><><><><><><><><><><><><><><><><><><><><><><><> */
