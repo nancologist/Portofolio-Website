@@ -5,6 +5,12 @@ import Project from "../../components/project/project";
 import './about.css';
 import {Snackbar} from "@material-ui/core";
 import MuiAlert from "@material-ui/lab/Alert";
+import StorageIcon from '@material-ui/icons/Storage';
+import FlipToFrontIcon from '@material-ui/icons/FlipToFront';
+import SettingsIcon from '@material-ui/icons/Settings';
+import TranslateIcon from '@material-ui/icons/Translate';
+import BuildIcon from '@material-ui/icons/Build';
+import ComputerIcon from '@material-ui/icons/Computer';
 
 function Alert(props) {
     return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -44,23 +50,53 @@ export default (props) => {
                 <h1 className="section__title">Skills</h1>
                 <div className="skill__list">
                     <div className="skill__list-item">
-                        <h2>Frontend</h2>
+                        <div className="list-item__title">
+                            <h2>Frontend</h2>
+                            <div className="skill-icon">
+                                <FlipToFrontIcon fontSize={'large'} />
+                            </div>
+                        </div>
                     </div>
                     <div className="skill__list-item">
-                        <h2>Backend</h2>
-                        <h3>Others</h3>
+                        <div className="list-item__title">
+                            <h2>Backend</h2>
+                            <div className="skill-icon">
+                                <SettingsIcon fontSize={'large'} />
+                            </div>
+                        </div>
+                        {/*<h3>Others</h3>*/}
                     </div>
                     <div className="skill__list-item">
-                        <h2>Database</h2>
+                        <div className="list-item__title">
+                            <h2>Database</h2>
+                            <div className="skill-icon">
+                                <StorageIcon fontSize={'large'} />
+                            </div>
+                        </div>
                     </div>
                     <div className="skill__list-item">
-                        <h2>Other Languages</h2>
+                        <div className="list-item__title">
+                            <h2>Other Languages</h2>
+                            <div className="skill-icon">
+                                <TranslateIcon fontSize={'large'} />
+                            </div>
+                        </div>
                     </div>
                     <div className="skill__list-item">
-                        <h2>Tools</h2>
+                        <div className="list-item__title">
+                            <h2>Tools</h2>
+                            <div className="skill-icon">
+                                <BuildIcon fontSize={'large'} />
+                            </div>
+                        </div>
                     </div>
                     <div className="skill__list-item">
-                        <h2>Others</h2>
+                        <div className="list-item__title">
+                            <h2>Others</h2>
+                            <div className="skill-icon">
+                                <ComputerIcon fontSize={'large'} />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
