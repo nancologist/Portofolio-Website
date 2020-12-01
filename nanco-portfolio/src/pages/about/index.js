@@ -11,13 +11,14 @@ import SettingsIcon from '@material-ui/icons/Settings';
 import TranslateIcon from '@material-ui/icons/Translate';
 import BuildIcon from '@material-ui/icons/Build';
 import ComputerIcon from '@material-ui/icons/Computer';
+import VideogameAssetIcon from '@material-ui/icons/VideogameAsset';
 
 import Icon from '@mdi/react';
 import {
     mdiLanguageJava, mdiNodejs, mdiLanguagePython, mdiLanguagePhp, mdiGraphql,
     mdiReact, mdiVuejs, mdiLanguageJavascript, mdiLanguageTypescript, mdiSass,
     mdiLanguageCss3, mdiLanguageHtml5, mdiJquery, mdiDatabase, mdiLanguageCsharp,
-    mdiLanguageR, mdiGit, mdiGithub, mdiGitlab, mdiFirebase
+    mdiLanguageR, mdiGit, mdiGithub, mdiGitlab, mdiFirebase, mdiBookMultiple, mdiRobotAngry
 } from '@mdi/js';
 import {colors} from "../../colors";
 
@@ -378,12 +379,44 @@ export default (props) => {
                             </div>
                         </div>
                         <div className="list-item__content">
-                            <p style={{color: '#ccc'}}>
-                                MacOS X, Bash, Terminal (Bash), LDAP, Assembly 6502,
-                            </p>
-                            <p style={{color: '#ccc'}}>
-                                ML (R, Python), Deno, 10-Finger-Schreiben
-                            </p>
+                            <div className="list-item__content__tech">
+                                <Icon
+                                    className="list-item__content__tech__icon"
+                                    path={mdiRobotAngry}
+                                    color={colors.primary}
+                                    size={2}
+                                    title={'Firebase'}
+                                />
+                                <span className="list-item__content__tech__text">
+                                    <strong>Machine Learning - </strong> R, Python : Data Cleaning, Linear Regression
+                                </span>
+                            </div>
+                            <div className="list-item__content__tech">
+                                <VideogameAssetIcon
+                                    fontSize={'large'} style={{
+                                        color: colors.primary,
+                                        transform: 'scale(1.2)'
+                                    }}
+                                />
+                                <span className="list-item__content__tech__text">
+                                    <strong> Assembly 6502</strong>
+                                </span>
+                            </div>
+                            <div className="list-item__content__tech">
+                                <Icon
+                                    className="list-item__content__tech__icon"
+                                    path={mdiBookMultiple}
+                                    color={colors.primary}
+                                    size={2}
+                                    title={'Firebase'}
+                                />
+                                <span className="list-item__content__tech__text">
+                                    MacOS X, Windows 10, Bash, Terminal (Bash), LDAP, Assembly 6502,
+                                </span>
+                                <span className="list-item__content__tech__text">
+                                    Machine Learning (R, Python), Deno, 10-Fingers-Typing
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
