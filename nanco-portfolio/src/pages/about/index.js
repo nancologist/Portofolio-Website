@@ -41,10 +41,14 @@ export default (props) => {
                 </div>
             </div>
             <div className="section-projects">
-                <h1 className="section-projects--title">Works</h1>
-                <Project/>
+                <h1 className="section__title">Works</h1>
+                <div className="section-projects__items">
+                    <Project/>
+                </div>
             </div>
-            <div className="section-skills"></div>
+            <div className="section-skills">
+                <h1 className="section-projects--title">Works</h1>
+            </div>
             <Snackbar
                 anchorOrigin={{ vertical: 'bottom', horizontal: 'right'}}
                 autoHideDuration={5000}

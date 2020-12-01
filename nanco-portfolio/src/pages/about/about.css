@@ -62,14 +62,16 @@
 .section-projects {
     /*background-color: var(--secondary-light-color);*/
     border-radius: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
     padding: 0 5px 0 5px;
 }
 
-.section-projects--title {
-    flex: 0 0 100%; /* Workaround for Exclude Title from Flex of .section-projects */
+.section-projects__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.section__title {
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -105,7 +107,7 @@
         justify-content: center;
     }
 
-    .section-projects--title {
+    .section__title {
         text-align: center;
         margin-top: 5px;
         margin-bottom: 40px;
@@ -120,7 +122,7 @@
     /*    padding: 0;*/
     /*}*/
 
-    .section-projects--title {
+    .section__title {
         text-align: center;
     }
 }
