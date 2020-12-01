@@ -102,7 +102,7 @@
 
 .list-item__title {
     display: flex;
-    border-radius: 20px;
+    border-radius: 20px 0 0 20px;
     width: 270px;
     min-width: 270px;
     height: 100%;
@@ -111,6 +111,10 @@
     align-items: center;
     background-color: var(--primary-dark-color);
     color: var(--secondary-color);
+}
+
+.skill__list-item:nth-child(2n) .list-item__title{
+    border-radius: 0 20px 20px 0;
 }
 
 .list-item__title > .skill-icon {
