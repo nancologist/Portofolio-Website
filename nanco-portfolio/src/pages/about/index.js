@@ -12,6 +12,9 @@ import TranslateIcon from '@material-ui/icons/Translate';
 import BuildIcon from '@material-ui/icons/Build';
 import ComputerIcon from '@material-ui/icons/Computer';
 
+import Icon from '@mdi/react';
+import { mdiAccount } from '@mdi/js';
+
 function Alert(props) {
     return <MuiAlert elevation={6} variant="filled" {...props} />;
 }
@@ -71,6 +74,7 @@ export default (props) => {
                             <h2>Database</h2>
                             <div className="skill-icon">
                                 <StorageIcon fontSize={'large'} />
+                                <Icon path={mdiAccount}/>
                             </div>
                         </div>
                     </div>

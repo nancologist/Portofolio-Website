@@ -51,3 +51,8 @@ ___
 https://www.npmjs.com/package/gatsby-plugin-i18n
 
 ___
+
+## Other Packages for Icons:
+
+* ``npm install @mdi/react --save-dev``
+* ``npm install @mdi/js --save-dev``

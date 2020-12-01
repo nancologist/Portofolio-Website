@@ -26,6 +26,8 @@
     "react-transition-group": "^4.4.1"
   },
   "devDependencies": {
+    "@mdi/js": "^5.8.55",
+    "@mdi/react": "^1.4.0",
     "eslint-config-react-app": "^5.2.1",
     "prettier": "2.0.5"
   },
