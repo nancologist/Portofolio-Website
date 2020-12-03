@@ -136,22 +136,6 @@
     align-items: flex-end;
 }
 
-.list-item__content__tech {
-    margin-bottom: 10px;
-    color: #ccc;
-    display: flex;
-    align-items: center;
-}
-
-.skill__list-item:nth-child(2n+1) .list-item__content__tech {
-    flex-direction: row-reverse;
-}
-
-.list-item__content__tech__text {
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
 /* <><><><><><><><><><><><><><><><><><><><><><><><><><><> */
 /* <><><><><><><><><> MOBILE RESPONSIVE <><><><><><><><><> */
 /* <><><><><><><><><><><><><><><><><><><><><><><><><><><> */
@@ -187,10 +171,6 @@
         width: 80%;
         align-items: stretch !important;
     }
-
-    .list-item__content__tech {
-        flex-direction: row !important;
-    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -222,20 +202,9 @@
         margin-top: 5px;
         margin-bottom: 40px;
     }
-
-    .list-item__content__tech__icon {
-        min-width: 40px; /* Prevent the Skill icons get too small when the sibling text is too long. */
-    }
 }
 
 @media only screen and (max-width: 667px) {
-    /*.section-projects {*/
-    /*    background-color: transparent;*/
-    /*    margin-left: -50px;*/
-    /*    margin-right: -50px;*/
-    /*    padding: 0;*/
-    /*}*/
-
     .section__title {
         text-align: center;
     }
