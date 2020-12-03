@@ -383,10 +383,80 @@ export default () => {
     );
 }
 
-// const skills = [
-//     {
-//         title: 'Frontend',
-//         titleIcon: '',
-//         techs: []
-//     }
-// ];
+const skills = [
+    {
+        title: 'Frontend',
+        titleIcon: 'FlipToFrontIcon',
+        techs: [
+            {
+                techName: 'ReactJS - ',
+                techDesc: 'Redux, Gatsby, NextJS, Material-UI',
+                techIcon: 'mdiReact',
+                techIconTitle: 'ReactJS'
+            },
+            {
+                techName: 'VueJS - ',
+                techDesc: 'Redux, Gatsby, NextJS, Material-UI',
+                techIcon: 'mdiReact',
+                techIconTitle: 'ReactJS',
+                techInlineStyle: {'margin-top': '10px'}
+            },
+            {
+                techName: 'VueJS - ',
+                techDesc: 'Redux, Gatsby, NextJS, Material-UI',
+                techIcon: 'mdiReact',
+                techIconTitle: 'ReactJS',
+                techInlineStyle: {'margin-top': '10px'}
+            },
+            {
+                techName: 'VueJS - ',
+                techDesc: 'Redux, Gatsby, NextJS, Material-UI',
+                techIcon: 'mdiReact',
+                techIconTitle: 'ReactJS',
+                techInlineStyle: {'margin-top': '10px'}
+            },
+            {
+                techName: 'VueJS - ',
+                techDesc: 'Redux, Gatsby, NextJS, Material-UI',
+                techIcon: 'mdiReact',
+                techIconTitle: 'ReactJS',
+                techInlineStyle: {'margin-top': '10px'}
+            },
+            {
+                techName: 'VueJS - ',
+                techDesc: 'Redux, Gatsby, NextJS, Material-UI',
+                techIcon: 'mdiReact',
+                techIconTitle: 'ReactJS',
+                techInlineStyle: {'margin-top': '10px'}
+            },
+            {
+                techName: 'VueJS - ',
+                techDesc: 'Redux, Gatsby, NextJS, Material-UI',
+                techIcon: 'mdiReact',
+                techIconTitle: 'ReactJS',
+                techInlineStyle: {'margin-top': '10px'}
+            },
+            {
+                techName: 'VueJS - ',
+                techDesc: 'Redux, Gatsby, NextJS, Material-UI',
+                techIcon: 'mdiReact',
+                techIconTitle: 'ReactJS',
+                techInlineStyle: {'margin-top': '10px'}
+            },
+            {
+                techName: 'VueJS - ',
+                techDesc: 'Redux, Gatsby, NextJS, Material-UI',
+                techIcon: 'mdiReact',
+                techIconTitle: 'ReactJS',
+                techInlineStyle: {'margin-top': '10px'}
+            },
+            {
+                techName: 'VueJS - ',
+                techDesc: 'Redux, Gatsby, NextJS, Material-UI',
+                techIcon: 'mdiReact',
+                techIconTitle: 'ReactJS',
+                techInlineStyle: {'margin-top': '10px'}
+            }
+        ]
+    }
+];
