@@ -2,6 +2,8 @@ import React from "react";
 import StorageIcon from '@material-ui/icons/Storage';
 import FlipToFrontIcon from '@material-ui/icons/FlipToFront';
 import SettingsIcon from '@material-ui/icons/Settings';
+import DesktopWindowsIcon from '@material-ui/icons/DesktopWindows';
+import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
 import TranslateIcon from '@material-ui/icons/Translate';
 import BuildIcon from '@material-ui/icons/Build';
 import ComputerIcon from '@material-ui/icons/Computer';
@@ -9,8 +11,13 @@ import VideogameAssetIcon from '@material-ui/icons/VideogameAsset';
 import Icon from '@mdi/react';
 import {
     mdiLanguageJava, mdiNodejs, mdiLanguagePython, mdiLanguagePhp, mdiGraphql,
+
     mdiReact, mdiVuejs, mdiLanguageJavascript, mdiLanguageTypescript, mdiSass,
-    mdiLanguageCss3, mdiLanguageHtml5, mdiJquery, mdiDatabase, mdiLanguageCsharp,
+    mdiLanguageCss3, mdiLanguageHtml5, mdiJquery,
+
+    mdiElectronFramework,
+
+    mdiDatabase, mdiLanguageCsharp,
     mdiLanguageR, mdiGit, mdiGithub, mdiGitlab, mdiFirebase, mdiBookMultiple, mdiRobotAngry
 } from '@mdi/js';
 
@@ -34,80 +41,6 @@ export default () => {
             })}
 
             {/*
-
-            <div className="skill__list-item">
-                <div className="list-item__title">
-                    <h2>Backend</h2>
-                    <div className="skill-icon">
-                        <SettingsIcon fontSize={'large'} />
-                    </div>
-                </div>
-                <div className="list-item__content">
-                    <div className="list-item__content__tech">
-                        <Icon
-                            className="list-item__content__tech__icon"
-                            path={mdiLanguageJava}
-                            color={colors.primary}
-                            size={2}
-                            title={'Java'}
-                        />
-                        <span className="list-item__content__tech__text">
-                                    <strong>Java - </strong>
-                                    Spring MVC, Maven, Thymeleaf, JUnit, Mockito, Selenium
-                                </span>
-                    </div>
-                    <div className="list-item__content__tech">
-                        <Icon
-                            className="list-item__content__tech__icon"
-                            path={mdiNodejs}
-                            color={colors.primary}
-                            size={2}
-                            title={'NodeJS'}
-                        />
-                        <span className="list-item__content__tech__text">
-                                    <strong>NodeJS - </strong>
-                                    ExpressJS, Typescript, Sequelize, Mongoose, Pug, EJS, Handlebars
-                                </span>
-                    </div>
-                    <div className="list-item__content__tech">
-                        <Icon
-                            className="list-item__content__tech__icon"
-                            path={mdiLanguagePython}
-                            color={colors.primary}
-                            size={2}
-                            title={'Python'}
-                        />
-                        <span className="list-item__content__tech__text">
-                                    <strong>Python - </strong>
-                                    Django, PythonLDAP
-                                </span>
-                    </div>
-                    <div className="list-item__content__tech">
-                        <Icon
-                            className="list-item__content__tech__icon"
-                            path={mdiLanguagePhp}
-                            color={colors.primary}
-                            size={2}
-                            title={'PHP'}
-                        />
-                        <span className="list-item__content__tech__text">
-                                    <strong>PHP</strong>
-                                </span>
-                    </div>
-                    <div className="list-item__content__tech">
-                        <Icon
-                            className="list-item__content__tech__icon"
-                            path={mdiGraphql}
-                            color={colors.primary}
-                            size={2}
-                            title={'GraphQL'}
-                        />
-                        <span className="list-item__content__tech__text">
-                                    <strong>GraphQL</strong>
-                                </span>
-                    </div>
-                </div>
-            </div>
 
             <div className="skill__list-item">
                 <div className="list-item__title">
@@ -323,27 +256,27 @@ const skills = [
         techs: [
             {
                 techName: 'ReactJS - ',
-                techDesc: 'Redux, Gatsby, NextJS, Material-UI',
+                techDesc: 'Redux, Gatsby, NextJS, Material-UI, Certified By Udemy (40hrs)',
                 techIcon: mdiReact,
                 techIconTitle: 'ReactJS'
             },
             {
                 techName: 'VueJS - ',
-                techDesc: 'Vuex, NuxtJS, Vuetify',
+                techDesc: 'Vuex, NuxtJS, Vuetify, Certified By Udemy (30hrs)',
                 techIcon: mdiVuejs,
                 techIconTitle: 'VueJS'
             },
             {
                 techName: 'Typescript - ',
-                techDesc: 'Generics, Interfaces, Unions, ...',
+                techDesc: 'Generics, Interfaces, Unions, Certified By Udemy (20hrs)',
                 techIcon: mdiLanguageTypescript,
-                techIconTitle: 'Typescript',
+                techIconTitle: 'Typescript'
             },
             {
                 techName: 'Javascript - ',
                 techDesc: 'ES6, ES7, Fetch API, Ajax, ...',
                 techIcon: mdiLanguageJavascript,
-                techIconTitle: 'Javascript',
+                techIconTitle: 'Javascript'
             },
             {
                 techName: 'jQuery',
@@ -388,12 +321,6 @@ const skills = [
                 techIconTitle: 'NodeJS',
             },
             {
-                techName: 'Javascript - ',
-                techDesc: 'ES6, ES7, Fetch API, Ajax, ...',
-                techIcon: mdiLanguageJavascript,
-                techIconTitle: 'Javascript',
-            },
-            {
                 techName: 'Python - ',
                 techDesc: 'Django, PythonLDAP',
                 techIcon: mdiLanguagePython,
@@ -406,11 +333,71 @@ const skills = [
                 techIconTitle: 'PHP'
             },
             {
-                techName: 'GraphQL',
-                techDesc: 'BEM, Mobile First, Grid, Flexbox',
+                techName: 'Firebase (NoSQL) - ',
+                techDesc: 'Google Service BaaS ',
+                techIcon: mdiDatabase,
+                techIconTitle: 'Firebase'
+            },
+            {
+                techName: 'GraphQL - ',
+                techDesc: 'Query Language for APIs',
                 techIcon: mdiGraphql,
                 techIconTitle: 'GraphQL'
             }
+        ]
+    },
+    {
+        title: 'Desktop Apps',
+        IconTagName: DesktopWindowsIcon,
+        techs: [
+            {
+                techName: 'ElectronJS - ',
+                techDesc: 'Cross Plattform Desktop Applications (MacOS, Windows, Linux)',
+                techIcon: mdiElectronFramework,
+                techIconTitle: 'ElectronJS'
+            },
+        ]
+    },
+    {
+        title: 'Mobile Apps',
+        IconTagName: PhoneAndroidIcon,
+        techs: [
+            {
+                techName: 'React Native - ',
+                techDesc: 'In Learning Progress, Cross Plattform Mobile Applications (Android, iOS)',
+                techIcon: mdiReact,
+                techIconTitle: 'React Native'
+            },
+        ]
+    },
+    {
+        title: 'Database',
+        IconTagName: StorageIcon,
+        techs: [
+            {
+                techName: 'MongoDB (NoSQL) - ',
+                techDesc: 'Atlas, Compass',
+                techIcon: mdiDatabase,
+                techIconTitle: 'MongoDB'
+            },
+            {
+                techName: 'Firebase (NoSQL) - ',
+                techDesc: 'Google Service BaaS ',
+                techIcon: mdiDatabase,
+                techIconTitle: 'Firebase'
+            },
+            {
+                techName: 'MySQL - ',
+                techDesc: 'PhpMyAdmin',
+                techIcon: mdiDatabase,
+                techIconTitle: 'MySQL'
+            },
+            {
+                techName: 'MS-SQL',
+                techDesc: '',
+                techIcon: mdiDatabase,
+                techIconTitle: 'MS-SQL'
+            },
         ]
     },
 ];
