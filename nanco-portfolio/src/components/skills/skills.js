@@ -16,11 +16,24 @@ import {
 
 import {colors} from "../../colors";
 
+import Skill from './skill/skill';
+
 export default () => {
     return (
         <div className="skill__list">
+            {skills.map((skill) => {
+                // Todo: Outsource skill.techs in a new cmp, BUT NOT NOW...
+                return (
+                    <Skill
+                        title={skill.title}
+                        key={skill.title}
+                        IconTagName={skill.IconTagName}
+                        techs={skill.techs}
+                    />
+                );
+            })}
 
-            <div className="skill__list-item">
+            {/*<div className="skill__list-item">
                 <div className="list-item__title">
                     <h2>Frontend</h2>
                     <div className="skill-icon">
@@ -378,7 +391,8 @@ export default () => {
                                 </span>
                     </div>
                 </div>
-            </div>
+            </div>*/}
+
         </div>
     );
 }
@@ -386,77 +400,62 @@ export default () => {
 const skills = [
     {
         title: 'Frontend',
-        titleIcon: 'FlipToFrontIcon',
+        IconTagName: FlipToFrontIcon,
         techs: [
             {
                 techName: 'ReactJS - ',
                 techDesc: 'Redux, Gatsby, NextJS, Material-UI',
-                techIcon: 'mdiReact',
+                techIcon: mdiReact,
                 techIconTitle: 'ReactJS'
             },
             {
                 techName: 'VueJS - ',
                 techDesc: 'Redux, Gatsby, NextJS, Material-UI',
-                techIcon: 'mdiReact',
-                techIconTitle: 'ReactJS',
-                techInlineStyle: {'margin-top': '10px'}
+                techIcon: mdiVuejs,
+                techIconTitle: 'VueJS'
             },
             {
-                techName: 'VueJS - ',
-                techDesc: 'Redux, Gatsby, NextJS, Material-UI',
-                techIcon: 'mdiReact',
-                techIconTitle: 'ReactJS',
-                techInlineStyle: {'margin-top': '10px'}
+                techName: 'Typescript - ',
+                techDesc: 'Generics, Interfaces, Unions, ...',
+                techIcon: mdiLanguageTypescript,
+                techIconTitle: 'Typescript',
+                noText: true
             },
             {
-                techName: 'VueJS - ',
-                techDesc: 'Redux, Gatsby, NextJS, Material-UI',
-                techIcon: 'mdiReact',
-                techIconTitle: 'ReactJS',
-                techInlineStyle: {'margin-top': '10px'}
+                techName: 'jQuery',
+                techDesc: '',
+                techIcon: mdiJquery,
+                techIconTitle: 'jQuery',
+                noText: true
             },
             {
-                techName: 'VueJS - ',
-                techDesc: 'Redux, Gatsby, NextJS, Material-UI',
-                techIcon: 'mdiReact',
-                techIconTitle: 'ReactJS',
-                techInlineStyle: {'margin-top': '10px'}
+                techName: 'Javascript - ',
+                techDesc: 'ES6, ES7, Fetch API, Ajax, ...',
+                techIcon: mdiLanguageJavascript,
+                techIconTitle: 'Javascript',
+                noText: true
             },
             {
-                techName: 'VueJS - ',
-                techDesc: 'Redux, Gatsby, NextJS, Material-UI',
-                techIcon: 'mdiReact',
-                techIconTitle: 'ReactJS',
-                techInlineStyle: {'margin-top': '10px'}
+                techName: 'Sass',
+                techDesc: '',
+                techIcon: mdiSass,
+                techIconTitle: 'Sass',
+                noText: true
             },
             {
-                techName: 'VueJS - ',
-                techDesc: 'Redux, Gatsby, NextJS, Material-UI',
-                techIcon: 'mdiReact',
-                techIconTitle: 'ReactJS',
-                techInlineStyle: {'margin-top': '10px'}
+                techName: 'CSS - ',
+                techDesc: 'BEM, Mobile First, Grid, Flexbox',
+                techIcon: mdiLanguageCss3,
+                techIconTitle: 'CSS',
+                noText: true
             },
             {
-                techName: 'VueJS - ',
-                techDesc: 'Redux, Gatsby, NextJS, Material-UI',
-                techIcon: 'mdiReact',
-                techIconTitle: 'ReactJS',
-                techInlineStyle: {'margin-top': '10px'}
+                techName: 'HTML',
+                techDesc: '',
+                techIcon: mdiLanguageHtml5,
+                techIconTitle: 'HTML',
+                noText: true
             },
-            {
-                techName: 'VueJS - ',
-                techDesc: 'Redux, Gatsby, NextJS, Material-UI',
-                techIcon: 'mdiReact',
-                techIconTitle: 'ReactJS',
-                techInlineStyle: {'margin-top': '10px'}
-            },
-            {
-                techName: 'VueJS - ',
-                techDesc: 'Redux, Gatsby, NextJS, Material-UI',
-                techIcon: 'mdiReact',
-                techIconTitle: 'ReactJS',
-                techInlineStyle: {'margin-top': '10px'}
-            }
         ]
     }
 ];
