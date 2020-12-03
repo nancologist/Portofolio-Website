@@ -22,22 +22,21 @@ import {
     mdiGit, mdiGithub, mdiGitlab, mdiJira, mdiBookMultiple, mdiRobotAngry, mdiGamepadVariantOutline
 } from '@mdi/js';
 
+import './skills.css';
 import Skill from './skill/skill';
 
-export default () => {
-    return (
-        <div className="skill__list">
-            {skills.map((skill) => (
-                <Skill
-                    title={skill.title}
-                    key={skill.title}
-                    IconTagName={skill.IconTagName}
-                    techs={skill.techs}
-                />
-            ))}
-        </div>
-    );
-}
+export default () => (
+    <div className="skill__list">
+        {skills.map((skill) => (
+            <Skill
+                title={skill.title}
+                key={skill.title}
+                IconTagName={skill.IconTagName}
+                techs={skill.techs}
+            />
+        ))}
+    </div>
+);
 
 const skills = [
     {
