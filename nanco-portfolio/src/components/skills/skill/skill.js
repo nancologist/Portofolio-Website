@@ -1,5 +1,6 @@
 import React from "react";
 import Tech from './tech/tech';
+import './skill.css';
 
 export default (props) => {
     return (
