@@ -6,9 +6,8 @@ import DesktopWindowsIcon from '@material-ui/icons/DesktopWindows';
 import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
 import TranslateIcon from '@material-ui/icons/Translate';
 import BuildIcon from '@material-ui/icons/Build';
-import ComputerIcon from '@material-ui/icons/Computer';
+import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 import VideogameAssetIcon from '@material-ui/icons/VideogameAsset';
-import Icon from '@mdi/react';
 import {
     mdiLanguageJava, mdiNodejs, mdiLanguagePython, mdiLanguagePhp, mdiGraphql,
 
@@ -17,8 +16,11 @@ import {
 
     mdiElectronFramework,
 
-    mdiDatabase, mdiLanguageCsharp,
-    mdiLanguageR, mdiGit, mdiGithub, mdiGitlab, mdiFirebase, mdiBookMultiple, mdiRobotAngry, mdiGamepadVariantOutline
+    mdiDatabase, mdiFirebase,
+
+    mdiLanguageCsharp, mdiLanguageR,
+
+    mdiGit, mdiGithub, mdiGitlab, mdiJira, mdiBookMultiple, mdiRobotAngry, mdiGamepadVariantOutline, mdiCreation
 } from '@mdi/js';
 
 import {colors} from "../../colors";
@@ -29,7 +31,6 @@ export default () => {
     return (
         <div className="skill__list">
             {skills.map((skill) => {
-                // Todo: Outsource skill.techs in a new cmp, BUT NOT NOW...
                 return (
                     <Skill
                         title={skill.title}
@@ -39,116 +40,6 @@ export default () => {
                     />
                 );
             })}
-
-            {/*
-            <div className="skill__list-item">
-                <div className="list-item__title">
-                    <h2>Tools</h2>
-                    <div className="skill-icon">
-                        <BuildIcon fontSize={'large'} />
-                    </div>
-                </div>
-                <div className="list-item__content">
-                    <div className="list-item__content__tech">
-                        <Icon
-                            className="list-item__content__tech__icon"
-                            path={mdiGithub}
-                            color={colors.primary}
-                            size={2}
-                            title={'Github'}
-                        />
-                        <span className="list-item__content__tech__text">
-                                    <strong>Github - </strong> For business and personal projects.
-                                </span>
-                    </div>
-                    <div className="list-item__content__tech">
-                        <Icon
-                            className="list-item__content__tech__icon"
-                            path={mdiGitlab}
-                            color={colors.primary}
-                            size={2}
-                            title={'Gitlab'}
-                        />
-                        <span className="list-item__content__tech__text">
-                                    <strong>GitLab - </strong> used for business projects.
-                                </span>
-                    </div>
-                    <div className="list-item__content__tech">
-                        <Icon
-                            className="list-item__content__tech__icon"
-                            path={mdiGit}
-                            color={colors.primary}
-                            size={2}
-                            title={'Git'}
-                        />
-                        <span className="list-item__content__tech__text">
-                                    <strong>Git - </strong> daily use.
-                                </span>
-                    </div>
-                    <div className="list-item__content__tech">
-                        <Icon
-                            className="list-item__content__tech__icon"
-                            path={mdiFirebase}
-                            color={colors.primary}
-                            size={2}
-                            title={'Firebase'}
-                        />
-                        <span className="list-item__content__tech__text">
-                                    <strong>Google Firebase - </strong> NoSQL Database and BaaS (Backend as a Service)
-                                </span>
-                    </div>
-                </div>
-            </div>
-
-            <div className="skill__list-item">
-                <div className="list-item__title">
-                    <h2>Others</h2>
-                    <div className="skill-icon">
-                        <ComputerIcon fontSize={'large'} />
-                    </div>
-                </div>
-                <div className="list-item__content">
-                    <div className="list-item__content__tech">
-                        <Icon
-                            className="list-item__content__tech__icon"
-                            path={mdiRobotAngry}
-                            color={colors.primary}
-                            size={2}
-                            title={'Firebase'}
-                        />
-                        <span className="list-item__content__tech__text">
-                                    <strong>Machine Learning - </strong> R, Python : Data Cleaning, Linear Regression
-                                </span>
-                    </div>
-                    <div className="list-item__content__tech">
-                        <VideogameAssetIcon
-                            fontSize={'large'} style={{
-                            color: colors.primary,
-                            transform: 'scale(1.2)'
-                        }}
-                        />
-                        <span className="list-item__content__tech__text">
-                                    <strong> Assembly 6502</strong>
-                                </span>
-                    </div>
-                    <div className="list-item__content__tech">
-                        <Icon
-                            className="list-item__content__tech__icon"
-                            path={mdiBookMultiple}
-                            color={colors.primary}
-                            size={2}
-                            title={'Firebase'}
-                        />
-                        <span className="list-item__content__tech__text">
-                                    MacOS X, Windows 10, Bash, Terminal (Bash), LDAP, Assembly 6502,
-                                </span>
-                        <span className="list-item__content__tech__text">
-                                    Machine Learning (R, Python), Deno, 10-Fingers-Typing
-                                </span>
-                    </div>
-                </div>
-            </div>*/}
-
         </div>
     );
 }
@@ -237,9 +128,9 @@ const skills = [
                 techIconTitle: 'PHP'
             },
             {
-                techName: 'Firebase (NoSQL) - ',
-                techDesc: 'Google Service BaaS ',
-                techIcon: mdiDatabase,
+                techName: 'Firebase - ',
+                techDesc: 'Google BaaS (Backend as a Service)',
+                techIcon: mdiFirebase,
                 techIconTitle: 'Firebase'
             },
             {
@@ -322,9 +213,55 @@ const skills = [
             },
             {
                 techName: 'Assembly 6502 - ',
-                techDesc: 'Great language to get deep in the machine.',
+                techDesc: 'Great language to dive into the machine for the nerds!',
                 techIcon: mdiGamepadVariantOutline,
                 techIconTitle: 'Assembly 6502'
+            },
+        ]
+    },
+    {
+        title: 'Tools',
+        IconTagName: BuildIcon,
+        techs: [
+            {
+                techName: 'Jira - ',
+                techDesc: 'Ticket System used for business projects, Kanban and Scrum Projects.',
+                techIcon: mdiJira
+            },
+            {
+                techName: 'Github - ',
+                techDesc: 'For business and personal projects.',
+                techIcon: mdiGithub,
+                techIconTitle: 'Github'
+            },
+            {
+                techName: 'GitLab - ',
+                techDesc: 'used for business projects.',
+                techIcon: mdiGitlab,
+                techIconTitle: 'GitLab'
+            },
+            {
+                techName: 'Git',
+                techDesc: 'daily use.',
+                techIcon: mdiGit,
+                techIconTitle: 'Git'
+            },
+        ]
+    },
+    {
+        title: 'Others',
+        IconTagName: AddCircleOutlineIcon,
+        techs: [
+            {
+                techName: 'Machine Learning - ',
+                techDesc: '(R, Python) Data Cleaning, Linear Regression.',
+                techIcon: mdiRobotAngry
+            },
+            {
+                techName: 'OS & Co. - ',
+                techDesc: 'MacOS X, Windows 10, Bash, Terminal (Bash), LDAP, Assembly 6502.',
+                techIcon: mdiBookMultiple,
+                techIconTitle: 'others'
             },
         ]
     },

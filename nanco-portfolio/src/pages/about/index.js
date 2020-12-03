@@ -1,6 +1,4 @@
 import React, {useState} from "react";
-
-import ArrowDownBtn from "../../components/ui-components/arrowDownBtn";
 import Project from "../../components/project/project";
 import './about.css';
 import {Snackbar} from "@material-ui/core";
