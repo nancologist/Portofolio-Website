@@ -18,7 +18,7 @@ import {
     mdiElectronFramework,
 
     mdiDatabase, mdiLanguageCsharp,
-    mdiLanguageR, mdiGit, mdiGithub, mdiGitlab, mdiFirebase, mdiBookMultiple, mdiRobotAngry
+    mdiLanguageR, mdiGit, mdiGithub, mdiGitlab, mdiFirebase, mdiBookMultiple, mdiRobotAngry, mdiGamepadVariantOutline
 } from '@mdi/js';
 
 import {colors} from "../../colors";
@@ -41,102 +41,6 @@ export default () => {
             })}
 
             {/*
-
-            <div className="skill__list-item">
-                <div className="list-item__title">
-                    <h2>Database</h2>
-                    <div className="skill-icon">
-                        <StorageIcon fontSize={'large'} />
-                    </div>
-                </div>
-                <div className="list-item__content">
-                    <div className="list-item__content__tech">
-                        <Icon
-                            className="list-item__content__tech__icon"
-                            path={mdiDatabase}
-                            color={colors.primary}
-                            size={2}
-                            title={'Database'}
-                        />
-                        <span className="list-item__content__tech__text">
-                                    <strong>MongoDB - </strong> Atlas, Compass
-                                </span>
-                    </div>
-                    <div className="list-item__content__tech">
-                        <Icon
-                            className="list-item__content__tech__icon"
-                            path={mdiDatabase}
-                            color={colors.primary}
-                            size={2}
-                            title={'Database'}
-                        />
-                        <span className="list-item__content__tech__text">
-                                    <strong>Firebase</strong> (NoSQL)
-                                </span>
-                    </div>
-                    <div className="list-item__content__tech">
-                        <Icon
-                            className="list-item__content__tech__icon"
-                            path={mdiDatabase}
-                            color={colors.primary}
-                            size={2}
-                            title={'Database'}
-                        />
-                        <span className="list-item__content__tech__text">
-                                    <strong>MS-SQL </strong>
-                                </span>
-                    </div>
-                    <div className="list-item__content__tech">
-                        <Icon
-                            className="list-item__content__tech__icon"
-                            path={mdiDatabase}
-                            color={colors.primary}
-                            size={2}
-                            title={'Database'}
-                        />
-                        <span className="list-item__content__tech__text">
-                                    <strong>MySQL - </strong>
-                                    PhpMyAdmin
-                                </span>
-                    </div>
-                </div>
-            </div>
-
-            <div className="skill__list-item">
-                <div className="list-item__title">
-                    <h2>Other Languages</h2>
-                    <div className="skill-icon">
-                        <TranslateIcon fontSize={'large'} />
-                    </div>
-                </div>
-                <div className="list-item__content">
-                    <div className="list-item__content__tech">
-                        <Icon
-                            className="list-item__content__tech__icon"
-                            path={mdiLanguageCsharp}
-                            color={colors.primary}
-                            size={2}
-                            title={'CSharp'}
-                        />
-                        <span className="list-item__content__tech__text">
-                                    <strong>CSharp - </strong> Rider, VisualStudio
-                                </span>
-                    </div>
-                    <div className="list-item__content__tech">
-                        <Icon
-                            className="list-item__content__tech__icon"
-                            path={mdiLanguageR}
-                            color={colors.primary}
-                            size={2}
-                            title={'R'}
-                        />
-                        <span className="list-item__content__tech__text">
-                                    <strong>R - </strong> For Machine Learning Purposes
-                            </span>
-                    </div>
-                </div>
-            </div>
-
             <div className="skill__list-item">
                 <div className="list-item__title">
                     <h2>Tools</h2>
@@ -397,6 +301,30 @@ const skills = [
                 techDesc: '',
                 techIcon: mdiDatabase,
                 techIconTitle: 'MS-SQL'
+            },
+        ]
+    },
+    {
+        title: 'Other Languages',
+        IconTagName: TranslateIcon,
+        techs: [
+            {
+                techName: 'CSharp',
+                techDesc: '',
+                techIcon: mdiLanguageCsharp,
+                techIconTitle: 'CSharp'
+            },
+            {
+                techName: 'R',
+                techDesc: '',
+                techIcon: mdiLanguageR,
+                techIconTitle: 'R'
+            },
+            {
+                techName: 'Assembly 6502 - ',
+                techDesc: 'Great language to get deep in the machine.',
+                techIcon: mdiGamepadVariantOutline,
+                techIconTitle: 'Assembly 6502'
             },
         ]
     },
