@@ -1,6 +1,7 @@
 import React from "react";
 import {colors} from "../../../../colors";
 import Icon from '@mdi/react';
+import './tech.css';
 
 export default (props) => {
     return (
