@@ -27,16 +27,14 @@ import Skill from './skill/skill';
 export default () => {
     return (
         <div className="skill__list">
-            {skills.map((skill) => {
-                return (
-                    <Skill
-                        title={skill.title}
-                        key={skill.title}
-                        IconTagName={skill.IconTagName}
-                        techs={skill.techs}
-                    />
-                );
-            })}
+            {skills.map((skill) => (
+                <Skill
+                    title={skill.title}
+                    key={skill.title}
+                    IconTagName={skill.IconTagName}
+                    techs={skill.techs}
+                />
+            ))}
         </div>
     );
 }
