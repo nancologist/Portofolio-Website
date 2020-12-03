@@ -7,7 +7,6 @@ import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
 import TranslateIcon from '@material-ui/icons/Translate';
 import BuildIcon from '@material-ui/icons/Build';
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
-import VideogameAssetIcon from '@material-ui/icons/VideogameAsset';
 import {
     mdiLanguageJava, mdiNodejs, mdiLanguagePython, mdiLanguagePhp, mdiGraphql,
 
@@ -20,10 +19,8 @@ import {
 
     mdiLanguageCsharp, mdiLanguageR,
 
-    mdiGit, mdiGithub, mdiGitlab, mdiJira, mdiBookMultiple, mdiRobotAngry, mdiGamepadVariantOutline, mdiCreation
+    mdiGit, mdiGithub, mdiGitlab, mdiJira, mdiBookMultiple, mdiRobotAngry, mdiGamepadVariantOutline
 } from '@mdi/js';
-
-import {colors} from "../../colors";
 
 import Skill from './skill/skill';
 
