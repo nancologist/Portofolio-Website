@@ -166,7 +166,7 @@
     }
 
     /* <><><><><><><><><><><><><><><><><><><><><><><><><><><> */
-    /* <><><><><><><><><> Section SKILLS <><><><><><><><><><> */
+    /* <><><><><><> RESPONSIVE - Section SKILLS <><><><><><> */
     /* <><><><><><><><><><><><><><><><><><><><><><><><><><><> */
     .skill__list-item {
         flex-direction: column !important; /* Add "important" to overwrite even children too. */
@@ -221,6 +221,10 @@
         text-align: center;
         margin-top: 5px;
         margin-bottom: 40px;
+    }
+
+    .list-item__content__tech__icon {
+        min-width: 40px; /* Prevent the Skill icons get too small when the sibling text is too long. */
     }
 }
 
