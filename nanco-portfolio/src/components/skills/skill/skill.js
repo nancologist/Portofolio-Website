@@ -17,6 +17,7 @@ export default (props) => (
                     iconTitle={tech.techIconTitle}
                     name={tech.techName}
                     desc={tech.techDesc}
+                    key={tech.techName}
                 />
             ))}
         </div>
