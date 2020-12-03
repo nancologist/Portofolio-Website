@@ -329,7 +329,7 @@ const skills = [
             },
             {
                 techName: 'VueJS - ',
-                techDesc: 'Redux, Gatsby, NextJS, Material-UI',
+                techDesc: 'Vuex, NuxtJS, Vuetify',
                 techIcon: mdiVuejs,
                 techIconTitle: 'VueJS'
             },
@@ -341,17 +341,17 @@ const skills = [
                 noText: true
             },
             {
-                techName: 'jQuery',
-                techDesc: '',
-                techIcon: mdiJquery,
-                techIconTitle: 'jQuery',
-                noText: true
-            },
-            {
                 techName: 'Javascript - ',
                 techDesc: 'ES6, ES7, Fetch API, Ajax, ...',
                 techIcon: mdiLanguageJavascript,
                 techIconTitle: 'Javascript',
+                noText: true
+            },
+            {
+                techName: 'jQuery',
+                techDesc: '',
+                techIcon: mdiJquery,
+                techIconTitle: 'jQuery',
                 noText: true
             },
             {
@@ -376,5 +376,65 @@ const skills = [
                 noText: true
             },
         ]
-    }
+    },
+    {
+        title: 'Backend',
+        IconTagName: SettingsIcon,
+        techs: [
+            {
+                techName: 'Java - ',
+                techDesc: 'Spring MVC, Maven, Thymeleaf, JUnit, Mockito, Selenium',
+                techIcon: mdiLanguageJava,
+                techIconTitle: 'Java'
+            },
+            /*{
+                techName: 'VueJS - ',
+                techDesc: 'Redux, Gatsby, NextJS, Material-UI',
+                techIcon: mdiVuejs,
+                techIconTitle: 'VueJS'
+            },
+            {
+                techName: 'Typescript - ',
+                techDesc: 'Generics, Interfaces, Unions, ...',
+                techIcon: mdiLanguageTypescript,
+                techIconTitle: 'Typescript',
+                noText: true
+            },
+            {
+                techName: 'Javascript - ',
+                techDesc: 'ES6, ES7, Fetch API, Ajax, ...',
+                techIcon: mdiLanguageJavascript,
+                techIconTitle: 'Javascript',
+                noText: true
+            },
+            {
+                techName: 'jQuery',
+                techDesc: '',
+                techIcon: mdiJquery,
+                techIconTitle: 'jQuery',
+                noText: true
+            },
+            {
+                techName: 'Sass',
+                techDesc: '',
+                techIcon: mdiSass,
+                techIconTitle: 'Sass',
+                noText: true
+            },
+            {
+                techName: 'CSS - ',
+                techDesc: 'BEM, Mobile First, Grid, Flexbox',
+                techIcon: mdiLanguageCss3,
+                techIconTitle: 'CSS',
+                noText: true
+            },
+            {
+                techName: 'HTML',
+                techDesc: '',
+                techIcon: mdiLanguageHtml5,
+                techIconTitle: 'HTML',
+                noText: true
+            },*/
+        ]
+    },
 ];
