@@ -7,6 +7,7 @@ import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
 import TranslateIcon from '@material-ui/icons/Translate';
 import BuildIcon from '@material-ui/icons/Build';
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
+import AssignmentTurnedInOutlinedIcon from '@material-ui/icons/AssignmentTurnedInOutlined';
 import {
     mdiLanguageJava, mdiNodejs, mdiLanguagePython, mdiLanguagePhp, mdiGraphql,
 
@@ -186,6 +187,30 @@ const skills = [
                 techDesc: '',
                 techIcon: mdiDatabase,
                 techIconTitle: 'MS-SQL'
+            },
+        ]
+    },
+    {
+        title: 'Software Testing',
+        IconTagName: AssignmentTurnedInOutlinedIcon,
+        techs: [
+            {
+                techName: 'Java - ',
+                techDesc: 'Unit Testing (JUnit) ,Integration Testing (Mockito), Black-box testing (Selenium)',
+                techIcon: mdiLanguageJava,
+                techIconTitle: 'Java'
+            },
+            {
+                techName: 'JavaScript - ',
+                techDesc: 'Puppeteer, Jest',
+                techIcon: mdiLanguageJavascript,
+                techIconTitle: 'Java'
+            },
+            {
+                techName: 'Python - ',
+                techDesc: 'Django Web App Testing',
+                techIcon: mdiLanguagePython,
+                techIconTitle: 'Python'
             },
         ]
     },
