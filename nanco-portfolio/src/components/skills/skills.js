@@ -20,7 +20,7 @@ import {
 
     mdiLanguageCsharp, mdiLanguageR,
 
-    mdiGit, mdiGithub, mdiGitlab, mdiJira, mdiBookMultiple, mdiRobotAngry, mdiGamepadVariantOutline
+    mdiGit, mdiGithub, mdiGitlab, mdiJira, mdiBookMultiple, mdiRobotAngry, mdiGamepadVariantOutline, mdiDocker
 } from '@mdi/js';
 
 import './skills.css';
@@ -243,8 +243,13 @@ const skills = [
         IconTagName: BuildIcon,
         techs: [
             {
+                techName: 'Docker - ',
+                techDesc: 'makes the life a lot easier!',
+                techIcon: mdiDocker
+            },
+            {
                 techName: 'Jira - ',
-                techDesc: 'Ticket System used for business projects, Kanban and Scrum Projects.',
+                techDesc: 'Ticket System used for business projects, Kanban and Scrum.',
                 techIcon: mdiJira
             },
             {
