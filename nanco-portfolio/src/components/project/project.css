@@ -19,10 +19,11 @@
 .project__overlay {
     align-items: center;
     background-color: rgba(134, 194, 50, 0.8);
+    bottom: -100%;
     color: var(--secondary-color);
     display: flex;
     height: 100%;
-    position: relative; bottom: -100%;
+    position: relative;
     transition: all 300ms;
     width: 100%;
 }
@@ -51,3 +52,37 @@
         height: 200px;
     }
 }
+
+/* ---------------- Works - overlay position ---------------- */
+
+.project:hover > .overlay_from-left {
+    transform: translate(100%);
+}
+.overlay_from-left {
+    top: 0;
+    left: -100%
+}
+
+.project:hover > .overlay_from-right {
+    transform: translateX(-100%);
+}
+.overlay_from-right {
+    top: 0;
+    right: -100%;
+}
+
+.project:hover > .overlay_from-top {
+    transform: translateY(100%);
+}
+.overlay_from-top {
+    top: -100%;
+}
+
+.project:hover > .overlay_from-bottom {
+    transform: translateY(-100%);
+}
+.overlay_from-bottom {
+    bottom: -100%;
+}
+
+/* -------------------------------------------------------- */
