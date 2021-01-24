@@ -293,24 +293,31 @@ const project = () => {
     };
 
     const slideInOverlay = (event) => {
+        const el = event.target.querySelector('.project__overlay');
         setOverlayClass([baseClass]); // Reset Classes
         const mousePosition = findMousePosition(event);
+        if(!!el) {
+            el.className = 'project__overlay';
+            switch (mousePosition) {
+                case 'right':
+                    el.classList.add('overlay_from-left');
+                    // setOverlayClass(prevState => ([...prevState, 'overlay_from-left']));
+                    break;
 
-        switch (mousePosition) {
-            case 'right':
-                setOverlayClass(prevState => ([...prevState, 'overlay_from-left']));
-                break;
+                case 'left':
+                    el.classList.add('overlay_from-right');
+                    // setOverlayClass(prevState => ([...prevState, 'overlay_from-right']));
+                    break;
 
-            case 'left':
-                setOverlayClass(prevState => ([...prevState, 'overlay_from-right']));
-                break;
+                case 'under':
+                    el.classList.add('overlay_from-top');
+                    // setOverlayClass(prevState => ([...prevState, 'overlay_from-top']));
+                    break;
 
-            case 'under':
-                setOverlayClass(prevState => ([...prevState, 'overlay_from-top']));
-                break;
-
-            case 'above':
-                break;
+                case 'above':
+                    // el.classList.add('overlay_from-bottom');
+                    break;
+            }
         }
     };
 
