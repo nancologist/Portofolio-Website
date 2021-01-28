@@ -3,4 +3,4 @@
 nanco-portfolio/.cache
 nanco-portfolio/node_modules
 nanco-portfolio/public
-**/DS_Store
+**/.DS_Store
