@@ -16,11 +16,7 @@
     transform: translateX(20%);
 }
 
-.skill_in-viewport {
-    opacity: 1;
-    transform: translateX(0);
-}
-
+.skill_in-viewport,
 .skill__list-item:nth-child(2n).skill_in-viewport {
     opacity: 1;
     transform: translateX(0);
