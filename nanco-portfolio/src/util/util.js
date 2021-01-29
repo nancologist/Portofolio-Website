@@ -8,8 +8,5 @@ export function isElementVisible(el) {
             || rect.left > vWidth || rect.top > vHeight)
         return false;
 
-    return (
-      el.contains(efp(rect.right, (rect.bottom + rect.top) / 2 ))
-      ||  el.contains(efp(rect.left,  (rect.bottom + rect.top) / 2 ))
-    );
+    return el.contains(efp((rect.left + rect.right) / 2, (rect.bottom + rect.top) / 2 ))
 }
