@@ -26,8 +26,9 @@ import {
 import './skills.css';
 import Skill from './skill/skill';
 
-export default () => (
-    <div className="skill__list">
+export default () => {
+    return (
+        <div className="skill__list">
         {skills.map((skill) => (
             <Skill
                 title={skill.title}
@@ -37,7 +38,8 @@ export default () => (
             />
         ))}
     </div>
-);
+    );
+};
 
 const skills = [
     {

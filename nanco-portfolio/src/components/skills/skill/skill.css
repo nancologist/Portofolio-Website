@@ -5,11 +5,26 @@
     height: fit-content;
     min-height: 100px;
     margin-bottom: 50px;
+    transform: translateX(-20%);
+    transition: ease-in-out 700ms;
+    opacity: 0;
 }
 
 .skill__list-item:nth-child(2n) {
     border-radius: 20px 0;
     flex-direction: row-reverse;
+    transform: translateX(20%);
+    opacity: 0;
+}
+
+.skill_in-viewport {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.skill__list-item:nth-child(2n).skill_in-viewport {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 /* Skills- List > Item > Title */
