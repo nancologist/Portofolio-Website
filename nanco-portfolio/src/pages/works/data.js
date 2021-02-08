@@ -1,7 +1,3 @@
-import React, { Fragment } from "react";
-import AppModal from "../ui-components/AppModal/AppModal";
-import "./project.css";
-
 import electronJsLogo from '../../images/brands/electronjs.svg.png';
 import googleLighthouseLogo from '../../images/brands/google-lighthouse.svg';
 import vueJsLogo from '../../images/brands/vuejs.png';
@@ -37,11 +33,10 @@ import seleniumLogo from '../../images/brands/selenium.jpg';
 import springLogo from '../../images/brands/spring.png';
 import cssLogo from '../../images/brands/css.png';
 
-// Works' Thumbnails
 import lighthouseThumb from '../../images/work-thumbnails/lighthouse-deskapp.jpg'
 import myPageThumb from '../../images/work-thumbnails/my-page.jpg'
 
-const projects = [
+export const works = [
     {
         title: 'Desktop App - Webpage Assessment Tool using Google Lighthouse',
         thumbnail: lighthouseThumb,
@@ -278,121 +273,3 @@ const projects = [
         ]
     },
 ];
-
-const project = () => {
-    const [currentProject, setCurrentProject] = React.useState(projects[0]);
-    const [modalOpen, setModalOpen] = React.useState(false);
-
-    const baseClass = 'project__overlay';
-    const [overlayClass, setOverlayClass] = React.useState([baseClass]);
-    // const [overlayStyle, setOverlayStyle] = React.useState({});
-
-    const handleClick = (i) => {
-        setCurrentProject(projects[i]);
-        setModalOpen(true);
-    };
-
-    const slideInOverlay = (event) => {
-        const el = event.target.querySelector('.project__overlay');
-        setOverlayClass([baseClass]); // Reset Classes
-        const mousePosition = findMousePosition(event);
-        if(!!el) {
-            el.className = 'project__overlay';
-            switch (mousePosition) {
-                case 'right':
-                    el.classList.add('overlay_from-left');
-                    // setOverlayClass(prevState => ([...prevState, 'overlay_from-left']));
-                    break;
-
-                case 'left':
-                    el.classList.add('overlay_from-right');
-                    // setOverlayClass(prevState => ([...prevState, 'overlay_from-right']));
-                    break;
-
-                case 'under':
-                    el.classList.add('overlay_from-top');
-                    // setOverlayClass(prevState => ([...prevState, 'overlay_from-top']));
-                    break;
-
-                case 'above':
-                    // el.classList.add('overlay_from-bottom');
-                    break;
-            }
-        }
-    };
-
-    // const slideOutOverlay = (event) => {
-    //     // const el = event.currentTarget;
-    //     setOverlayStyle({}); // Reset Inline Style
-    //     setOverlayClass([baseClass]); // Reset Classes
-    //     const mousePosition = findMousePosition(event);
-    //     switch (mousePosition) {
-    //         case 'right':
-    //             setOverlayStyle({ transform: 'translateX(100%)' });
-    //             break;
-    //
-    //         case 'left':
-    //             setOverlayStyle({ transform: 'translateX(-100%)' });
-    //             break;
-    //
-    //         case 'top':
-    //             break;
-    //
-    //         case 'bottom':
-    //             break;
-    //     }
-    // };
-
-    const closeModal = () => { setModalOpen(false) };
-
-    return (
-        <Fragment>
-            {
-                projects.map((project, index) => {
-                    return (
-                        <div
-                            className="project"
-                            key={index}
-                            onClick={handleClick.bind(this, index)}
-                            onMouseEnter={slideInOverlay}
-                            style={{ backgroundImage: `url(${project.thumbnail})` }}
-                        >
-                            <div className={overlayClass.join(' ')}>
-                                <h3 className="overlay__title">{project.title}</h3>
-                            </div>
-                        </div>
-                    )
-                })
-            }
-            <AppModal
-                handleClose={closeModal}
-                open={modalOpen}
-                project={currentProject}
-            />
-        </Fragment>
-    );
-};
-
-export default project;
-
-function findMousePosition(e) {
-    const el = e.currentTarget;
-    const { width, height } = el.getBoundingClientRect();
-
-    const { pageX: x, pageY: y} = e.nativeEvent;
-    const yMin = el.offsetTop;
-    const yMax = el.offsetTop + height;
-    const xMin = el.offsetLeft;
-    const xMax = el.offsetLeft + width;
-
-    const miscalculation = 20;
-    const isMouseRightOfEl = yMin <= y <= yMax && xMax - miscalculation <= x;
-    const isMouseLeftOfEl = yMin <= y <= yMax && x <= xMin + miscalculation;
-    const isMouseUnderEl = xMin <= x <= xMax && yMax - miscalculation <= y;
-    const isMouseAboveEl = xMin <= x <= xMax && y <= yMin + miscalculation;
-
-    if (isMouseRightOfEl) return 'right';
-    if (isMouseLeftOfEl) return 'left';
-    if (isMouseAboveEl) return 'above';
-    if (isMouseUnderEl) return 'under';
-}

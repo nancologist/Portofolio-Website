@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import Projects from "../../components/project/project";
 import './about.css';
 import {Snackbar} from "@material-ui/core";
 import MuiAlert from "@material-ui/lab/Alert";
@@ -42,12 +41,6 @@ export default (props) => {
             <div className="section-skills">
                 <h1 className="section__title">Skills</h1>
                 <Skills/>
-            </div>
-            <div className="section-projects">
-                <h1 className="section__title">Works</h1>
-                <div className="section-projects__items">
-                    <Projects/>
-                </div>
             </div>
             <Snackbar
                 anchorOrigin={{ vertical: 'bottom', horizontal: 'right'}}

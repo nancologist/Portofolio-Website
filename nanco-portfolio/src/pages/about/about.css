@@ -62,28 +62,6 @@
     color: var(--primary-color);
 }
 
-
-/* <><><><><><><><><><><><><><><><><><><><><><><><><><><> */
-/* <><><><><><><><><> Section Projects <><><><><><><><><> */
-/* <><><><><><><><><><><><><><><><><><><><><><><><><><><> */
-
-.section-projects {
-    /*background-color: var(--secondary-light-color);*/
-    border-radius: 5px;
-    padding: 0 5px 0 5px;
-}
-
-.section-projects__items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-
-.section__title {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
 /* <><><><><><><><><><><><><><><><><><><><><><><><><><><> */
 /* <><><><><><><><><> MOBILE RESPONSIVE <><><><><><><><><> */
 /* <><><><><><><><><><><><><><><><><><><><><><><><><><><> */

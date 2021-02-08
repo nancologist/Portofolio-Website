@@ -1,3 +1,9 @@
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
 .project {
     background-color: var(--secondary-light-color);
     background-position: center;
@@ -86,3 +92,4 @@
 }
 
 /* -------------------------------------------------------- */
+
