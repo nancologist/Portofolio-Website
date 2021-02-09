@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import AppModal from "../../components/ui-components/AppModal/AppModal";
 import { findMousePosition } from '../../components/pages/works/utils';
@@ -6,6 +6,7 @@ import { works } from '../../components/pages/works/data';
 import './works.css';
 
 import githubLogo from '../../images/github-white.png'
+import githubMark from '../../images/githubMark.png'
 
 const Works = () => {
     const [currentWork, setCurrentWork] = useState(works[0]);
@@ -14,7 +15,7 @@ const Works = () => {
     const baseClass = 'work__overlay';
     const [overlayClass, setOverlayClass] = useState([baseClass]);
 
-    const handleClick = (i, event) => {
+    const handleClick = (event) => {
         const index = works.findIndex(work => work.title === event.currentTarget.id);
         setCurrentWork(works[index]);
         setModalOpen(true);
@@ -45,6 +46,19 @@ const Works = () => {
 
     const closeModal = () => { setModalOpen(false) };
 
+    const [blinking, setBlinking] = useState({ borderWidth: '1px'});
+    useEffect(() => {
+        setInterval(() => {
+            setBlinking(prev => {
+                if(prev.borderWidth === '1px') {
+                    return { borderWidth: '3px'};
+                } else {
+                    return { borderWidth: '1px'}
+                }
+            });
+        }, 2000)
+    }, []);
+
     const contribWorks = works.filter(work => work.type === 'contribution');
     const ownWorks = works.filter(work => work.type === 'own');
 
@@ -57,6 +71,7 @@ const Works = () => {
                         className="works__title__main__link"
                         href="http://www.github.com/nancologist"
                         rel="noopener noreferrer"
+                        style={blinking}
                         target="_blank"
                     >
                         <img src={githubLogo} alt="GitHub Logo"/>
@@ -71,7 +86,7 @@ const Works = () => {
                             className="work"
                             key={work.title}
                             id={work.title}
-                            onClick={handleClick.bind(this, index)}
+                            onClick={handleClick}
                             onMouseEnter={slideInOverlay}
                             style={{ backgroundImage: `url(${work.thumbnail})` }}
                         >
