@@ -50,15 +50,18 @@
     }
 }
 
+/* Breakpoint 450px: Wo es fuer die Nav-Items in einer Reihe zu eng wird. */
+@media only screen and (max-width: 450px) {
+    .nav-list {
+        flex-wrap: wrap;
+        justify-content: center;        
+    }
+}
+
 @media only screen and (max-width: 319px) {
     .nav {
         flex-direction: row;
         /*padding: 0;*/
-    }
-
-    .nav-list {
-        flex-wrap: wrap;
-        justify-content: center;
     }
 
     .nav-logo-container {
