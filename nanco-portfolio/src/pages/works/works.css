@@ -9,6 +9,24 @@
     padding-top: 20px;
 }
 
+.works__title__main {
+    display: flex;
+    align-items: center;
+}
+
+.works__title__main__text {
+    margin-right: 15px;
+}
+
+.works__title__main__link {
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.works__title__main__link img {
+    width: 100px;
+}
+
 .work {
     background-color: var(--secondary-light-color);
     background-position: center;

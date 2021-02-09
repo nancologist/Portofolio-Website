@@ -5,6 +5,8 @@ import { findMousePosition } from '../../components/pages/works/utils';
 import { works } from '../../components/pages/works/data';
 import './works.css';
 
+import githubLogo from '../../images/github-white.png'
+
 const Works = () => {
     const [currentWork, setCurrentWork] = useState(works[0]);
     const [modalOpen, setModalOpen] = useState(false);
@@ -14,7 +16,6 @@ const Works = () => {
 
     const handleClick = (i, event) => {
         const index = works.findIndex(work => work.title === event.currentTarget.id);
-        console.log(index)
         setCurrentWork(works[index]);
         setModalOpen(true);
     };
@@ -50,9 +51,18 @@ const Works = () => {
     return (
         <div className="page-container">
             <div className="works__title">
-                <h1>My Works</h1>
+                <div className="works__title__main">
+                    <h1 className="works__title__main__text">My Works</h1>
+                    <a
+                        className="works__title__main__link"
+                        href="http://www.github.com/nancologist"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                    >
+                        <img src={githubLogo} alt="GitHub Logo"/>
+                    </a>
+                </div>
                 <span>(open source)</span>
-                <div>Github Logo</div>
             </div>
             <div className="works">
                 {ownWorks.map((work, index) => {
