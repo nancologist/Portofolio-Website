@@ -17,9 +17,13 @@ const langs = {
             route: '/about',
         },
         {
+            name: 'Works',
+            route: '/works'
+        },
+        {
             name: 'Contact',
             route: '/contact',
-        }
+        },
     ],
     de: [
         {
