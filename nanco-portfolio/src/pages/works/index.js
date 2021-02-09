@@ -12,8 +12,10 @@ const Works = () => {
     const baseClass = 'work__overlay';
     const [overlayClass, setOverlayClass] = useState([baseClass]);
 
-    const handleClick = (i) => {
-        setCurrentWork(works[i]);
+    const handleClick = (i, event) => {
+        const index = works.findIndex(work => work.title === event.currentTarget.id);
+        console.log(index)
+        setCurrentWork(works[index]);
         setModalOpen(true);
     };
 
@@ -50,13 +52,15 @@ const Works = () => {
             <div className="works__title">
                 <h1>My Works</h1>
                 <span>(open source)</span>
+                <div>Github Logo</div>
             </div>
             <div className="works">
                 {ownWorks.map((work, index) => {
                     return (
                         <div
                             className="work"
-                            key={index}
+                            key={work.title}
+                            id={work.title}
                             onClick={handleClick.bind(this, index)}
                             onMouseEnter={slideInOverlay}
                             style={{ backgroundImage: `url(${work.thumbnail})` }}
@@ -76,7 +80,8 @@ const Works = () => {
                 return (
                     <div
                         className="work"
-                        key={index}
+                        key={work.title}
+                        id={work.title}
                         onClick={handleClick.bind(this, index)}
                         onMouseEnter={slideInOverlay}
                         style={{ backgroundImage: `url(${work.thumbnail})` }}
