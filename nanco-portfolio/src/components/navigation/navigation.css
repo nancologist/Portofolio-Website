@@ -41,7 +41,8 @@
     padding: 0 5px;
 }
 
-@media only screen and (max-width: 768px) {
+/* Breakpoint 823px: Where the logo starts to shrink drastically. */
+@media only screen and (max-width: 823px) {
     .nav {
         flex-direction: column;
         align-items: center;
@@ -53,8 +54,7 @@
 /* Breakpoint 450px: Wo es fuer die Nav-Items in einer Reihe zu eng wird. */
 @media only screen and (max-width: 450px) {
     .nav-list {
-        flex-wrap: wrap;
-        justify-content: center;        
+        flex-direction: column;
     }
 }
 

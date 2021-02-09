@@ -86,8 +86,25 @@
 @media only screen and (max-width: 768px) {
     .work {
         margin-bottom: 15px;
-        width: 70%;
-        height: 200px;
+        height: 200px; width: 200px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .works__title {
+        text-align: left;
+    }
+
+    .works__title__main {
+        justify-content: space-between;
+    }
+
+    .works__title__main__text {
+        margin-right: 0;
+    }
+
+    .work {
+        height: 150px; width: 150px;
     }
 }
 
