@@ -36,8 +36,47 @@ import cssLogo from '../../images/brands/css.png';
 import lighthouseThumb from '../../images/work-thumbnails/lighthouse-deskapp.jpg'
 import myPageThumb from '../../images/work-thumbnails/my-page.jpg'
 
+import car24Logo from '../../images/my-works/logo.png';
+
 export const works = [
     {
+        type: 'own',
+        title: 'Car24 - RESTful Webapp',
+        thumbnail: car24Logo,
+        customer: {
+            logo: electronJsLogo,
+            name: 'Car24 Logo'
+        },
+        date: 'Sep 2020 - Okt 2020',
+        tasks: [
+            'Allowing User to customize and configure Google Lighthouse scoring criteria and expectations',
+            'Possibility to use both remote or local sitemaps entering URL or importing local xml files',
+            'Reading Sitemap files and allow user to select multiple URLs for scoring by Google Lighthouse',
+            'Adding Drag&Drop feature to ease importing sitemap files',
+            'Cross platform application thanks to the ElectronJS',
+            'Using Vue and Vuetify for the UI'
+        ],
+        tools: [
+            {
+                src: electronJsLogo,
+                alt: 'ElectronJS Logo'
+            },
+            {
+                src: googleLighthouseLogo,
+                alt: 'Google Lighthouse Logo'
+            },
+            {
+                src: vueJsLogo,
+                alt: 'VueJS Logo'
+            },
+            {
+                src: vuetifyLogo,
+                alt: 'Vuetify Logo'
+            }
+        ]
+    },
+    {
+        type: 'own',
         title: 'Desktop App - Webpage Assessment Tool using Google Lighthouse',
         thumbnail: lighthouseThumb,
         customer: {
@@ -73,6 +112,7 @@ export const works = [
         ]
     },
     {
+        type: 'contribution', 
         title: 'Stiftung Warentest - JavaScript Consolidation (DPX)',
         thumbnail: stiwaLogo,
         customer: {
@@ -114,6 +154,7 @@ export const works = [
         ]
     },
     {
+        type: 'own', 
         title: 'Volkshochschulkurse (School Project)',
         thumbnail: vhsKurseLogo,
         customer: {
@@ -148,6 +189,7 @@ export const works = [
         ]
     },
     {
+        type: 'own',
         title: 'My Playground!',
         thumbnail: myPageThumb,
         customer: {
@@ -188,6 +230,7 @@ export const works = [
         ]
     },
     {
+        type: 'contribution',
         title: 'LDAP GUI (DPX)',
         thumbnail: ppLogo,
         customer: {
@@ -221,6 +264,7 @@ export const works = [
         ]
     },
     {
+        type: 'contribution',
         title: 'Georg Fischer Website - Test Automation (DPX)',
         thumbnail: gfLogo,
         customer: {
@@ -245,6 +289,7 @@ export const works = [
         ]
     },
     {
+        type: 'contribution',
         title: 'Password Tool (DPX)',
         thumbnail: ppLogo,
         customer: {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 
 import AppModal from "../../components/ui-components/AppModal/AppModal";
 import { findMousePosition } from './utils';
@@ -34,7 +34,7 @@ const Works = () => {
                     el.classList.add('overlay_from-top');
                     break;
                 case 'above':
-                    // el.classList.add('overlay_from-bottom');
+                    el.classList.add('overlay_from-bottom');
                     break;
             }
         }
@@ -42,10 +42,17 @@ const Works = () => {
 
     const closeModal = () => { setModalOpen(false) };
 
+    const contribWorks = works.filter(work => work.type === 'contribution');
+    const ownWorks = works.filter(work => work.type === 'own');
+
     return (
-        <div className="works">
-            {
-                works.map((work, index) => {
+        <div className="page-container">
+            <div className="works__title">
+                <h1>My Works</h1>
+                <span>(open source)</span>
+            </div>
+            <div className="works">
+                {ownWorks.map((work, index) => {
                     return (
                         <div
                             className="work"
@@ -59,8 +66,28 @@ const Works = () => {
                             </div>
                         </div>
                     )
-                })
-            }
+                })}
+            </div>
+            <div className="works__title">
+                <h1>Contributions</h1>
+            </div>
+            <div className="works">
+            {contribWorks.map((work, index) => {
+                return (
+                    <div
+                        className="work"
+                        key={index}
+                        onClick={handleClick.bind(this, index)}
+                        onMouseEnter={slideInOverlay}
+                        style={{ backgroundImage: `url(${work.thumbnail})` }}
+                    >
+                        <div className={overlayClass.join(' ')}>
+                            <h3 className="overlay__title">{work.title}</h3>
+                        </div>
+                    </div>
+                )
+            })}
+            </div>
             <AppModal
                 handleClose={closeModal}
                 open={modalOpen}
