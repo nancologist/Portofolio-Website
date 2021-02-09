@@ -1,8 +1,8 @@
-import React, { useState, Fragment } from "react";
+import React, { useState } from "react";
 
 import AppModal from "../../components/ui-components/AppModal/AppModal";
-import { findMousePosition } from './utils';
-import { works } from './data';
+import { findMousePosition } from '../../components/pages/works/utils';
+import { works } from '../../components/pages/works/data';
 import './works.css';
 
 const Works = () => {

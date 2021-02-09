@@ -1,46 +1,46 @@
-import electronJsLogo from '../../images/brands/electronjs.svg.png';
-import googleLighthouseLogo from '../../images/brands/google-lighthouse.svg';
-import vueJsLogo from '../../images/brands/vuejs.png';
-import vuetifyLogo from '../../images/brands/vuetify.png';
+import electronJsLogo from '../../../images/brands/electronjs.svg.png';
+import googleLighthouseLogo from '../../../images/brands/google-lighthouse.svg';
+import vueJsLogo from '../../../images/brands/vuejs.png';
+import vuetifyLogo from '../../../images/brands/vuetify.png';
 
-import stiwaLogo from '../../images/brands/stiwa.svg';
-import es6Logo from '../../images/brands/es6.png';
-import eslintLogo from '../../images/brands/eslint.png';
-import puppLogo from '../../images/brands/puppeteer.png';
-import jestLogo from '../../images/brands/jest.jpg';
-import sassLogo from '../../images/brands/sass.jpg';
-import jqueryLogo from '../../images/brands/jquery.jpg';
+import stiwaLogo from '../../../images/brands/stiwa.svg';
+import es6Logo from '../../../images/brands/es6.png';
+import eslintLogo from '../../../images/brands/eslint.png';
+import puppLogo from '../../../images/brands/puppeteer.png';
+import jestLogo from '../../../images/brands/jest.jpg';
+import sassLogo from '../../../images/brands/sass.jpg';
+import jqueryLogo from '../../../images/brands/jquery.jpg';
 
-import gatsbyLogo from '../../images/brands/gatsby.png';
-import reactLogo from '../../images/brands/react.png';
-import materialUiLogo from '../../images/brands/materialui.svg';
-import myPortfolioLogo from '../../images/logo.svg';
-import netlifyLogo from '../../images/brands/netlify.png';
+import gatsbyLogo from '../../../images/brands/gatsby.png';
+import reactLogo from '../../../images/brands/react.png';
+import materialUiLogo from '../../../images/brands/materialui.svg';
+import myPortfolioLogo from '../../../images/logo.svg';
+import netlifyLogo from '../../../images/brands/netlify.png';
 
-import vhsKurseLogo from '../../images/brands/vhsKurse.png';
-import firebaseLogo from '../../images/brands/firebase.png';
-import reduxLogo from '../../images/brands/redux.png';
+import vhsKurseLogo from '../../../images/brands/vhsKurse.png';
+import firebaseLogo from '../../../images/brands/firebase.png';
+import reduxLogo from '../../../images/brands/redux.png';
 
-import ppLogo from '../../images/brands/newpp.png';
-import djangoLogo from '../../images/brands/django.jpg';
-import pythonLogo from '../../images/brands/Python.svg.png';
-import mdbLogo from '../../images/brands/mdb.jpeg';
+import ppLogo from '../../../images/brands/newpp.png';
+import djangoLogo from '../../../images/brands/django.jpg';
+import pythonLogo from '../../../images/brands/Python.svg.png';
+import mdbLogo from '../../../images/brands/mdb.jpeg';
 
-import gfLogo from '../../images/brands/gf.png';
-import javaLogo from '../../images/brands/java.jpg';
-import seleniumLogo from '../../images/brands/selenium.jpg';
+import gfLogo from '../../../images/brands/gf.png';
+import javaLogo from '../../../images/brands/java.jpg';
+import seleniumLogo from '../../../images/brands/selenium.jpg';
 
-import springLogo from '../../images/brands/spring.png';
-import cssLogo from '../../images/brands/css.png';
+import springLogo from '../../../images/brands/spring.png';
+import cssLogo from '../../../images/brands/css.png';
 
-import lighthouseThumb from '../../images/work-thumbnails/lighthouse-deskapp.jpg'
-import myPageThumb from '../../images/work-thumbnails/my-page.jpg'
+import lighthouseThumb from '../../../images/work-thumbnails/lighthouse-deskapp.jpg'
+import myPageThumb from '../../../images/work-thumbnails/my-page.jpg'
 
-import car24Logo from '../../images/my-works/logo.png';
-import nodejsLogo from '../../images/stacks/nodejs.jpg'
-import expressjsLogo from '../../images/stacks/expressjs.png'
-import restApiLogo from '../../images/stacks/rest-api.png'
-import typescriptLogo from '../../images/stacks/typescript.png'
+import car24Logo from '../../../images/my-works/logo.png';
+import nodejsLogo from '../../../images/stacks/nodejs.jpg'
+import expressjsLogo from '../../../images/stacks/expressjs.png'
+import restApiLogo from '../../../images/stacks/rest-api.png'
+import typescriptLogo from '../../../images/stacks/typescript.png'
 
 export const works = [
     {
