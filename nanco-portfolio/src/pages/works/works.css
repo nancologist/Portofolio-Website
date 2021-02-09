@@ -2,11 +2,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
-    padding-top: 10px;
 }
 
 .works__title {
-    padding-bottom: 5px;   
+    padding-bottom: 5px;
+    padding-top: 20px;
 }
 
 .work {

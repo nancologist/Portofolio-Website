@@ -37,6 +37,10 @@ import lighthouseThumb from '../../images/work-thumbnails/lighthouse-deskapp.jpg
 import myPageThumb from '../../images/work-thumbnails/my-page.jpg'
 
 import car24Logo from '../../images/my-works/logo.png';
+import nodejsLogo from '../../images/stacks/nodejs.jpg'
+import expressjsLogo from '../../images/stacks/expressjs.png'
+import restApiLogo from '../../images/stacks/rest-api.png'
+import typescriptLogo from '../../images/stacks/typescript.png'
 
 export const works = [
     {
@@ -44,35 +48,36 @@ export const works = [
         title: 'Car24 - RESTful Webapp',
         thumbnail: car24Logo,
         customer: {
-            logo: electronJsLogo,
+            logo: car24Logo,
             name: 'Car24 Logo'
         },
-        date: 'Sep 2020 - Okt 2020',
+        date: 'Jan 2021 - present',
         tasks: [
-            'Allowing User to customize and configure Google Lighthouse scoring criteria and expectations',
-            'Possibility to use both remote or local sitemaps entering URL or importing local xml files',
-            'Reading Sitemap files and allow user to select multiple URLs for scoring by Google Lighthouse',
-            'Adding Drag&Drop feature to ease importing sitemap files',
-            'Cross platform application thanks to the ElectronJS',
-            'Using Vue and Vuetify for the UI'
+            'Designing and implementing a car trading portal',
+            'Implementing RESTful API using ExpressJS to make the backend reusable.',
+            'Using TypeScript both in frontend and backend code to make it stronger.'
         ],
         tools: [
             {
-                src: electronJsLogo,
-                alt: 'ElectronJS Logo'
+                src: typescriptLogo,
+                alt: 'TypeScript Logo'
             },
             {
-                src: googleLighthouseLogo,
-                alt: 'Google Lighthouse Logo'
+                src: nodejsLogo,
+                alt: 'NodeJS Logo'
+            },
+            // {
+            //     src: expressjsLogo,
+            //     alt: 'ExpressJS Logo'
+            // },
+            {
+                src: restApiLogo,
+                alt: 'REST API Logo'
             },
             {
-                src: vueJsLogo,
-                alt: 'VueJS Logo'
+                src: reactLogo,
+                alt: 'ReactJS Logo'
             },
-            {
-                src: vuetifyLogo,
-                alt: 'Vuetify Logo'
-            }
         ]
     },
     {
