@@ -3,6 +3,7 @@ import './about.css';
 import {Snackbar} from "@material-ui/core";
 import MuiAlert from "@material-ui/lab/Alert";
 import Skills from '../../components/skills/skills.js';
+// import AppTimeline from '../../components/AppTimeline/AppTimeline';
 
 function Alert(props) {
     return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -28,6 +29,7 @@ export default (props) => {
                 <div className="about-pic-container">
                     <div className="about-pic"/>
                 </div>
+                {/* <AppTimeline /> */}
                 <div className="bio__content__text">
                     <p className="bio__content__title">Codes, bugs, errors, my second family.</p>
                     <p className="bio__content__text">
