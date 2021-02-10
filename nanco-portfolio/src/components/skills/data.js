@@ -1,4 +1,3 @@
-import React from "react";
 import StorageIcon from '@material-ui/icons/Storage';
 import FlipToFrontIcon from '@material-ui/icons/FlipToFront';
 import SettingsIcon from '@material-ui/icons/Settings';
@@ -22,26 +21,9 @@ import {
 
     mdiGit, mdiGithub, mdiGitlab, mdiJira, mdiBookMultiple, mdiRobotAngry, mdiGamepadVariantOutline, mdiDocker
 } from '@mdi/js';
+import skill from './skill/skill';
 
-import './skills.css';
-import Skill from './skill/skill';
-
-export default () => {
-    return (
-        <div className="skill__list">
-        {skills.map((skill) => (
-            <Skill
-                title={skill.title}
-                key={skill.title}
-                IconTagName={skill.IconTagName}
-                techs={skill.techs}
-            />
-        ))}
-    </div>
-    );
-};
-
-const skills = [
+export const skills = [
     {
         title: 'Frontend',
         IconTagName: FlipToFrontIcon,

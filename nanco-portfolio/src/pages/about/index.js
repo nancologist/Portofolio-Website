@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import './about.css';
 import {Snackbar} from "@material-ui/core";
 import MuiAlert from "@material-ui/lab/Alert";
-import Skills from '../../components/skills/skills.js';
 // import AppTimeline from '../../components/AppTimeline/AppTimeline';
 
 function Alert(props) {
@@ -39,10 +38,6 @@ export default (props) => {
                         In the last three years I have learned and tried dozens of languages and frameworks: Java, Python, PHP, JavaScript, Spring, Django, Vue, React, NodeJS, Express etc. to find the right one for me. Surprisingly I loved them all. They are all some kind of artworks to me, with different aspects and features.
                     </p>
                 </div>
-            </div>
-            <div className="section-skills">
-                <h1 className="section__title">Skills</h1>
-                <Skills/>
             </div>
             <Snackbar
                 anchorOrigin={{ vertical: 'bottom', horizontal: 'right'}}

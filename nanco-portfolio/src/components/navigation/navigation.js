@@ -5,41 +5,7 @@ import React from 'react';
 import Logo from "../logo/logo";
 import './navigation.css';
 import NavItem from "./navItem/navItem";
-
-const langs = {
-    en: [
-        {
-            name: 'Home',
-            route: '/',
-        },
-        {
-            name: 'About',
-            route: '/about',
-        },
-        {
-            name: 'Works',
-            route: '/works'
-        },
-        {
-            name: 'Contact',
-            route: '/contact',
-        },
-    ],
-    de: [
-        {
-            name: 'Startseite',
-            route: '/de',
-        },
-        {
-            name: 'Über mich',
-            route: '/de/ueber-mich',
-        },
-        {
-            name: 'Kontakt',
-            route: '/de/kontakt',
-        }
-    ]
-};
+import { routesByLangs } from './data';
 
 const Navigation = (props) => {
     let xStyle;
@@ -51,9 +17,9 @@ const Navigation = (props) => {
     }
 
     if (props.isGerman) {
-        navItems = langs.de;
+        navItems = routesByLangs.de;
     } else {
-        navItems = langs.en;
+        navItems = routesByLangs.en;
     }
 
     const navItemEls = navItems.map((navItem, index) => (
