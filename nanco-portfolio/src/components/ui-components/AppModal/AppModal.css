@@ -91,10 +91,13 @@
     max-height: 100%;
 }
 
-@media only screen and (max-width: 668px) {
-    .modal {
-    }
+.repo-link {
+    color: var(--primary-color);
+    display: block;
+    text-decoration: underline;
+}
 
+@media only screen and (max-width: 668px) {
     .modal__close-btn {
         position: fixed;
         right: 20px;

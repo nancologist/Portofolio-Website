@@ -46,6 +46,7 @@ export const works = [
     {
         type: 'own',
         title: 'Car24 - RESTful Webapp',
+        repo: 'https://github.com/nancologist/car24',
         thumbnail: car24Logo,
         customer: {
             logo: car24Logo,
@@ -66,10 +67,6 @@ export const works = [
                 src: nodejsLogo,
                 alt: 'NodeJS Logo'
             },
-            // {
-            //     src: expressjsLogo,
-            //     alt: 'ExpressJS Logo'
-            // },
             {
                 src: restApiLogo,
                 alt: 'REST API Logo'
@@ -83,6 +80,7 @@ export const works = [
     {
         type: 'own',
         title: 'Desktop App - Webpage Assessment Tool using Google Lighthouse',
+        repo: 'https://github.com/nancologist/google-lighthouse_abschluss-projekt',
         thumbnail: lighthouseThumb,
         customer: {
             logo: electronJsLogo,
@@ -161,6 +159,7 @@ export const works = [
     {
         type: 'own', 
         title: 'Volkshochschulkurse (School Project)',
+        repo: 'https://github.com/nancologist/vhs-kurse',
         thumbnail: vhsKurseLogo,
         customer: {
             logo: vhsKurseLogo,
@@ -195,7 +194,8 @@ export const works = [
     },
     {
         type: 'own',
-        title: 'My Playground!',
+        title: 'Nancologist.com',
+        repo: 'https://github.com/nancologist/Nancologist.com',
         thumbnail: myPageThumb,
         customer: {
             logo: myPortfolioLogo,
