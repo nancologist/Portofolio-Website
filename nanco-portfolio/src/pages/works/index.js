@@ -80,7 +80,7 @@ const Works = () => {
                 <span>(open source)</span>
             </div>
             <div className="works">
-                {ownWorks.map((work, index) => {
+                {ownWorks.map((work) => {
                     return (
                         <div
                             className="work"
@@ -101,13 +101,13 @@ const Works = () => {
                 <h1>Contributions</h1>
             </div>
             <div className="works">
-            {contribWorks.map((work, index) => {
+            {contribWorks.map((work) => {
                 return (
                     <div
                         className="work"
                         key={work.title}
                         id={work.title}
-                        onClick={handleClick.bind(this, index)}
+                        onClick={handleClick}
                         onMouseEnter={slideInOverlay}
                         style={{ backgroundImage: `url(${work.thumbnail})` }}
                     >

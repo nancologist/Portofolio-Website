@@ -66,9 +66,11 @@ const AppModal = (props) => {
                                 )
                             }</div>
                         </div>
-                        <a href={project.repo} className="repo-link">
-                            <strong>Check out the source code!</strong>
-                        </a>
+                        {!!project.repo ? 
+                            <a href={project.repo} className="repo-link">
+                                <strong>Check out the source code!</strong>
+                            </a>
+                        : null}
                     </div>
                 </div>
             </Fade>

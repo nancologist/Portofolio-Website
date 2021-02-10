@@ -94,6 +94,7 @@
 .repo-link {
     color: var(--primary-color);
     display: block;
+    margin-top: 5%;
     text-decoration: underline;
 }
 
