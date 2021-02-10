@@ -1,4 +1,40 @@
+.invisible {
+    display: none;
+}
+
 .skill__list {
     display: flex;
     flex-direction: column;
+}
+
+.arrows {
+    align-items: center;justify-content: flex-start;
+    display: flex;
+    height: 100px; width: 50px;
+    position: fixed;
+    transform: rotate(90deg);
+}
+
+.arrows--left {
+    top: 20%; left: 5%;
+}
+
+.arrows--right {
+    top: 20%; right: 5%;
+}
+
+.arrows__arrow {
+    margin: -5px;
+}
+
+.arrow1 {
+    opacity: 30%;
+}
+
+.arrow2 {
+    opacity: 60%;
+}
+
+.arrow3 {
+    opacity: 1;
 }

@@ -21,7 +21,6 @@ import {
 
     mdiGit, mdiGithub, mdiGitlab, mdiJira, mdiBookMultiple, mdiRobotAngry, mdiGamepadVariantOutline, mdiDocker
 } from '@mdi/js';
-import skill from './skill/skill';
 
 export const skills = [
     {
