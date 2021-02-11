@@ -5,7 +5,7 @@ const HomeEN = () => {
     const [isIE, setIsIE] = useState(false);
     useEffect(() => {
         const ua = window.navigator.userAgent;
-        setIsIE(!/MSIE|Trident/.test(ua));
+        setIsIE(/MSIE|Trident/.test(ua));
     }, []);
 
     if (isIE) {
