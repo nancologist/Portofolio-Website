@@ -1,16 +1,20 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import Home from "../components/pages/home";
 
 const HomeEN = () => {
-    
-    const ua = window.navigator.userAgent;
-    const isIE = /MSIE|Trident/.test(ua);
+    const [isIE, setIsIE] = useState(false);
+    useEffect(() => {
+        const ua = window.navigator.userAgent;
+        setIsIE(!/MSIE|Trident/.test(ua));
+    }, []);
+
     if (isIE) {
         return (
             <div style={{ textAlign: 'center' }}>
                 <h1>Error: IE internet browsers are not supported!</h1>
                 <p>This is a modern webpage using modern technologies. To check it out please come back with a modern browser like Firefox, Chrome or Microsoft Edge.</p>
                 <p>Thank you! :)</p>
+                <p>Morteza Jalilifar</p>
             </div>
         );
     }
