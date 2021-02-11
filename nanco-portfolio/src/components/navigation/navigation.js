@@ -1,15 +1,16 @@
 import React from 'react';
-// import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
-// import {NavLink} from 'react-router-dom';
+// import MenuIcon from '@material-ui/icons/Menu';
 
 import Logo from "../logo/logo";
 import './navigation.css';
 import NavItem from "./navItem/navItem";
+// import AppDrawer from '../AppDrawer/AppDrawer';
 import { routesByLangs } from './data';
 
 const Navigation = (props) => {
     let xStyle;
     let navItems;
+    // let drawerIcon;
     if (props.isHome) {
         xStyle = {
             opacity: 0
@@ -26,10 +27,17 @@ const Navigation = (props) => {
         <NavItem key={index} goto={navItem.route}>{navItem.name}</NavItem>
     ));
 
+    // Todo: NavBar for small devices.
+    // const mediaQuery = window.matchMedia('(max-width: 1200px)');
+    // if (mediaQuery.matches) {
+    //     drawerIcon = <MenuIcon />;
+    // }
+
     return (
         <header>
             <nav className="nav" style={xStyle}>
                 <div className="nav-logo-container">
+                    {/* {drawerIcon} */}
                     <Logo/>
                 </div>
                 <ul className="nav-list">
