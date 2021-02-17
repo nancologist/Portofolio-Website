@@ -1,6 +1,5 @@
 .nav {
     display: flex;
-    font-size: 17px;
     justify-content: space-between;
     padding: 18px 15%;
     border-bottom: 1px solid var(--primary-color);

@@ -34,23 +34,20 @@ input[type=number] {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    /*font-family: 'Rubik';*/
-    /*font-family: 'Convergence';*/
+    font-size: 1.1rem;
     background-color: var(--secondary-color);
     color: var(--primary-color);
     height: 100vh;
 }
 
 a {
-    /*font-family: 'Convergence';*/
-    /*font-family: 'Rubik';*/
     text-decoration: none;
     cursor: pointer;
     text-align: center;
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Montserrat Alternates', sans-serif;
+    /* font-family: 'Montserrat Alternates', sans-serif; */
 }
 
 p {

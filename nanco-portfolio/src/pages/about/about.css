@@ -13,12 +13,9 @@
 
 .section-bio {
     display: flex;
-    font-family: 'Convergence', sans-serif;
-    /*height: 80vh;*/
 }
 
 .about-pic-container {
-    /*min-height: 100%;*/
     width: 260px;
     border-radius: 5px;
     flex-shrink: 0;
@@ -44,12 +41,10 @@
 
 .bio__content__title {
     color: var(--primary-color);
-    font-size: 25px;
 }
 
 .bio__content__text {
     line-height: 1.5;
-    font-size: 1.1rem;
     color: #ccc;
 }
 
