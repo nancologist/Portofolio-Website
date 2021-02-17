@@ -1,6 +1,6 @@
 export default {
     profile: `
-        Fullstack engineer with 2+ years of hands-on experience designing, developing and implementing the applications and solutions using a wide range of backend and frontend technologies and programming languages.<br>
+        Fullstack engineer with 2+ years of hands-on experience designing, developing and implementing the applications, solutions and quality assurance using a wide range of backend and frontend technologies and programming languages.<br>
         
         Using best practices and latest design patterns to improve the code quality.<br>
         
