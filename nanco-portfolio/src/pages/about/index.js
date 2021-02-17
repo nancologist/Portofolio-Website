@@ -5,6 +5,7 @@ import MuiAlert from "@material-ui/lab/Alert";
 
 import './about.css';
 import data from '../../components/pages/about/data';
+import AppTimeline from "../../components/AppTimeline/AppTimeline";
 
 function Alert(props) {
     return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -26,16 +27,28 @@ export default (props) => {
 
     return (
         <div className="page-container about">
+
+            {/* TODO: Apply BEM and review the class names of this part! */}
             <div className="section-bio">
                 <div className="about-pic-container">
                     <div className="about-pic"/>
                 </div>
-                {/* <AppTimeline /> */}
                 <div className="bio__content__text">
                     <h1 className="bio__content__title">Profile</h1>
                     { data.profile.split('<br>').map(text => <p className="bio__content__text">{text}</p>)}
                 </div>
             </div>
+
+            <div className="about__xp">
+                <h2>Experiences</h2>
+                <AppTimeline />
+            </div>
+
+            <div className="about__edu">
+                <h2>Education</h2>
+                
+            </div>
+            
             <Snackbar
                 anchorOrigin={{ vertical: 'bottom', horizontal: 'right'}}
                 autoHideDuration={5000}
