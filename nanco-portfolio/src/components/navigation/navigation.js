@@ -12,7 +12,7 @@ import { routesByLangs } from './data';
 import { getWidth } from './util';
 
 const Navigation = (props) => {
-    const [drawerOpen, setDrawerOpen] = useState(true)
+    const [drawerOpen, setDrawerOpen] = useState(false)
     const handleLogoClick = () => {
         const isNavDrawer = getWidth() <= 1024
         if (!isNavDrawer) return;
