@@ -1,29 +1,21 @@
-import React, { useState } from 'react';
-import Drawer from '@material-ui/core/Drawer';
-import { 
-    WbIncandescentOutlined, PersonOutlineOutlined, WorkOutlineOutlined,
-    CallOutlined, HomeOutlined
-} from '@material-ui/icons/';
+import React, { useRef } from 'react';
 
 import Logo from "../logo/logo";
 import './navigation.css';
 import NavItem from "./navItem/navItem";
 import { routesByLangs } from './data';
 import { getWidth } from './util';
+import NavDrawer from './navDrawer/navDrawer';
 
 const Navigation = (props) => {
-    const [drawerOpen, setDrawerOpen] = useState(false)
+    const navDrawerCmp = useRef();
+
     const handleLogoClick = () => {
         const isNavDrawer = getWidth() <= 1024
         if (!isNavDrawer) return;
-        setDrawerOpen(true);
+        navDrawerCmp.current.openDrawer();
     };
-    const closeDrawer = () => {
-        setDrawerOpen(false);
-    };
-    const handleNavItemClick = () => {
-        if (drawerOpen) setDrawerOpen(false);
-    };
+    
 
     let xStyle;
     let navItems;
@@ -45,31 +37,13 @@ const Navigation = (props) => {
         </NavItem>
     ));
 
-    const mobileNavIcons = [
-        <HomeOutlined/>, <PersonOutlineOutlined />, <WbIncandescentOutlined />,
-        <WorkOutlineOutlined />, <CallOutlined />
-    ]
-
-    const mobileNavItemEls = navItems.map((navItem, index) => (
-        <NavItem key={index} goto={navItem.route} clicked={handleNavItemClick}>
-            {mobileNavIcons[index]} <span>{navItem.name}</span>
-        </NavItem>
-    ));
-
     return (
         <header>
             <nav className="nav" style={xStyle}>
                 <div className="nav-logo-container" onClick={handleLogoClick} >
                     <Logo />
                 </div>
-                <Drawer 
-                    anchor="left" open={drawerOpen}
-                    onClose={closeDrawer}
-                    transitionDuration={400}
-                >
-                    <h3>Morteza Jalilifar</h3>
-                    <ul>{mobileNavItemEls}</ul>
-                </Drawer>
+                <NavDrawer navItems={navItems} ref={navDrawerCmp} />
                 <ul className="nav-list">
                     {navItemEls}
                 </ul>
