@@ -39,15 +39,7 @@ export default (props) => {
                 </div>
             </div>
 
-            <div className="about__xp">
-                <h2>Experiences</h2>
-                <AppTimeline />
-            </div>
-
-            <div className="about__edu">
-                <h2>Education</h2>
-                
-            </div>
+            {/* <AppTimeline /> */}
             
             <Snackbar
                 anchorOrigin={{ vertical: 'bottom', horizontal: 'right'}}
