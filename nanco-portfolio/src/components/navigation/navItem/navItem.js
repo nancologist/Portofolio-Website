@@ -4,7 +4,7 @@ import './navItem.css';
 
 export default (props) => {
     return (
-        <li className="navItem">
+        <li className="navItem" onClick={props.clicked}>
             <Link
                 to={props.goto}
                 activeClassName="active"

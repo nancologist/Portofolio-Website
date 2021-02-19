@@ -35,7 +35,7 @@ export default (props) => {
                 </div>
                 <div className="bio__content__text">
                     <h1 className="bio__content__title">Profile</h1>
-                    { data.profile.split('<br>').map(text => <p className="bio__content__text">{text}</p>)}
+                    { data.profile.split('<br>').map((text, i) => <p className="bio__content__text" key={i}>{text}</p>)}
                 </div>
             </div>
 

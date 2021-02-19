@@ -51,6 +51,19 @@
     will-change: transform;
 }
 
+@media only screen and (max-width: 1024px) {
+    .navItem a {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .navItem a span {
+        margin-left: 20px;
+    }
+}
+
 /* This @media allows hover-effect only if it's a device without touch. */
 @media (hover: hover) {
     .navItem a:hover {
