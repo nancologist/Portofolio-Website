@@ -77,7 +77,6 @@ const Works = () => {
                         <img src={githubLogo} alt="GitHub Logo"/>
                     </a>
                 </div>
-                <span>(open source)</span>
             </div>
             <div className="works">
                 {ownWorks.map((work) => {

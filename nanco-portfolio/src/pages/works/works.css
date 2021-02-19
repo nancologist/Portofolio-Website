@@ -62,10 +62,6 @@
     width: 100%;
 }
 
-/*.project > * {*/
-/*    margin-bottom: 30px;*/
-/*}*/
-
 @media only screen and (max-width: 1488px) {
     .works {
         justify-content: center;
@@ -77,6 +73,7 @@
 
     .works__title__main {
         justify-content: center;
+        margin-bottom: 10px;
     }
 
     .works__title__main__text {
