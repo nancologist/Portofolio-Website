@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 import Logo from "../logo/logo";
 import './navigation.css';
@@ -9,6 +9,20 @@ import NavDrawer from './navDrawer/navDrawer';
 
 const Navigation = (props) => {
     const navDrawerCmp = useRef();
+    const navEl = useRef();
+    const [navClasses, setNavClasses] = useState(['nav']);
+
+    useEffect(() => {
+        window.onscroll = () => {
+            const sticky = navEl.current.offsetTop;
+            console.log(sticky + ' , ' + window.pageYOffset)
+            if (window.pageYOffset > sticky) {
+                setNavClasses(['nav', 'nav--sticky']);
+              } else {
+                setNavClasses(['nav']);
+              }
+        }
+    }, []);
 
     const handleLogoClick = () => {
         const isNavDrawer = getWidth() <= 1024
@@ -39,7 +53,7 @@ const Navigation = (props) => {
 
     return (
         <header>
-            <nav className="nav" style={xStyle}>
+            <nav className={navClasses.join(' ')} style={xStyle} ref={navEl} >
                 <div className="nav-logo-container" onClick={handleLogoClick} >
                     <Logo />
                 </div>

@@ -1,11 +1,34 @@
+header + div {
+    padding-top: 30px;    
+}
+
 .nav {
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
-    padding: 18px 15%;
-    border-bottom: 1px solid var(--primary-color);
+    padding: 10px 15%;
+    /* border-bottom: 1px solid var(--primary-color); */
+    box-shadow: rgba(0, 0, 0, 0.25) 1px 3px 5px;
     margin-bottom: 4px;
-    transition: opacity 500ms ease-in-out;
+    transition: 0.4s;
 }
+
+/* ------------------ Sticky Navbar ------------------ */
+
+.nav--sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 0 15%;
+    font-size: 16px;
+}
+
+.nav--sticky .nav-logo-container {
+    width: 70px; height: 70px;
+}
+
+/* ---------------------------------------------------- */
 
 .nav-logo-container {
     background-color: transparent;
@@ -15,6 +38,7 @@
     text-align: center;
     position: relative;
     overflow: hidden;
+    transition: 0.4s;
 }
 
 .nav-logo-container img {
@@ -47,23 +71,6 @@
 
     .nav-list {
         display: none;
-    }
-
-    .MuiDrawer-paper {
-        background-color: var(--secondary-color) !important;
-        padding: 40px 15px 0 15px;
-        font-size: 22px;
-    }
-
-    .MuiDrawer-paper h3 {
-        color: #ccc;
-        margin-bottom: 10px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid rgb(100, 100, 100);
-    }
-
-    .MuiDrawer-paper ul {
-        margin-top: 10px;
     }
 }
 
