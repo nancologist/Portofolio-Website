@@ -16,7 +16,8 @@ const Navigation = (props) => {
         window.onscroll = () => {
             const sticky = navEl.current.offsetTop;
             console.log(sticky + ' , ' + window.pageYOffset)
-            if (window.pageYOffset > sticky) {
+            // + 10 , otherwise /Works looks buggy:
+            if (window.pageYOffset > sticky + 10) {
                 setNavClasses(['nav', 'nav--sticky']);
               } else {
                 setNavClasses(['nav']);
