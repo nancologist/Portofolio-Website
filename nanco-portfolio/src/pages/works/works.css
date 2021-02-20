@@ -127,7 +127,7 @@
 .work:hover > .overlay_from-top {
     transform: translateY(100%);
 }
-.work_from-top {
+.overlay_from-top {
     top: -100%;
 }
 
