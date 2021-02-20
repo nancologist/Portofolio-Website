@@ -248,7 +248,7 @@ export const skills = [
                 techIconTitle: 'GitLab'
             },
             {
-                techName: 'Git',
+                techName: 'Git - ',
                 techDesc: 'daily use.',
                 techIcon: mdiGit,
                 techIconTitle: 'Git'
@@ -266,7 +266,7 @@ export const skills = [
             },
             {
                 techName: 'OS & Co. - ',
-                techDesc: 'MacOS X, Windows 10, Bash, Terminal (Bash), LDAP, Assembly 6502.',
+                techDesc: 'Linux Debian, MacOS X, Windows 10, Bash, Terminal (Bash), LDAP, Assembly 6502.',
                 techIcon: mdiBookMultiple,
                 techIconTitle: 'others'
             },

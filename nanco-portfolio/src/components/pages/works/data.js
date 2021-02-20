@@ -42,8 +42,40 @@ import restApiLogo from '../../../images/stacks/rest-api.png'
 import typescriptLogo from '../../../images/stacks/typescript.png'
 
 import lhLogo from '../../../images/my-works/lighthouse.png'
+import dotShopLogo from '../../../images/my-works/dotshop.png'
 
 export const works = [
+    {
+        type: 'own',
+        title: 'dotShop - RESTful Webapp',
+        repo: 'https://github.com/nancologist/car24',
+        thumbnail: dotShopLogo,
+        customer: {
+            logo: dotShopLogo,
+            name: 'dotShop Logo'
+        },
+        date: 'Feb 2021 - present',
+        tasks: [
+            'E-commerce prototype',
+            'MERN-Stack Webapp',
+            'Designing and implementing an online supermarket.',
+            'Implementing RESTful API using ExpressJS to make the backend reusable.'
+        ],
+        tools: [
+            {
+                src: nodejsLogo,
+                alt: 'NodeJS Logo'
+            },
+            {
+                src: restApiLogo,
+                alt: 'REST API Logo'
+            },
+            {
+                src: reactLogo,
+                alt: 'ReactJS Logo'
+            },
+        ]
+    },
     {
         type: 'own',
         title: 'Car24 - RESTful Webapp',
