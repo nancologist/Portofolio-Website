@@ -33,7 +33,6 @@ import seleniumLogo from '../../../images/brands/selenium.jpg';
 import springLogo from '../../../images/brands/spring.png';
 import cssLogo from '../../../images/brands/css.png';
 
-import lighthouseThumb from '../../../images/work-thumbnails/lighthouse-deskapp.jpg'
 import myPageThumb from '../../../images/work-thumbnails/my-page.jpg'
 
 import car24Logo from '../../../images/my-works/logo.png';
@@ -41,6 +40,8 @@ import nodejsLogo from '../../../images/stacks/nodejs.jpg'
 import expressjsLogo from '../../../images/stacks/expressjs.png'
 import restApiLogo from '../../../images/stacks/rest-api.png'
 import typescriptLogo from '../../../images/stacks/typescript.png'
+
+import lhLogo from '../../../images/my-works/lighthouse.png'
 
 export const works = [
     {
@@ -81,7 +82,7 @@ export const works = [
         type: 'own',
         title: 'Desktop App - Webpage Assessment Tool using Google Lighthouse',
         repo: 'https://github.com/nancologist/google-lighthouse_abschluss-projekt',
-        thumbnail: lighthouseThumb,
+        thumbnail: lhLogo,
         customer: {
             logo: electronJsLogo,
             name: 'ElectronJS Logo'
