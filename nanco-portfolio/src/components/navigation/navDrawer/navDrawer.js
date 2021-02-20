@@ -6,6 +6,7 @@ import {
     CallOutlined, HomeOutlined
 } from '@material-ui/icons/';
 
+import './navDrawer.css';
 import NavItem from '../navItem/navItem';
 
 const NavDrawer = ({ navItems }, ref) => {
